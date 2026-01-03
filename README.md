@@ -1,4 +1,4 @@
-# Content Design Starter Template
+# AI Content Design Handbook
 
 A comprehensive resource for content designers, featuring practical templates, workflows, and guidelines for creating clear, accessible, user-focused content—including extensive resources for AI-powered content experiences.
 
