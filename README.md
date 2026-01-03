@@ -1,6 +1,6 @@
 # AI Content Design Handbook
 
-A comprehensive resource for content designers, featuring practical templates, workflows, and guidelines for creating clear, accessible, user-focused content—including extensive resources for AI-powered content experiences.
+The comprehensive guide for designing content in the age of AI. Featuring practical templates, workflows, and ethical guidelines for creating clear, accessible, user-focused content—with extensive resources for AI-powered experiences, conversational interfaces, and responsible AI practices.
 
 ## Highlights
 
@@ -69,7 +69,7 @@ Essential guidelines and references:
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/jkelleman/content-design-starter-template.git
+   git clone https://github.com/jkelleman/ai-content-design-handbook.git
    ```
 
 2. **Browse templates** 
@@ -93,7 +93,7 @@ Essential guidelines and references:
 - Content designers new to VS Code and Git
 - Teams establishing content testing and measurement practices
 
-## How to Use This Template
+## How to Use This Handbook
 
 **For a specific content challenge:**
 Navigate to the relevant template and follow the framework
@@ -127,7 +127,7 @@ Navigate to the relevant template and follow the framework
 
 ## Contributing
 
-This template is a living resource. Contributions welcome:
+This handbook is a living resource. Contributions welcome:
 - Add new templates
 - Improve existing examples
 - Share real-world case studies
