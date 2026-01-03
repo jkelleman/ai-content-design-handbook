@@ -1,22 +1,13 @@
 title: Content Design Starter Template
-description: A beginner-friendly GitHub Pages site for content designers using VS Code.
+description: Practical templates, workflows, and guidelines for creating clear, accessible, user-focused content.
 theme: minima
 author:
   name: Jen Kelleman
 show_excerpts: true
+baseurl: "/content-design-starter-template"
+url: "https://jkelleman.github.io"
 
 minima:
   skin: auto
   social_links:
-    github: https://github.com/your-username/content-design-starter-template
-    medium: https://medium.com/your-article-link
-
-navigation:
-  - title: Home
-    url: /
-  - title: Templates
-    url: /templates/
-  - title: Examples
-    url: /examples/
-  - title: Resources
-    url: /resources/
+    github: https://github.com/jkelleman/content-design-starter-template
