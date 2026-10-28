@@ -4,15 +4,15 @@ The comprehensive guide for designing content in the age of AI. Featuring practi
 
 ## Highlights
 
-🤖 **AI & Conversational Design** - Prompt engineering, AI content strategy, chatbot patterns, and conversation flows
+**AI & Conversational Design** - Prompt engineering, AI content strategy, chatbot patterns, and conversation flows
 
-📊 **Content Testing & Measurement** - 5 testing methods, metrics frameworks, A/B testing, and AI content evaluation
+**Content Testing & Measurement** - 5 testing methods, metrics frameworks, A/B testing, and AI content evaluation
 
-⚖️ **Ethical AI Guidelines** - Bias detection, content safety, transparency, and responsible AI practices
+**Ethical AI Guidelines** - Bias detection, content safety, transparency, and responsible AI practices
 
-📝 **Core Content Templates** - Error messages, onboarding, microcopy, and documentation patterns
+**Core Content Templates** - Error messages, onboarding, microcopy, and documentation patterns
 
-🔄 **Workflows & Processes** - Git for content designers, review processes, and quality assurance
+**Workflows & Processes** - Git for content designers, review processes, and quality assurance
 
 ## What's Inside
 
@@ -141,9 +141,9 @@ Created by **[Jen Kelleman](https://github.com/jkelleman)**, Principal Content D
 Based on real-world experience designing content for Microsoft Fabric, Azure, and enterprise data platforms—including extensive work with AI-powered experiences, conversational interfaces, and responsible AI practices.
 
 ### Connect
-- 💼 [LinkedIn](https://www.linkedin.com/in/jenniferkelleman)
-- ✍️ [Medium](https://www.jenkelleman.medium.com)
-- 🐙 [GitHub](https://github.com/jkelleman)
+- [LinkedIn](https://www.linkedin.com/in/jenniferkelleman)
+- [Medium](https://www.jenkelleman.medium.com)
+- [GitHub](https://github.com/jkelleman)
 
 ### Featured Topics
 - AI content strategy and design
