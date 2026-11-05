@@ -298,6 +298,32 @@ Provide clear next action
 - Toggle: "Send daily summary"
 - Description: "Get a daily email with pipeline status and errors"
 
+## Microcopy for AI features
+
+AI features add a new set of small strings that need the same care as buttons and labels.
+
+| Element | Guidance | Example |
+|---|---|---|
+| **AI label** | Mark AI-generated content consistently, and make the label open an explanation | `AI` label → "Summary generated from 12 comments. [How this works]" |
+| **Prompt box placeholder** | Suggest a task, not a personality | "Ask about orders, revenue, or customers" (not "Ask me anything!") |
+| **Example prompts** | 2–3 that reliably work well | "Which region grew fastest last quarter?" |
+| **Regenerate** | Its own button, separate from the AI label | [Regenerate] |
+| **Feedback** | Ask about the specific output | 👍 / 👎 "Was this summary accurate?" |
+| **Disclaimers** | Short, placed at the output, specific to the risk | "Check figures before sharing. AI can make mistakes." |
+| **Stop / cancel** | Always available while generating | [Stop generating] |
+| **Citations** | Point to the source, not the model | "From Q3-report.pdf, page 4" |
+
+IBM's Carbon design system says the AI label shouldn't double as an action button. Regenerate and similar actions get their own controls, so the label stays a reliable signal.
+
+## Settings descriptions
+
+Apple's HIG gives a useful rule: describe what a setting does **when it's on**, and people will infer the opposite. Its example is the Apple Watch Handwashing Timer, whose description explains that the watch can start a 20-second timer when it detects handwashing, with no need to explain what happens when it's off.
+
+```
+❌ Enable or disable AI suggestions in this workspace.
+✅ Suggest replies based on the conversation. Suggestions are only visible to you.
+```
+
 ## Tone Guidance
 
 **Be conversational:**
@@ -345,8 +371,20 @@ Use sparingly, only for genuine celebration
 - [ ] Accessible (works with screen readers)
 - [ ] Culturally appropriate and inclusive
 
+## How leading companies do it
+
+| Company | What they teach |
+|---|---|
+| **Apple** | Use verbs for buttons; plain "Send" beats cute "Let's do it!"; avoid "Click here"; use possessives like "your" sparingly; say "tap," not "click," on touch devices. ([HIG: Writing](https://developer.apple.com/design/human-interface-guidelines/writing)) |
+| **Shopify** | Calls to action open with a strong verb ("Create template"); pick one term per concept and never alternate between synonyms like "Upload image" and "Add photos." ([App content](https://shopify.dev/apps/design-guidelines/content)) |
+| **Google** | Refer to controls by their label text, address people as "you," and don't mix "my" and "your" in one phrase. ([Material communication](https://codelabs.developers.google.com/codelabs/material-communication-guidance)) |
+| **Atlassian** | Keep calls to action to one or two words and make them specific. ([Error messages](https://atlassian.design/foundations/content/designing-messages/error-messages)) |
+| **IBM** | Keep the AI label separate from actions like regenerate, and never disable it. ([AI label](https://carbondesignsystem.com/components/ai-label/usage/)) |
+
+More detail: [How Leading Companies Design Content for AI](../../resources/industry-examples.md)
+
 ## Related Resources
 
-- [Voice and Tone Guide](../style-guides/voice-and-tone.md)
+- [Voice and Tone Guide](../../style-guides/voice-and-tone-framework.md)
 - [Writing for Accessibility](../../resources/accessibility-guidelines.md)
-- [Button Patterns](../../examples/button-patterns.md)
+- [Before and After Examples](../../examples/before-after-examples.md)

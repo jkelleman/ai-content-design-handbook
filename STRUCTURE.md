@@ -7,6 +7,11 @@ ai-content-design-handbook/
 ├── README.md                           # Repository overview
 ├── index.md                            # GitHub Pages homepage
 ├── content_design_starter.md           # Quick-start planning template
+├── CONTRIBUTING.md                     # How to contribute
+├── LICENSE                             # MIT license
+├── assets/
+│   ├── banner.png                      # README banner
+│   └── banner.html                     # Banner source
 │
 ├── templates/                          # Ready-to-use content templates
 │   ├── messages/
@@ -22,38 +27,42 @@ ai-content-design-handbook/
 │   ├── documentation/
 │   │   └── release-notes.md           # Release notes templates
 │   │
-│   ├── ai-content/                    # ✨ AI content design
+│   ├── ai-content/                    # AI content design
 │   │   ├── prompt-design.md           # Prompt engineering guide
 │   │   ├── content-as-data.md         # Structure content for AI
-│   │   └── ai-content-strategy.md     # AI content planning
+│   │   ├── ai-content-strategy.md     # AI content planning
+│   │   └── agentic-experiences.md     # Content for AI agents
 │   │
-│   └── conversational/                # ✨ Conversational design
+│   └── conversational/                # Conversational design
 │       └── conversation-flows.md      # Chatbot & conversational UI
 │
 ├── workflows/                          # Process guides
 │   ├── git-workflow.md                # Git for content designers
 │   ├── content-review-process.md      # Review and approval process
 │   │
-│   └── testing/                       # ✨ Testing & measurement
+│   └── testing/                       # Testing & measurement
 │       ├── content-testing.md         # 5 testing methods
 │       ├── content-metrics.md         # Metrics & measurement
 │       ├── ab-testing-content.md      # A/B testing framework
-│       └── ai-content-evaluation.md   # AI content quality assessment
+│       ├── ai-content-evaluation.md   # AI content quality assessment
+│       └── llm-as-a-judge.md          # Calibrating LLM judges
 │
 ├── resources/                          # Guidelines and references
 │   ├── accessibility-guidelines.md    # Accessibility best practices
+│   ├── industry-examples.md           # How 10 companies design content for AI
 │   │
-│   └── ethical-ai/                    # ✨ Ethical AI guidelines
+│   └── ethical-ai/                    # Ethical AI guidelines
 │       ├── ethical-ai-guidelines.md   # 6 core principles
 │       ├── bias-detection.md          # Identify & mitigate bias
 │       ├── content-safety.md          # Safety protocols
 │       └── transparency-guidelines.md # AI disclosure practices
 │
 ├── examples/                           # Real-world examples
-│   └── [Content examples and case studies]
+│   └── before-after-examples.md       # 27 before-and-after rewrites
 │
 ├── style-guides/                       # Voice, tone, and style resources
-│   └── [Style guide templates and frameworks]
+│   ├── voice-and-tone-framework.md    # Voice and tone
+│   └── terminology-guidelines.md      # Terminology and word choice
 │
 └── _config.yml                         # GitHub Pages configuration
 ```
@@ -68,8 +77,9 @@ ai-content-design-handbook/
 - Onboarding flows and confirmation dialogs
 - Release notes and documentation
 
-**AI & Conversational Design:** ✨ NEW
+**AI & Conversational Design:**
 - Prompt engineering frameworks
+- Content patterns for AI agents: plans, approvals, progress, and receipts
 - Content-as-data structures
 - AI content strategy planning
 - Conversational UI patterns and chatbot flows
@@ -80,22 +90,26 @@ ai-content-design-handbook/
 - Git basics for content designers
 - Content review and approval processes
 
-**Testing & Measurement:** ✨ NEW
+**Testing & Measurement:**
 - Content testing methodologies (comprehension, usability, A/B, findability, preference)
 - Metrics frameworks for measuring content effectiveness
 - A/B testing for content experiments
 - AI content quality evaluation
+- LLM-as-a-judge calibration against human reviewers
 
 ### Resources
 
 **Accessibility:**
 - Comprehensive accessibility guidelines for inclusive content
 
-**Ethical AI:** ✨ NEW
+**Industry Practice:**
+- What Google, Microsoft, Apple, Amazon, Meta, IBM, Salesforce, Adobe, Atlassian, and Shopify publish about content design, with sources
+
+**Ethical AI:**
 - Core principles for responsible AI content (transparency, accuracy, fairness, safety, privacy, accountability)
 - Bias detection across 7 types (gender, racial, age, ability, socioeconomic, geographic, expertise)
 - Content safety protocols covering 9 harm categories
-- Transparency and disclosure best practices
+- Transparency and disclosure best practices, including EU AI Act Article 50
 
 ### Examples
 Real-world content examples showing:
@@ -162,8 +176,8 @@ Contributions are welcome! Consider adding:
 
 ## About This Resource
 
-Created by Jen Kelleman, Principal Content Designer at Microsoft, based on years of experience designing content for enterprise software platforms including Microsoft Fabric, Azure Data Factory, and Power BI.
+Created by [Jen Kelleman](https://github.com/jkelleman), a content designer for AI and data experiences. Company examples are paraphrased from public guidance and linked; this handbook isn't affiliated with any of the companies it cites.
 
 ## License
 
-MIT License - Free to use and adapt for your needs
+[MIT License](LICENSE) - Free to use and adapt for your needs

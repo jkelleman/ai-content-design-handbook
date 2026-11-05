@@ -516,8 +516,27 @@ ZIP:
 
 ---
 
+## How leading companies do it
+
+| Company | What they teach |
+|---|---|
+| **Apple** | Write for everyone with simple, plain language, keeping accessibility and localization in mind. Avoid "Click here" in links; descriptive link text matters especially for screen reader users. ([HIG: Writing](https://developer.apple.com/design/human-interface-guidelines/writing)) |
+| **Google** | Write alt text without "image of" or "picture of," use numerals for numbers, and write for all reading levels. ([Material communication](https://codelabs.developers.google.com/codelabs/material-communication-guidance)) |
+| **Microsoft** | Put people before disabilities ("readers who are blind or have low vision"), avoid phrases like "suffering from," and mention a disability only when it's relevant. ([Bias-free communication](https://learn.microsoft.com/style-guide/bias-free-communication)) |
+| **IBM** | Carbon points writers to IBM Accessibility's content design guidance for alt text, error messages, form labels, and context. AI styling is tested for contrast so glow effects don't reduce readability. ([Carbon content](https://carbondesignsystem.com/guidelines/content/overview), [Carbon for AI](https://carbondesignsystem.com/guidelines/carbon-for-ai/)) |
+| **Atlassian** | Provide alt text for illustrations and symbols in messages, use plain language, and write descriptive links. ([Error messages](https://atlassian.design/foundations/content/designing-messages/error-messages)) |
+| **Shopify** | Aim for about a US grade 7 reading level and avoid idioms, for readers with varied reading skills and first languages. ([App content](https://shopify.dev/apps/design-guidelines/content)) |
+
+### AI and accessibility
+
+- **AI disclosures must be accessible.** EU AI Act Article 50 requires AI disclosures to meet accessibility requirements. Make sure AI labels have text alternatives that screen readers announce.
+- **Generated alt text needs review.** AI can draft alt text, but it can misidentify content or miss what matters in context. Treat it as a draft.
+- **Streaming responses** can overwhelm screen readers. Announce when generation finishes rather than every word as it arrives.
+
+More detail: [How Leading Companies Design Content for AI](industry-examples.md)
+
 ## Related Resources
 
-- [Voice and Tone Guide](../style-guides/voice-and-tone.md)
+- [Voice and Tone Guide](../style-guides/voice-and-tone-framework.md)
 - [Content Review Process](../workflows/content-review-process.md)
 - [Microcopy Template](../templates/messages/microcopy.md)

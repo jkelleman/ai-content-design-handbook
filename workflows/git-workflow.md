@@ -412,8 +412,27 @@ git blame file.md                 # See who changed each line
 - [Git Documentation](https://git-scm.com/doc)
 - Ask your team's Git expert
 
+## How leading companies use docs-as-code
+
+Treating content like code, with version control, pull requests, reviews, and automated checks, is standard practice at large companies.
+
+| Company | Practice | What to borrow |
+|---|---|---|
+| **Microsoft** | Microsoft Learn documentation is maintained in public GitHub repositories, and anyone can propose an edit through a pull request. ([Contributor guide](https://learn.microsoft.com/contribute/)) | Review content changes the same way code is reviewed |
+| **Google** | Google publishes its developer documentation style guide openly, so writers inside and outside the company work from one reference. ([Developer documentation style guide](https://developers.google.com/style)) | Keep your style guide in the same repo as your content, versioned |
+| **Salesforce** | Applies one set of writing guidelines across in-app text, help, developer docs, and training. ([SLDS voice and tone](https://spring-21.lightningdesignsystem.com/guidelines/voice-and-tone)) | One source of truth for voice, used by every content type |
+
+### What to version besides docs
+
+- **UI strings** (string files, resource files)
+- **System prompts and few-shot examples** for AI features. A prompt change can alter every response, so it deserves a pull request and a reviewer. See [Prompt Design](../templates/ai-content/prompt-design.md).
+- **Evaluation rubrics and golden sets,** so you can tell whether quality changed because the content changed or because the rubric did. See [LLM-as-a-Judge](testing/llm-as-a-judge.md).
+- **Terminology lists,** which AI features can use for grounding
+
+More detail: [How Leading Companies Design Content for AI](../resources/industry-examples.md)
+
 ## Related Resources
 
 - [Content Review Process](content-review-process.md)
-- [Documentation Structure](../resources/documentation-structure.md)
-- [Style Guide](../style-guides/voice-and-tone.md)
+- [Content Review Process](content-review-process.md)
+- [Style Guide](../style-guides/voice-and-tone-framework.md)

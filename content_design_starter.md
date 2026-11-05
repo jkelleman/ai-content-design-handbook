@@ -375,6 +375,25 @@ What will you track post-launch?
 
 ---
 
+## 🏢 Benchmark Against Industry Guidance
+
+Before writing, check which published guidance applies to your feature. Note what you'll adopt and where you'll differ.
+
+| If your feature has… | Benchmark against | Key question |
+|---|---|---|
+| Error states | [Microsoft error guidelines](https://learn.microsoft.com/en-us/windows/win32/debug/error-message-guidelines), [Adobe Spectrum](https://spectrum.adobe.com/page/writing-for-errors) | Does every error say what happened and what to do? |
+| An AI assistant or chat | [Microsoft Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/) | Does the first screen say what it can do and how well (G1, G2)? |
+| AI that can fail or be unsure | [Google People + AI Guidebook](https://pair.withgoogle.com/chapter/People%20+%20AI%20Guidebook%20-%20Errors%20+%20Graceful%20Failure.pdf) | Which AI error types can happen, and what's the path forward for each? |
+| AI-generated content in the UI | [IBM Carbon AI label](https://carbondesignsystem.com/components/ai-label/usage/) | Is every piece of AI content marked, with an explanation one click away? |
+| AI-generated images or media | [Adobe Content Credentials](https://helpx.adobe.com/in/creative-cloud/apps/adobe-content-authenticity/content-credentials/overview.html), [EU AI Act Article 50](resources/ethical-ai/transparency-guidelines.md) | Does output carry machine-readable provenance? |
+| An agent that takes actions | [Agentic AI Experiences](templates/ai-content/agentic-experiences.md) | Is there a plan, approval, progress, and receipt for each action? |
+| A global audience | [Shopify app content guidelines](https://shopify.dev/apps/design-guidelines/content) | Is it about a US grade 7 reading level, with no idioms? |
+| A voice interface | [Amazon Alexa situational design](https://developer.amazon.com/alexa-skills-kit/situational-design) | Does it make sense by listening alone? |
+
+All 10 companies' guidance: [How Leading Companies Design Content for AI](resources/industry-examples.md)
+
+---
+
 ## 💡 Notes & Decisions
 
 ### Open Questions
@@ -401,6 +420,8 @@ What will you track post-launch?
 - [Conversation Flows](templates/conversational/conversation-flows.md) - For chatbot design
 - [Voice & Tone Framework](style-guides/voice-and-tone-framework.md) - Define your voice
 - [Content Testing](workflows/testing/content-testing.md) - Test your content
+- [Agentic AI Experiences](templates/ai-content/agentic-experiences.md) - For AI that takes actions
+- [LLM-as-a-Judge](workflows/testing/llm-as-a-judge.md) - Evaluate AI output at scale
 
 ### Additional Resources
 - [Ethical AI Guidelines](resources/ethical-ai/ethical-ai-guidelines.md)

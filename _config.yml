@@ -1,13 +1,13 @@
-title: Content Design Starter Template
-description: Practical templates, workflows, and guidelines for creating clear, accessible, user-focused content.
+title: AI Content Design Handbook
+description: Templates, workflows, and ethical guidelines for designing the words in AI products, with examples from how leading tech companies design their own content.
 theme: minima
 author:
   name: Jen Kelleman
 show_excerpts: true
-baseurl: "/content-design-starter-template"
+baseurl: "/ai-content-design-handbook"
 url: "https://jkelleman.github.io"
 
 minima:
   skin: auto
   social_links:
-    github: https://github.com/jkelleman/content-design-starter-template
+    github: https://github.com/jkelleman/ai-content-design-handbook

@@ -629,9 +629,38 @@ Track conversation effectiveness:
 - **Escalation rate**: % escalated to human
 - **User satisfaction**: Ratings/feedback
 
+## How leading companies do it
+
+| Company | What they teach |
+|---|---|
+| **Amazon** | Design voice-first, not screen-first; build on situations instead of rigid flow charts; write for the ear; use punctuation to control pacing; adapt to returning users. ([Situational design](https://developer.amazon.com/alexa-skills-kit/situational-design), [Writing great dialogs](https://developer.amazon.com/blogs/alexa/post/9c5f66b0-9514-423a-827e-a2e71a68b456/how-to-write-great-dialogs-for-alexa-skills)) |
+| **Microsoft** | Scope services when in doubt (G10): ask a clarifying question or narrow the task instead of guessing. Remember recent interactions (G12), and make dismissal and correction easy (G8, G9). ([Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/)) |
+| **Google** | When the AI can't help, say what it can't do and what input would work, and offer an alternative the way a waiter suggests a substitute dish. ([PAIR: Errors + Graceful Failure](https://pair.withgoogle.com/chapter/People%20+%20AI%20Guidebook%20-%20Errors%20+%20Graceful%20Failure.pdf)) |
+| **Apple** | Write for how people use each device: small screens need brevity, and on a shared TV, consider who you're addressing. ([HIG: Writing](https://developer.apple.com/design/human-interface-guidelines/writing)) |
+| **Atlassian** | Shift toward practical, direct language when people are stressed or blocked. ([Voice and tone](https://atlassian.design/foundations/content/voice-tone)) |
+
+### Patterns worth adopting from these
+
+**Clarify instead of guessing (Microsoft G10):**
+```
+User: Show me the numbers for last quarter.
+❌ Here's revenue for Q3: $4.2M.
+✅ Do you mean revenue, orders, or new customers for Q3 (July–September)?
+```
+
+**Offer a substitute (Google PAIR):**
+```
+User: Book the 6:00 PM table at Luca.
+✅ Luca is full at 6:00. I can book 5:30 or 7:15, or check Bellora nearby at 6:00.
+```
+
+**Write for the ear (Amazon):** responses should make sense by listening alone. Limit how many options you read out, and use punctuation to add pauses between list items so people can follow.
+
+More detail: [How Leading Companies Design Content for AI](../../resources/industry-examples.md)
+
 ## Related Resources
 
 - [Prompt Design](../ai-content/prompt-design.md)
 - [Error Messages](../messages/error-messages.md)
-- [Conversational UI Patterns](conversational-ui-patterns.md)
-- [Voice and Tone for Chatbots](../../style-guides/chatbot-voice-tone.md)
+- [Agentic AI Experiences](../ai-content/agentic-experiences.md)
+- [Voice and Tone for Chatbots](../../style-guides/voice-and-tone-framework.md)

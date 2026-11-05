@@ -1,6 +1,6 @@
 # Onboarding Flow Template
 
-Use this template to design effective onboarding experiences that help users get started quickly.
+Onboarding gets people to their first success as fast as possible, and teaches only what they need for it. For AI features, it also has to set honest expectations about what the AI can do and how reliable it is.
 
 ## Template Structure
 
@@ -243,6 +243,55 @@ You're ready to collaborate.
 - Users who explicitly skipped
 - Users demonstrating product mastery
 
+## Writing the flow: labels and steps
+
+Consistent step labels tell people where they are. Apple's HIG suggests starting a multi-step flow with language like **Get Started**, moving through it with **Continue** or **Next** (pick one and keep it), and ending with **Done** so it's clear the flow is complete.
+
+| Step | Label pattern | Example |
+|---|---|---|
+| Start | "Get started," "Set up [thing]" | [Set up workspace] |
+| Middle | "Continue" or "Next" (choose one), or a label that previews the next step | [Continue] or [Connect data] |
+| Optional | "Skip for now," never just "Skip" when it can be done later | [Skip for now] |
+| End | "Done," or the first real action | [Done] or [Open dashboard] |
+
+Show progress honestly ("Step 2 of 3") and never add steps after promising a number.
+
+## Onboarding returning users
+
+Not everyone who sees onboarding is new. Amazon's Alexa dialog guidance recommends adapting to how familiar someone is and how long they've been away: skip the introduction after a short gap, and mention what's new after a long one.
+
+| Returning after… | Show |
+|---|---|
+| A few days | Nothing; take them where they left off |
+| Several weeks | A one-line "What's new" with a link |
+| An abandoned setup | "Pick up where you left off" with the remaining steps |
+| A major redesign | A short, skippable tour of what moved |
+
+## Onboarding to an AI feature
+
+AI features need different onboarding, because people's main question isn't "where is it?" but "what can it do, and can I trust it?" Microsoft's Guidelines for Human-AI Interaction open with exactly these two: make clear what the system can do (G1), and make clear how well it can do it (G2).
+
+**Cover four things, briefly:**
+
+1. **What it does,** in concrete terms: "Ask questions about your sales data in plain language."
+2. **What it can't do:** "It can't see data outside this workspace or change your data."
+3. **How reliable it is:** "Answers can contain mistakes. Each one shows the query it used so you can check."
+4. **How to start:** two or three example prompts that are likely to work well.
+
+```
+❌ Meet your new AI assistant! ✨ It can help you with anything.
+
+✅ Ask questions about your sales data
+   Get answers in plain language, with the query behind each one so you can check it.
+   It can't see other workspaces or change your data.
+   Try: "Which products sold best last month?"
+   [Ask a question]   [Not now]
+```
+
+Google's People + AI Guidebook adds that early errors shape people's mental model of an AI feature, so onboarding should set expectations before the first mistake happens, not after.
+
+**Announce changes later, too.** G18, notify users about changes, applies after onboarding. When the AI gains a capability or behaves differently, tell people. See [Release Notes](../documentation/release-notes.md).
+
 ## Measuring Onboarding Success
 
 **Key metrics:**
@@ -252,8 +301,21 @@ You're ready to collaborate.
 - Drop-off points
 - Feature adoption post-onboarding
 
+## How leading companies do it
+
+| Company | What they teach |
+|---|---|
+| **Apple** | Use consistent labels through multi-step flows (Get Started → Continue or Next → Done), and consider each screen's purpose, putting the most important information first. ([HIG: Writing](https://developer.apple.com/design/human-interface-guidelines/writing)) |
+| **Amazon** | Adapt to returning users: skip onboarding after a short absence, mention new features after a long one. ([Writing great dialogs](https://developer.amazon.com/blogs/alexa/post/9c5f66b0-9514-423a-827e-a2e71a68b456/how-to-write-great-dialogs-for-alexa-skills)) |
+| **Microsoft** | For AI features, make clear what the system can do and how well it can do it, from the first screen. ([Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/)) |
+| **Atlassian** | Soften confident tone for new or anxious users and give more prescriptive guidance; teach at key moments and suggest next steps. ([Voice and tone](https://atlassian.design/foundations/content/voice-tone)) |
+| **Shopify** | Split complex tasks into steps that each focus on one action, and put the most important tasks first. ([App content](https://shopify.dev/apps/design-guidelines/content)) |
+
+More detail: [How Leading Companies Design Content for AI](../../resources/industry-examples.md)
+
 ## Related Templates
 
 - [Empty States](../messages/empty-states.md)
 - [Success Messages](../messages/success-messages.md)
 - [Confirmation Dialogs](confirmation-dialogs.md)
+- [Agentic AI Experiences](../ai-content/agentic-experiences.md)

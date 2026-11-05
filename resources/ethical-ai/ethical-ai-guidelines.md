@@ -815,6 +815,23 @@ AI quality requires ongoing work
 **Involve diverse perspectives**
 Better outcomes through inclusion
 
+## How leading companies frame responsible AI
+
+Most large companies publish responsible AI principles. Comparing them shows what's become standard, and where each company adds something.
+
+| Company | Principles | Distinctive practice |
+|---|---|---|
+| **Microsoft** | Fairness, reliability and safety, privacy and security, inclusiveness, transparency, accountability | Publishes transparency notes documenting intended uses, limitations, and evaluations; 18 Guidelines for Human-AI Interaction ([Copilot note](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-transparency-note), [Guidelines](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/)) |
+| **Salesforce** | Responsible, accountable, transparent, empowering, inclusive | The Einstein Trust Layer masks data, prevents model providers from retaining prompts, and scans output for toxicity ([Trusted AI](https://salesforce.com/uk/artificial-intelligence/trusted-ai/)) |
+| **Google** | Google's AI Principles guide product decisions; PAIR translates them into design guidance | People + AI Guidebook, being amended for generative AI with input from equitable AI research workshops ([PAIR update](https://medium.com/people-ai-research/updating-the-people-ai-guidebook-in-the-age-of-generative-ai-cace6c846db4)) |
+| **Amazon** | Responsible AI dimensions documented per service | AI Service Cards with intended uses, limitations, and fairness testing ([AI Service Cards](https://aws.amazon.com/blogs/machine-learning/introducing-aws-ai-service-cards-a-new-resource-to-enhance-transparency-and-advance-responsible-ai)) |
+| **IBM** | Transparency and explainability built into the design system | AI label and explainability popover in every AI component ([Carbon for AI](https://carbondesignsystem.com/guidelines/carbon-for-ai/)) |
+| **Adobe** | Provenance and creator rights | Content Credentials attached to Firefly output ([Content Credentials](https://helpx.adobe.com/in/creative-cloud/apps/adobe-content-authenticity/content-credentials/overview.html)) |
+
+**The pattern:** principles alone don't change products. Each company that's credible on responsible AI turns principles into something concrete: a component (IBM), a pipeline (Salesforce), a document format (Microsoft, Amazon), or metadata (Adobe). Content designers can do the same by turning each principle into a template, a rule, or a check.
+
+More detail: [How Leading Companies Design Content for AI](../industry-examples.md)
+
 ## Resources & References
 
 ### Frameworks & Guidelines

@@ -172,8 +172,8 @@ RAG (Retrieval-Augmented Generation) systems that:
 - Train team on findings
 
 **Resources:**
-- [Content Testing Guide](../../workflows/content-testing.md)
-- [AI Content Evaluation](../../workflows/ai-content-evaluation.md)
+- [Content Testing Guide](../../workflows/testing/content-testing.md)
+- [AI Content Evaluation](../../workflows/testing/ai-content-evaluation.md)
 
 ## Key Responsibilities
 
@@ -445,6 +445,34 @@ retrieval: solutions WHERE tags INCLUDE ["connection", "sql_database"]
 output: Contextual error message generated dynamically
 ```
 
+## What's changed since generative AI went mainstream
+
+AI content strategy now covers more than generated text. Plan for:
+
+| Area | What it means for content strategy |
+|---|---|
+| **Grounding and citations** | Answers are only as good as the source content they retrieve. Your help center and docs are now model input. See [Content as Data](content-as-data.md). |
+| **Agents that act** | AI that sends, books, and edits needs approval, receipt, and undo content. See [Agentic AI Experiences](agentic-experiences.md). |
+| **Evaluation at scale** | Nobody can read every output, so quality depends on rubrics and calibrated judges. See [LLM-as-a-Judge](../../workflows/testing/llm-as-a-judge.md). |
+| **Regulation** | In the EU, AI Act Article 50 transparency obligations have applied since August 2, 2026: people must be told when they're interacting with AI, and synthetic content must be marked. See [Transparency Guidelines](../../resources/ethical-ai/transparency-guidelines.md). |
+| **Provenance** | Labels and metadata for AI-generated media, such as C2PA Content Credentials, are becoming expected. |
+
+## How leading companies approach AI content
+
+**Microsoft: document limits publicly.** Microsoft publishes transparency notes for its AI products. The Microsoft 365 Copilot note covers intended uses, limitations, evaluations, and mitigations, and describes reminding people that AI content can contain errors, citing sources so they can verify, and warning against overreliance. ([Copilot transparency note](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-transparency-note))
+
+**Salesforce: build trust into the pipeline.** The Einstein Trust Layer masks sensitive data before prompts reach the model, keeps model providers from retaining prompts, and scans output for toxicity and bias. Trust is a system property, not a disclaimer. ([Trusted AI](https://salesforce.com/uk/artificial-intelligence/trusted-ai/))
+
+**IBM: make AI visible everywhere it appears.** Carbon for AI marks AI-generated content at every level of the interface with one consistent label, which opens an explanation. When people edit AI content, the AI marking comes off and a revert option appears. ([Carbon for AI](https://carbondesignsystem.com/guidelines/carbon-for-ai/))
+
+**Meta: labels must match what the system knows.** Meta's first AI image label, "Made with AI," was applied to photos with minor AI edits, and photographers objected. Meta switched to "AI info," which says generative AI *may* have been used. Any label your strategy introduces is a claim; word it to match your detection accuracy. ([Report](https://jang.com.pk/en/15206-meta-replaces-made-with-ai-label-with-ai-info-amid-user-criticism-news))
+
+**Google: keep the foundations, amend for generative AI.** Google's PAIR team kept its six guidebook chapters and is amending them for generative AI, focusing on outputs that change every run, hallucinations, and keeping a human in the loop for editing and fact-checking. ([PAIR update](https://medium.com/people-ai-research/updating-the-people-ai-guidebook-in-the-age-of-generative-ai-cace6c846db4))
+
+**Amazon: document every AI service the same way.** AWS AI Service Cards use the same four sections for every service, which makes them comparable and easy to maintain. ([AI Service Cards](https://aws.amazon.com/blogs/machine-learning/introducing-aws-ai-service-cards-a-new-resource-to-enhance-transparency-and-advance-responsible-ai))
+
+More detail: [How Leading Companies Design Content for AI](../../resources/industry-examples.md)
+
 ## Resources
 
 ### Templates
@@ -455,14 +483,15 @@ output: Contextual error message generated dynamically
 
 ### Guides
 
-- [RAG Content Strategy](../../resources/rag-content-strategy.md)
-- [AI Content Evaluation](../../workflows/ai-content-evaluation.md)
-- [Ethical AI Guidelines](../../resources/ethical-ai-content.md)
+- [AI Content Evaluation](../../workflows/testing/ai-content-evaluation.md)
+- [LLM-as-a-Judge](../../workflows/testing/llm-as-a-judge.md)
+- [Ethical AI Guidelines](../../resources/ethical-ai/ethical-ai-guidelines.md)
+- [How Leading Companies Design Content for AI](../../resources/industry-examples.md)
 
 ### External Resources
 
 - [Content Strategy Quad - Brain Traffic](https://www.braintraffic.com/blog/new-thinking-brain-traffics-content-strategy-quad)
-- [Conversation Design Resources - Google](https://developers.google.com/assistant/conversation-design)
+- [People + AI Guidebook - Google](https://pair.withgoogle.com/guidebook/chapters)
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
 
 ---

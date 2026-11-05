@@ -558,9 +558,40 @@ solutions: [
 ]
 ```
 
+## How leading companies structure content
+
+Several companies publish structures that work as content models you can borrow.
+
+| Company | Structure | What to borrow |
+|---|---|---|
+| **IBM** | The Carbon AI label's explainability popover follows a four-part template: overview, supporting details, artifacts and resources, additional actions. ([AI label](https://carbondesignsystem.com/components/ai-label/usage/)) | A content model for "How this was generated" explanations |
+| **Amazon** | AWS AI Service Cards use four fixed sections: basic concepts, intended use cases and limitations, responsible AI design considerations, deployment and optimization. ([AI Service Cards](https://aws.amazon.com/blogs/machine-learning/introducing-aws-ai-service-cards-a-new-resource-to-enhance-transparency-and-advance-responsible-ai)) | A schema for documenting any AI feature |
+| **Microsoft** | Transparency notes cover intended uses, limitations, evaluations, and mitigations for each AI product. ([Copilot transparency note](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-transparency-note)) | Fields a retrieval system can use to answer "Can it do X?" |
+| **Adobe** | Content Credentials attach structured provenance metadata (creator, edits, AI tools used) to the content itself. ([Content Credentials](https://helpx.adobe.com/in/creative-cloud/apps/adobe-content-authenticity/content-credentials/overview.html)) | Provenance fields that travel with generated content |
+| **Google** | Material recommends a word list and a content matrix to keep terms consistent across a product. ([Material communication](https://codelabs.developers.google.com/codelabs/material-communication-guidance)) | A terminology table AI systems can be grounded on |
+
+### Example: an AI explanation content model (adapted from IBM's popover template)
+
+```yaml
+ai_explanation:
+  overview: "Summary generated from 14 customer comments posted this week."
+  details:
+    - "Comments marked as spam were excluded."
+    - "The summary groups comments by theme."
+  sources:
+    - label: "View all 14 comments"
+      url: "/feedback?week=2026-W45"
+  actions:
+    - "Regenerate"
+    - "Report a problem"
+```
+
+Structuring explanations this way means every AI feature explains itself the same way, and the content can be reviewed and localized like any other component.
+
+More detail: [How Leading Companies Design Content for AI](../../resources/industry-examples.md)
+
 ## Related Resources
 
 - [Prompt Design](prompt-design.md)
-- [RAG Content Strategy](rag-content-strategy.md)
-- [Content Models](../../resources/content-models.md)
-- [Semantic Search Optimization](../../resources/semantic-search.md)
+- [Prompt Design](prompt-design.md)
+- [Terminology Guidelines](../../style-guides/terminology-guidelines.md)

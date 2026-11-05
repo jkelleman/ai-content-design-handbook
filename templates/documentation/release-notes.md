@@ -278,6 +278,26 @@ Patch notes (bug fixes only)
 - Social media highlights
 - Documentation updates
 
+## Release notes for AI features
+
+AI changes need clearer communication than most releases, because the same input can produce different output after an update, and people notice.
+
+**Announce behavior changes, not just features.** Microsoft's Guidelines for Human-AI Interaction include G14, update and adapt cautiously, and G18, notify users about changes. If a model update changes tone, accuracy, or what the assistant will and won't do, say so, even when there's no new button.
+
+```
+❌ Improved AI performance.
+
+✅ Summaries are now shorter and cite their sources
+   Summaries now average 3 sentences instead of 6, and each one links to the comments it draws from.
+   If you relied on longer summaries, choose "Detailed" in Summary settings.
+```
+
+**Be specific about what changed in quality.** "More accurate" means nothing without a measure. If you measured it, say how: "In our tests on 500 support tickets, the assistant chose the right category 91% of the time, up from 84%."
+
+**Say what didn't change.** People worry about data use with every AI update: "Your data is still not used to train models."
+
+**Document limits alongside features.** Microsoft publishes transparency notes and AWS publishes AI Service Cards covering intended uses and limitations for AI services. A release note for a new AI capability should link to the equivalent for your product.
+
 ## Checklist
 
 - [ ] User benefit leads each entry
@@ -290,7 +310,19 @@ Patch notes (bug fixes only)
 - [ ] Known issues acknowledged
 - [ ] Clear date and version
 
+## How leading companies do it
+
+| Company | What they teach |
+|---|---|
+| **Microsoft** | Notify people when AI capabilities change (G18) and change cautiously (G14); document intended uses, limitations, and evaluations in transparency notes. ([Guidelines](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/), [Copilot transparency note](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-transparency-note)) |
+| **Amazon** | AWS AI Service Cards pair each AI service with intended use cases, limitations, and responsible AI design considerations. ([AI Service Cards](https://aws.amazon.com/blogs/machine-learning/introducing-aws-ai-service-cards-a-new-resource-to-enhance-transparency-and-advance-responsible-ai)) |
+| **Amazon (Alexa)** | Tell returning users about new features after a long absence, without repeating what they already know. ([Writing great dialogs](https://developer.amazon.com/blogs/alexa/post/9c5f66b0-9514-423a-827e-a2e71a68b456/how-to-write-great-dialogs-for-alexa-skills)) |
+| **Shopify** | Plain language at about a US grade 7 reading level, with headings, bullets, and short sentences for a global audience. ([App content](https://shopify.dev/apps/design-guidelines/content)) |
+| **Salesforce** | Apply the same voice to in-app text, help, developer docs, and training. ([SLDS voice and tone](https://spring-21.lightningdesignsystem.com/guidelines/voice-and-tone)) |
+
+More detail: [How Leading Companies Design Content for AI](../../resources/industry-examples.md)
+
 ## Related Templates
 
-- [Feature Announcement](feature-announcement.md)
-- [Documentation](../documentation/help-documentation.md)
+- [Onboarding](../flows/onboarding.md)
+- [Transparency Guidelines](../../resources/ethical-ai/transparency-guidelines.md)

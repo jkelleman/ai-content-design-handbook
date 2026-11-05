@@ -386,9 +386,34 @@ Approved: [ ] Yes [ ] Yes with changes [ ] No
 
 ---
 
+## Reviewing AI-generated content and prompts
+
+AI changes what gets reviewed. You can't review every generated output, so review the things that produce them.
+
+| What to review | What to check |
+|---|---|
+| **System prompts** | Voice rules, grounding instructions, refusal and fallback language, nothing that conflicts with the style guide |
+| **Few-shot examples** | They're on-voice, varied, and not copied from the evaluation set |
+| **Rubrics** | Each rule is specific enough for two reviewers to apply the same way |
+| **Sampled outputs** | A regular random sample, plus everything users flagged |
+| **AI labels and disclaimers** | Present, consistent, and accurate about what the system knows |
+
+**Read it aloud.** Apple's HIG suggests reading your writing out loud when in doubt. It catches rhythm problems and robotic phrasing in generated text, too.
+
+## How leading companies do it
+
+| Company | What they teach |
+|---|---|
+| **Salesforce** | Hold in-app text, help, developer docs, and training to one set of writing guidelines, so reviewers apply one standard. ([SLDS voice and tone](https://spring-21.lightningdesignsystem.com/guidelines/voice-and-tone)) |
+| **Google** | Keep a word list and content matrix so reviewers can check terms against a single source. ([Material communication](https://codelabs.developers.google.com/codelabs/material-communication-guidance)) |
+| **Shopify** | Check that each concept uses one term everywhere, and that writing suits a global audience at about a US grade 7 reading level. ([App content](https://shopify.dev/apps/design-guidelines/content)) |
+| **Microsoft** | Review language against bias-free communication guidance, with specific term substitutions. ([Bias-free communication](https://learn.microsoft.com/style-guide/bias-free-communication)) |
+
+More detail: [How Leading Companies Design Content for AI](../resources/industry-examples.md)
+
 ## Related Resources
 
 - [Git Workflow](git-workflow.md)
-- [Style Guide](../style-guides/voice-and-tone.md)
+- [Style Guide](../style-guides/voice-and-tone-framework.md)
 - [Templates](../templates/)
 - [Accessibility Guidelines](../resources/accessibility-guidelines.md)

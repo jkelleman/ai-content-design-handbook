@@ -634,6 +634,100 @@ How can I help you today?
 
 ---
 
+## Lessons from Leading Companies
+
+These before-and-after pairs come from, or directly apply, the public guidance of large technology companies.
+
+### Example 18: Password requirements (Apple)
+
+```
+❌ That password is too short.
+✅ Choose a password with at least 8 characters.
+```
+**Why it works:** Apple's HIG uses this example. It states the requirement instead of the violation, so people know exactly what to do.
+([HIG: Writing](https://developer.apple.com/design/human-interface-guidelines/writing))
+
+### Example 19: Name field validation (Apple)
+
+```
+❌ Invalid name.
+❌ Don't use numbers or symbols.
+✅ Use only letters for your name.
+```
+**Why it works:** It tells people what to do, not what they did wrong, and appears next to the field.
+
+### Example 20: Loading failure without "we" (Apple)
+
+```
+❌ We're having trouble loading this content.
+✅ Unable to load content.
+```
+**Why it works:** Apple notes it's unclear who "we" is. Other companies, such as Atlassian, use "we" deliberately. Either way, add a next step: "Unable to load content. Check your connection and try again."
+
+### Example 21: Value out of range (Microsoft)
+
+```
+❌ Bad size.
+✅ Enter a size between 1 and 100.
+```
+**Why it works:** Microsoft's error guidelines say to avoid vague words like "bad" and state the actual criteria.
+([Error message guidelines](https://learn.microsoft.com/en-us/windows/win32/debug/error-message-guidelines))
+
+### Example 22: Printer offline (Google)
+
+```
+❌ You selected an unavailable printer.
+✅ The printer you chose is offline. Choose another printer or check that it's turned on.
+```
+**Why it works:** Google's technical writing guidance: describe what happened, not what the user did.
+([Set the right tone](https://developers.google.com/tech-writing/error-messages/set-tone))
+
+### Example 23: A button label (Apple)
+
+```
+❌ Let's do it!
+✅ Send
+```
+**Why it works:** Apple's HIG: label buttons with verbs and prioritize clarity over cleverness.
+
+### Example 24: Consistent action names (Shopify)
+
+```
+❌ "Upload image" on one page, "Add photos" on another
+✅ "Upload image" everywhere
+```
+**Why it works:** Shopify asks apps to pick one term per action. Synonyms make people wonder whether two buttons do different things.
+([App content](https://shopify.dev/apps/design-guidelines/content))
+
+### Example 25: An AI content label (Meta)
+
+```
+❌ Made with AI   (on a real photo with one AI-assisted edit)
+✅ AI info  →  "Generative AI may have been used to create or edit content in this post."
+```
+**Why it works:** Meta changed this label after photographers objected that real photos were mislabeled. A label is a claim; word it to match what the system actually knows.
+([Report](https://jang.com.pk/en/15206-meta-replaces-made-with-ai-label-with-ai-info-amid-user-criticism-news))
+
+### Example 26: An AI system limitation (Google PAIR)
+
+```
+❌ I can't help with that.
+✅ I can only search documents in this workspace, and I don't see one about travel policy.
+   Try searching the HR site, or ask your manager to add the policy here.
+```
+**Why it works:** Google's People + AI Guidebook says AI errors should explain what the system can't do and what input would work, and offer a path forward.
+([PAIR: Errors + Graceful Failure](https://pair.withgoogle.com/chapter/People%20+%20AI%20Guidebook%20-%20Errors%20+%20Graceful%20Failure.pdf))
+
+### Example 27: An agent receipt
+
+```
+❌ Done!
+✅ Sent 46 of 48 reminders from dana@acme.com. 2 bounced: billing@oldco.com, ap@northwind.io. Nothing else changed. [View sent]
+```
+**Why it works:** When AI acts for someone, the confirmation is a receipt: outcome, identity used, failures, and what didn't change. See [Agentic AI Experiences](../templates/ai-content/agentic-experiences.md).
+
+More examples and sources: [How Leading Companies Design Content for AI](../resources/industry-examples.md)
+
 ## Key Takeaways
 
 ### What Makes Good Content

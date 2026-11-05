@@ -1088,13 +1088,27 @@ New attack vectors emerge constantly
 **Go it alone**
 Leverage safety tools and experts
 
+## How leading companies build safety in
+
+**Salesforce: check before display.** The Einstein Trust Layer scans generated content in real time for hate speech, bias, harassment, and other policy violations, and flags or blocks it before people see it. Sensitive data is masked before prompts reach the model. ([Trusted AI](https://salesforce.com/uk/artificial-intelligence/trusted-ai/))
+
+**Microsoft: layered mitigations.** Microsoft 365 Copilot combines grounding, classifiers, metaprompting, AI disclosure, content credentials, and feedback mechanisms, and warns against relying on AI for consequential decisions in sensitive domains like healthcare, finance, and employment without careful evaluation. ([Copilot transparency note](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-transparency-note))
+
+**Google: fail safely, without a roadmap for attackers.** PAIR advises designing failure to be safe and uneventful, without over-explaining vulnerabilities that bad actors could exploit. Refusal messages should help legitimate users without describing exactly what was detected. ([PAIR: Errors + Graceful Failure](https://pair.withgoogle.com/chapter/People%20+%20AI%20Guidebook%20-%20Errors%20+%20Graceful%20Failure.pdf))
+
+**Meta: escalate labels with risk.** Meta applies a more prominent label to AI-generated content that poses a high risk of materially deceiving the public, and may penalize people who don't disclose realistic AI video or audio. ([Engadget](https://www.engadget.com/meta-plans-to-ramp-up-labeling-of-ai-generated-images-across-its-platforms-160234038.html))
+
+**Adobe: provenance for generated media.** Firefly attaches Content Credentials automatically, so generated images carry a record that AI made them. ([Content Credentials](https://helpx.adobe.com/in/creative-cloud/apps/adobe-content-authenticity/content-credentials/overview.html))
+
+More detail: [How Leading Companies Design Content for AI](../industry-examples.md)
+
 ## Related Resources
 
 - [Ethical AI Guidelines](ethical-ai-guidelines.md)
 - [Bias Detection Framework](bias-detection.md)
 - [AI Content Evaluation](../../workflows/testing/ai-content-evaluation.md)
-- [Crisis Resources Database](crisis-resources.md)
-- [Legal Compliance Guide](../legal-compliance.md)
+- [Transparency Guidelines](transparency-guidelines.md)
+- [Bias Detection](bias-detection.md)
 
 ## Emergency Contacts
 

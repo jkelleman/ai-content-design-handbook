@@ -932,6 +932,19 @@ Annually:
 - Set new goals
 ```
 
+## How leading companies address bias in content
+
+| Company | Practice |
+|---|---|
+| **Microsoft** | The Writing Style Guide lists specific substitutions: *primary/subordinate* for *master/slave*, *chair* for *chairman*, *workforce* for *manpower*, *perimeter network* for *DMZ*. It asks for examples with diverse names and roles and warns against examples that reflect mainly Western or affluent lifestyles. ([Bias-free communication](https://learn.microsoft.com/style-guide/bias-free-communication)) |
+| **Microsoft** | Guideline G6 of the Guidelines for Human-AI Interaction: mitigate social biases, so the AI's language and behavior don't reinforce unfair stereotypes. ([Guidelines](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/)) |
+| **Salesforce** | Inclusive is one of five trusted AI principles: test models on diverse data and assess effects on different groups. Generated content is scanned for bias and toxicity before display. ([Trusted AI](https://salesforce.com/uk/artificial-intelligence/trusted-ai/)) |
+| **Amazon** | AI Service Cards document fairness and bias testing for each service, with sample results. ([AI Service Cards](https://aws.amazon.com/blogs/machine-learning/introducing-aws-ai-service-cards-a-new-resource-to-enhance-transparency-and-advance-responsible-ai)) |
+| **Apple** | Write for everyone: plain language, written with accessibility and localization in mind, avoiding jargon and gendered terms. ([HIG: Writing](https://developer.apple.com/design/human-interface-guidelines/writing)) |
+| **Google** | PAIR's generative AI update draws on workshops with an equitable AI research roundtable, focusing on the needs of historically underserved communities. ([PAIR update](https://medium.com/people-ai-research/updating-the-people-ai-guidebook-in-the-age-of-generative-ai-cace6c846db4)) |
+
+More detail: [How Leading Companies Design Content for AI](../industry-examples.md)
+
 ## Related Resources
 
 - [Ethical AI Guidelines](ethical-ai-guidelines.md)

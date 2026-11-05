@@ -456,12 +456,71 @@ Define success metrics with engineering:
 - Consistency (90%+ similar responses)
 - Safety (0% policy violations)
 
+## Prompts are product content
+
+A system prompt shapes every response a feature gives, so treat it like any other shipped content: versioned, reviewed, tested, and owned.
+
+| Practice | What it looks like |
+|---|---|
+| **Version control** | Prompts live in the repo next to the code, with a changelog. See [Git Workflow](../../workflows/git-workflow.md). |
+| **Review** | Prompt changes go through content review like UI copy. See [Content Review Process](../../workflows/content-review-process.md). |
+| **Regression tests** | A fixed set of inputs runs against every prompt change, scored by people or calibrated judges. See [LLM-as-a-Judge](../../workflows/testing/llm-as-a-judge.md). |
+| **Ownership** | One named owner decides what "good" means for the feature's output. |
+
+## Grounding, guardrails, and the layers around a prompt
+
+In production, the prompt is one layer of several. Microsoft's Microsoft 365 Copilot transparency documentation lists *grounding* (supplying relevant source content), *metaprompting* (system instructions), *classifiers* (detecting harmful content), AI disclosure, and feedback mechanisms as separate mitigations that work together. Salesforce's Einstein Trust Layer adds steps before and after the model: sensitive data is masked with placeholder tokens before a prompt reaches the model, and generated output is scanned for toxicity and bias before anyone sees it.
+
+```
+Person's request
+   ↓
+Mask sensitive data (names, account numbers → placeholder tokens)
+   ↓
+Retrieve grounding content (approved docs, the person's data)
+   ↓
+System prompt + grounding + request → model
+   ↓
+Check output (safety classifiers, format validation, citations present)
+   ↓
+Unmask, add AI label and sources → person
+```
+
+**What this means for prompt writers:** don't try to do everything in the prompt. Put rules that must always hold, like "never show an account number," in a deterministic layer where code can enforce them, and use the prompt for judgment: tone, structure, what to emphasize.
+
+### Write grounding rules explicitly
+
+```
+Answer only from the documents provided below.
+If the documents don't contain the answer, say "I couldn't find that in your documents" and suggest where the person might look. Don't answer from general knowledge.
+Cite the document title and section for every factual claim.
+```
+
+### Write the refusal and fallback language, not just the happy path
+
+Most prompts describe the ideal answer and leave failures to the model, which then improvises. Write the fallback language yourself:
+
+```
+If the question is about billing, don't answer it. Say:
+"I can't help with billing questions, but the billing team can: [Contact billing]."
+```
+
+## How leading companies do it
+
+| Company | What they teach |
+|---|---|
+| **Microsoft** | Layer mitigations: grounding, metaprompting, classifiers, AI disclosure, and feedback, plus citations so people can verify. ([Copilot transparency note](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-transparency-note)) |
+| **Salesforce** | Mask sensitive data before the prompt reaches the model, don't let model providers retain prompts, and scan output for toxicity before display. ([Trusted AI](https://salesforce.com/uk/artificial-intelligence/trusted-ai/)) |
+| **Google** | Design for outputs that differ every run and for hallucinations; help people decide whether to edit or fact-check generated text. ([PAIR genAI update](https://medium.com/people-ai-research/updating-the-people-ai-guidebook-in-the-age-of-generative-ai-cace6c846db4)) |
+| **IBM** | Mark generated output with an AI label that opens an explanation, so the prompt's work is visible and checkable. ([Carbon for AI](https://carbondesignsystem.com/guidelines/carbon-for-ai/)) |
+
+More detail: [How Leading Companies Design Content for AI](../../resources/industry-examples.md)
+
 ## Resources
 
 **Prompt Engineering Guides:**
-- [OpenAI Prompt Engineering](https://platform.openai.com/docs/guides/prompt-engineering)
-- [Anthropic Prompt Guide](https://docs.anthropic.com/claude/docs/prompt-engineering)
-- [Google AI Prompt Best Practices](https://ai.google.dev/docs/prompt_best_practices)
+- [OpenAI: Prompt engineering](https://platform.openai.com/docs/guides/prompt-engineering)
+- [Anthropic: Prompt engineering overview](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview)
+- [Google: People + AI Guidebook](https://pair.withgoogle.com/guidebook/chapters)
 
 **Tools:**
 - Prompt testing platforms
@@ -472,4 +531,4 @@ Define success metrics with engineering:
 
 - [Conversational UI Patterns](../conversational/conversation-flows.md)
 - [AI Content Strategy](ai-content-strategy.md)
-- [Content Evaluation](../../workflows/content-evaluation.md)
+- [Content Evaluation](../../workflows/testing/ai-content-evaluation.md)

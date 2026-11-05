@@ -523,6 +523,32 @@ v1.1 - 2024-03-20 - Added AI feature terms
 v1.2 - 2024-06-10 - Updated inclusive language section
 ```
 
+## How leading companies manage terminology
+
+| Company | Practice | Example |
+|---|---|---|
+| **Shopify** | Pick one term per concept or action and never alternate between synonyms | Not "Upload image" in one place and "Add photos" in another ([App content](https://shopify.dev/apps/design-guidelines/content)) |
+| **Microsoft** | Replace terms with biased or militaristic connotations with neutral ones | *primary/subordinate* for *master/slave*; *perimeter network* for *DMZ*; *stop responding* for *hang* ([Bias-free communication](https://learn.microsoft.com/style-guide/bias-free-communication)) |
+| **Apple** | Describe gestures correctly for each device; keep a list of common terms | "Tap" on iPhone and iPad, not "click" ([HIG: Writing](https://developer.apple.com/design/human-interface-guidelines/writing)) |
+| **Google** | Maintain a word list and content matrix; use consistent terms across features | One name for each feature, everywhere ([Material communication](https://codelabs.developers.google.com/codelabs/material-communication-guidance)) |
+| **IBM** | Localize the AI label's abbreviation for each language | The AI label shows the local abbreviation for artificial intelligence in Spanish, French, German, and other languages ([AI label](https://carbondesignsystem.com/components/ai-label/usage/)) |
+
+### Terminology for AI features
+
+| Decide | Options | Recommendation |
+|---|---|---|
+| What you call the AI | Product name, "assistant," "AI," "agent" | One name, used consistently; don't alternate between "Copilot," "the assistant," and "AI" in one product |
+| What you call its output | "Suggestion," "draft," "answer," "result" | Match how much people should trust it: "draft" invites review, "answer" implies authority |
+| Labels for AI content | "AI-generated," "AI info," "Created with AI" | Word it to match what the system knows; Meta replaced "Made with AI" with "AI info" after mislabeling real photos ([Report](https://jang.com.pk/en/15206-meta-replaces-made-with-ai-label-with-ai-info-amid-user-criticism-news)) |
+| Verbs for AI actions | "Generate," "Create," "Write," "Draft" | Prefer verbs that describe the result ("Draft reply") over technical ones ("Generate") |
+| Agent actions | "Run," "Do it," "Approve," "Send" | Name the actual action: [Send 48 emails], not [Run] |
+
+### Terminology lists as AI grounding
+
+A maintained terminology list is now also model input. Feeding it to AI features, in the system prompt or through retrieval, keeps generated text consistent with the rest of your product. See [Content as Data](../templates/ai-content/content-as-data.md).
+
+More detail: [How Leading Companies Design Content for AI](../resources/industry-examples.md)
+
 ## Resources
 
 **Style guides to reference:**

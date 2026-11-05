@@ -1,6 +1,8 @@
 # Confirmation Dialog Template
 
-Use this template to create clear confirmation dialogs that prevent mistakes while respecting user intent.
+Use confirmation dialogs to stop people before a consequential mistake, without slowing down the decisions they make every day. A confirmation that appears too often stops protecting anyone: people learn to click through it without reading.
+
+The same pattern now covers a new case: **approving an action an AI agent wants to take**. See [Approving AI agent actions](#approving-ai-agent-actions).
 
 ## Template Structure
 
@@ -43,9 +45,9 @@ Use this template to create clear confirmation dialogs that prevent mistakes whi
 - Only include essential information
 
 **Buttons:**
-- **Primary/Destructive action**: Specific verb that matches title
-- **Cancel**: Always provide escape hatch
-- Order: Destructive action on right (follows Windows/web patterns)
+- **Primary/Destructive action**: Specific verb that matches the title ("Delete pipeline," not "OK" or "Yes")
+- **Cancel**: Always provide a way out
+- **Order: follow your platform.** Button order differs by platform convention, so match the system your product runs on and stay consistent. Apple's HIG and many web design systems put the primary action on the right; Windows has traditionally put the confirming button first. Consistency matters more than which side you choose.
 
 ### 3. Confirmation Dialog Checklist
 
@@ -118,9 +120,9 @@ This report will be visible to all users in your organization.
 [Cancel] [Remove]
 [Cancel] [Permanently delete]
 ```
-- Use red or warning color
-- Place on right
-- Use specific verb
+- Use red or warning color, plus an icon or the verb itself so it doesn't rely on color
+- Place it where your platform puts primary actions
+- Use a specific verb
 
 ### Non-Destructive Confirmations
 ```
@@ -129,7 +131,7 @@ This report will be visible to all users in your organization.
 [Cancel] [Send invite]
 ```
 - Use primary color
-- Place on right
+- Place it where your platform puts primary actions
 - Action verb matches consequence
 
 ### With Undo Available
@@ -173,7 +175,7 @@ This will permanently delete:
 
 ```
 **Delete production workspace?**
-Type DELETE to confirm:
+Type the workspace name, **prod-analytics**, to confirm:
 [                    ]
 
 This will permanently delete all data and cannot be undone.
@@ -223,8 +225,9 @@ Instead of: Modal dialog
 Better: Inline expansion with confirm button
 
 ```
-[Delete] → Expands to: "Are you sure? [Cancel] [Yes, delete]"
+[Delete] → Expands to: "Delete 3 files? [Cancel] [Delete files]"
 ```
+Even inline, name the action and the object instead of asking "Are you sure?"
 
 ### Strategy 4: Smart Defaults
 Instead of: Confirm every time
@@ -237,8 +240,60 @@ Better: Confirm only for items with dependencies or >X age
 - Clear heading hierarchy for screen readers
 - Sufficient color contrast on destructive buttons
 
+## Approving AI agent actions
+
+When an AI agent proposes an action, the confirmation becomes an **approval**. The person isn't double-checking their own decision; they're deciding whether to let software act on their behalf. That changes what the dialog needs to say.
+
+### What an approval must include
+
+| Element | Why | Example |
+|---|---|---|
+| **What the agent will do**, in plain language | People approve outcomes, not tool calls | "Send this email to 48 customers" |
+| **The exact details** that will be used | Agents can misread instructions | Recipient list, subject line, send time |
+| **Whose account or permissions it uses** | Actions carry the person's identity | "From dana@acme.com" |
+| **Whether it can be undone** | Sets the level of care | "Emails can't be unsent." |
+| **Why the agent thinks this is right** | Lets people catch a misunderstanding | "Because you asked me to notify everyone with an overdue invoice" |
+| **A way to edit before approving** | Approve-or-reject is too blunt | [Edit list] |
+
+### Example
+
+```
+❌ The agent wants to run send_email(recipients=48). Allow?
+   [Allow]   [Deny]
+
+✅ Send overdue-invoice reminders to 48 customers?
+   From: dana@acme.com · Subject: "Your invoice is past due"
+   I chose customers with invoices more than 30 days overdue, based on your request.
+   Emails can't be unsent.
+   [Review recipients]   [Cancel]   [Send 48 emails]
+```
+
+### Scale the friction to the risk
+
+| Risk | Approval pattern |
+|---|---|
+| Read-only (search, summarize) | No approval needed |
+| Reversible, low impact (draft a doc, add a calendar hold) | Act, then show a receipt with Undo |
+| Visible to others or hard to reverse (send, post, invite) | Approve once per action, showing exact details |
+| Irreversible or high impact (delete data, move money, change permissions) | Approve per action, show scope, consider type-to-confirm |
+
+Microsoft's Microsoft 365 Copilot transparency documentation calls out extra care for agentic AI whose actions are irreversible. Microsoft's Guidelines for Human-AI Interaction also ask designers to convey the consequences of user actions (G16) and to make clear why the system did what it did (G11). See [Agentic AI Experiences](../ai-content/agentic-experiences.md) for the full pattern.
+
+## How leading companies do it
+
+| Company | What they teach |
+|---|---|
+| **Apple** | Label buttons with specific verbs; plain words like "Send" work better than clever ones. ([HIG: Writing](https://developer.apple.com/design/human-interface-guidelines/writing)) |
+| **Google** | Make a dialog's purpose clear from its title and buttons alone, and never hide the consequences of irreversible actions. ([Material communication](https://codelabs.developers.google.com/codelabs/material-communication-guidance)) |
+| **Atlassian** | Calls to action name a specific action, such as save, remove, or create, instead of "OK," and always include a way to cancel. ([Error messages](https://atlassian.design/foundations/content/designing-messages/error-messages)) |
+| **Microsoft** | Yes and No buttons must answer a question; use Cancel to stop an operation and Close to dismiss. For AI agents, take extra care with irreversible actions. ([Error message guidelines](https://learn.microsoft.com/en-us/windows/win32/debug/error-message-guidelines), [Copilot transparency note](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-transparency-note)) |
+| **IBM** | When people override AI output, remove the AI marking and offer a way to revert. ([AI label](https://carbondesignsystem.com/components/ai-label/usage/)) |
+
+More detail: [How Leading Companies Design Content for AI](../../resources/industry-examples.md)
+
 ## Related Templates
 
 - [Error Messages](../messages/error-messages.md)
 - [Success Messages](../messages/success-messages.md)
 - [Empty States](../messages/empty-states.md)
+- [Agentic AI Experiences](../ai-content/agentic-experiences.md)

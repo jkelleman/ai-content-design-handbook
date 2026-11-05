@@ -770,10 +770,25 @@ Consider context, user needs, product goals
 **Stop evaluating**
 Quality drifts - continuous monitoring needed
 
+## Calibrating automated judges
+
+When evaluation scales beyond what people can read, an LLM judge applies your rubric automatically. A judge that hasn't been calibrated against human labels gives confident numbers that may not match what users experience. The full method, from splitting rubrics into single-purpose judges to measuring agreement and planting defects, is in [LLM-as-a-Judge](llm-as-a-judge.md).
+
+## How leading companies do it
+
+| Company | What they teach |
+|---|---|
+| **Microsoft** | Evaluate AI products for performance and quality and for risk and safety, and describe the methods publicly. ([Copilot transparency note](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-transparency-note)) |
+| **Amazon** | Document fairness and bias, explainability, and expected performance for each AI service, with sample results. ([AI Service Cards](https://aws.amazon.com/blogs/machine-learning/introducing-aws-ai-service-cards-a-new-resource-to-enhance-transparency-and-advance-responsible-ai)) |
+| **Google** | Trace errors to their source: training data, input, relevance, or conflicts between connected systems. ([PAIR: Errors + Graceful Failure](https://pair.withgoogle.com/chapter/People%20+%20AI%20Guidebook%20-%20Errors%20+%20Graceful%20Failure.pdf)) |
+| **Salesforce** | Scan generated content for toxicity and bias before display, as a standing safeguard. ([Trusted AI](https://salesforce.com/uk/artificial-intelligence/trusted-ai/)) |
+
+More detail: [How Leading Companies Design Content for AI](../../resources/industry-examples.md)
+
 ## Related Resources
 
-- [AI Content Strategy](../templates/ai-content/ai-content-strategy.md)
-- [Prompt Design Guide](../templates/ai-content/prompt-design.md)
-- [Content as Data](../templates/ai-content/content-as-data.md)
-- [Ethical AI Guidelines](../resources/ethical-ai-content.md)
-- [Safety Guidelines](../resources/content-safety.md)
+- [AI Content Strategy](../../templates/ai-content/ai-content-strategy.md)
+- [Prompt Design Guide](../../templates/ai-content/prompt-design.md)
+- [Content as Data](../../templates/ai-content/content-as-data.md)
+- [Ethical AI Guidelines](../../resources/ethical-ai/ethical-ai-guidelines.md)
+- [Safety Guidelines](../../resources/ethical-ai/content-safety.md)

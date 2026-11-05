@@ -803,9 +803,36 @@ function trackExperiment(event, data) {
 - [ ] Winner deployed
 - [ ] Learnings shared
 
+## A/B testing AI content
+
+AI outputs vary between runs, which adds noise to experiments. Adjust for it:
+
+- **Test the prompt or model version, not individual outputs.** Each variant is a configuration, and each user sees whatever it generates.
+- **Expect more variance** than with fixed strings, and size experiments accordingly.
+- **Add guardrail metrics:** refusal rate, flagged-content rate, and undo rate, alongside your success metric, so a variant can't win on engagement while getting less safe.
+- **Check quality offline first.** Run both variants through your evaluation set before exposing users. See [LLM-as-a-Judge](llm-as-a-judge.md).
+
+## Learning from large-scale experimentation
+
+The standard reference on running trustworthy experiments, *Trustworthy Online Controlled Experiments* (Ron Kohavi, Diane Tang, and Ya Xu, 2020), comes from people who led experimentation at Microsoft, Google, and LinkedIn. Its lessons that matter most for content:
+
+- **Define an overall evaluation criterion** before the test, not after you see results.
+- **Use guardrail metrics** to catch variants that win on the target metric while hurting something else.
+- **Distrust surprising wins.** Check for bugs and sample ratio mismatch before celebrating.
+
+## How leading companies do it
+
+| Company | What they teach |
+|---|---|
+| **Microsoft** | Change AI behavior cautiously (G14) and tell people when it changes (G18). A winning variant still needs a release note if it changes how the feature behaves. ([Guidelines](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/)) |
+| **Shopify** | Test against plain-language goals: short sentences, one term per concept, strong verbs in calls to action. ([App content](https://shopify.dev/apps/design-guidelines/content)) |
+| **Google** | Account for stakes when choosing what to test. A missed playlist song matters less than a health or financial decision. ([PAIR: Errors + Graceful Failure](https://pair.withgoogle.com/chapter/People%20+%20AI%20Guidebook%20-%20Errors%20+%20Graceful%20Failure.pdf)) |
+
+More detail: [How Leading Companies Design Content for AI](../../resources/industry-examples.md)
+
 ## Related Resources
 
 - [Content Metrics Guide](content-metrics.md)
 - [Content Testing Guide](content-testing.md)
-- [Statistical Significance Calculator](../resources/significance-calculator.md)
-- [Test Results Template](../resources/test-results-template.md)
+- [Content Testing](content-testing.md)
+- [Content Metrics](content-metrics.md)

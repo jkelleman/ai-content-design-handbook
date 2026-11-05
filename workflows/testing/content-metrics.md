@@ -568,9 +568,32 @@ Results: [Metrics showing impact]
 [Link to detailed dashboard]
 ```
 
+## Metrics for AI content
+
+| Metric | What it measures | How to collect |
+|---|---|---|
+| **Groundedness** | Share of claims supported by sources | Claim-level review or a calibrated judge |
+| **Refusal rate** | How often the AI declines, and whether it should have | Log refusals; review a sample for over- and under-refusal |
+| **Edit distance** | How much people change AI drafts before using them | Compare generated and final text |
+| **Acceptance rate** | How often suggestions are accepted, edited, or dismissed | Instrument accept, edit, and dismiss actions |
+| **Feedback rate and ratio** | Thumbs up and down per response | In-product feedback controls |
+| **Undo rate (agents)** | How often people reverse an agent's action | Instrument undo |
+
+High acceptance isn't automatically good. If people accept AI output without reading it, acceptance rises while quality problems slip through. Pair it with groundedness and sampled review.
+
+## How leading companies do it
+
+| Company | What they teach |
+|---|---|
+| **Google** | Monitor AI quality through support tickets, in-product metrics, surveys, and interviews, not one signal alone. ([PAIR: Errors + Graceful Failure](https://pair.withgoogle.com/chapter/People%20+%20AI%20Guidebook%20-%20Errors%20+%20Graceful%20Failure.pdf)) |
+| **Microsoft** | Collect granular feedback during normal use (G15). Microsoft 365 Copilot offers thumbs up and down on responses, which admins can review. ([Guidelines](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/), [Copilot transparency note](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-transparency-note)) |
+| **Amazon** | Report expected performance with sample results on a representative dataset. ([AI Service Cards](https://aws.amazon.com/blogs/machine-learning/introducing-aws-ai-service-cards-a-new-resource-to-enhance-transparency-and-advance-responsible-ai)) |
+
+More detail: [How Leading Companies Design Content for AI](../../resources/industry-examples.md)
+
 ## Related Resources
 
 - [Content Testing Guide](content-testing.md)
 - [A/B Testing Framework](ab-testing-content.md)
-- [Analytics Setup Guide](../resources/analytics-setup.md)
-- [Reporting Templates](../resources/reporting-templates.md)
+- [A/B Testing Content](ab-testing-content.md)
+- [LLM-as-a-Judge](llm-as-a-judge.md)

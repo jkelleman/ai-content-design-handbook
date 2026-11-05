@@ -623,12 +623,30 @@ Your Controls:
 
 ### Required by Law (Varies by Jurisdiction)
 
-**EU AI Act (High-Risk AI):**
+> This section summarizes public sources for content designers. It isn't legal advice. Confirm current requirements with your legal team.
+
+**EU AI Act, Article 50 (transparency), enforceable since August 2, 2026:**
+
+| Obligation | Who it applies to | What content has to do |
+|---|---|---|
+| **Chatbot and interactive AI disclosure** | Providers | Tell people they're interacting with an AI system, unless it's obvious from context |
+| **Machine-readable marking of synthetic content** | Providers | Mark generated audio, image, video, and text so it's detectable as AI-generated (assistive editing is exempt; a separate runway for watermarking runs to December 2, 2026) |
+| **Deepfake labeling** | Deployers | Disclose that content is artificially generated or manipulated; evidently artistic, satirical, or fictional work has lighter requirements |
+| **AI-generated text on matters of public interest** | Deployers | Disclose that it's AI-generated, unless a person with editorial responsibility reviewed it |
+| **Emotion recognition and biometric categorization** | Deployers | Inform the people exposed to it |
+
+Disclosures must be made at the latest at the time of the first interaction and must be accessible. Penalties reach €15 million or 3% of worldwide annual turnover, whichever is higher. The European Commission has published a voluntary icon set for labeling AI-generated content. ([Summary: Cloud Security Alliance research note](https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-article-50-transparency-20260729/))
+
+**What this means for content:** write the AI disclosure into the first screen or first message of every AI interaction, make it readable by screen readers, and make sure exports and downloads of AI-generated media carry machine-readable markers such as C2PA Content Credentials.
+
+**EU AI Act (high-risk AI systems):**
 - [ ] Transparent about AI use
 - [ ] Human oversight mechanisms
 - [ ] Technical documentation
 - [ ] Risk management system
 - [ ] Conformity assessments
+
+Timelines for high-risk obligations were revised by the EU's Digital Omnibus package, so check the current dates for your system's category.
 
 **GDPR (Data Protection):**
 - [ ] Clear consent for data processing
@@ -784,7 +802,7 @@ Prominent disclosure, easy to access details
 **Use jargon**
 ```markdown
 ❌ Bad:
-"Powered by GPT-4 with RAG and fine-tuned embeddings"
+"Powered by a fine-tuned large language model with RAG and vector embeddings"
 
 ✅ Good:
 "AI assistant trained on our documentation"
@@ -868,7 +886,7 @@ Ensure disclosure is understood
 
 ### Legal
 
-- **EU AI Act summary:** [Link]
+- **EU AI Act Article 50 summary:** [Cloud Security Alliance research note](https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-article-50-transparency-20260729/)
 - **GDPR AI guidance:** [Link]
 - **State law tracker:** [Link]
 - **Industry requirements:** [Link]
@@ -879,13 +897,29 @@ Ensure disclosure is understood
 - **Disclosure effectiveness:** [Link]
 - **Best practices:** [Link]
 
+## How leading companies do it
+
+**IBM: one label, everywhere, leading to an explanation.** Carbon's AI label marks AI content from a single word to a full page. Selecting it opens a popover with an overview, supporting details, artifacts and resources, and actions. The label is never decorative, never doubles as a button, and is never disabled. ([AI label](https://carbondesignsystem.com/components/ai-label/usage/))
+
+**Meta: word labels to match what you know.** Meta's "Made with AI" label was applied to real photos with minor AI edits; after objections from photographers, Meta renamed it "AI info," explaining that generative AI *may* have been used. Meta also detects C2PA and IPTC metadata and asks people to self-disclose realistic AI video and audio. ([Report](https://jang.com.pk/en/15206-meta-replaces-made-with-ai-label-with-ai-info-amid-user-criticism-news), [Engadget](https://www.engadget.com/meta-plans-to-ramp-up-labeling-of-ai-generated-images-across-its-platforms-160234038.html))
+
+**Adobe: provenance that travels with the content.** Content Credentials record who made content and how, including AI use; Firefly attaches them automatically, and a Cr icon reveals them. ([Content Credentials](https://helpx.adobe.com/in/creative-cloud/apps/adobe-content-authenticity/content-credentials/overview.html))
+
+**Microsoft: disclose, remind, cite.** Microsoft 365 Copilot tells people they're interacting with AI, reminds them AI-generated content may contain errors, and cites sources where possible. Microsoft's broader guidelines ask products to make clear why the system did what it did (G11). ([Copilot transparency note](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-transparency-note))
+
+**Amazon: publish limitations.** AWS AI Service Cards state intended use cases and limitations for each AI service in a standard format. ([AI Service Cards](https://aws.amazon.com/blogs/machine-learning/introducing-aws-ai-service-cards-a-new-resource-to-enhance-transparency-and-advance-responsible-ai))
+
+**Salesforce: transparency as a principle.** Salesforce's trusted AI principles include explaining why an AI system made a recommendation and keeping customers in control of their data. ([Trusted AI](https://salesforce.com/uk/artificial-intelligence/trusted-ai/))
+
+More detail: [How Leading Companies Design Content for AI](../industry-examples.md)
+
 ## Related Resources
 
 - [Ethical AI Guidelines](ethical-ai-guidelines.md)
 - [Bias Detection Framework](bias-detection.md)
 - [Content Safety Guidelines](content-safety.md)
 - [AI Content Evaluation](../../workflows/testing/ai-content-evaluation.md)
-- [Privacy by Design](../privacy-guidelines.md)
+- [Ethical AI Guidelines](ethical-ai-guidelines.md)
 
 ## Key Takeaways
 

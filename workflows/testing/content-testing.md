@@ -533,9 +533,29 @@ Fix issues and test again
 - [Test script used]
 ```
 
+## Testing AI-generated content
+
+Traditional content tests check one fixed string. AI content changes every time it's generated, so test the system, not a sample.
+
+- **Test many outputs per input.** Generate each test case several times and judge the spread, not just one answer.
+- **Include adversarial inputs:** typos, off-topic questions, requests the feature should refuse.
+- **Test the failure content,** like refusals, "I don't know" answers, and partial results, as carefully as the happy path.
+- **Plant known defects** to check that your reviewers or judges catch them. See [LLM-as-a-Judge](llm-as-a-judge.md).
+
+## How leading companies do it
+
+| Company | What they teach |
+|---|---|
+| **Shopify** | Aim for about a US grade 7 reading level and check drafts with a readability tool such as Hemingway. ([App content](https://shopify.dev/apps/design-guidelines/content)) |
+| **Apple** | When in doubt, read your writing out loud, and check each word is needed. ([HIG: Writing](https://developer.apple.com/design/human-interface-guidelines/writing)) |
+| **Google** | Find AI errors with beta tests, pilots, and ongoing monitoring, and stress-test for "background errors" users won't report. ([PAIR: Errors + Graceful Failure](https://pair.withgoogle.com/chapter/People%20+%20AI%20Guidebook%20-%20Errors%20+%20Graceful%20Failure.pdf)) |
+| **Microsoft** | Test AI products for both performance and quality and risk and safety, and publish what you tested. ([Copilot transparency note](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-transparency-note)) |
+
+More detail: [How Leading Companies Design Content for AI](../../resources/industry-examples.md)
+
 ## Related Resources
 
 - [Content Metrics](content-metrics.md)
 - [A/B Testing Framework](ab-testing-content.md)
 - [AI Content Evaluation](ai-content-evaluation.md)
-- [User Research Methods](../resources/user-research.md)
+- [LLM-as-a-Judge](llm-as-a-judge.md)

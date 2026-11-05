@@ -315,6 +315,59 @@ may need human support. What can I help with?"
 - v1.1 - [Date] - Added AI voice guidelines
 - [Your versions]
 
+## How leading companies define voice and tone
+
+### Atlassian: tone that follows the person's state
+
+Atlassian's voice has three traits: bold, optimistic, and practical with a wink. What makes it useful is the rule for flexing it:
+
+| Person's state | Tone shift |
+|---|---|
+| Confident, experienced (power users, admins) | Bold and optimistic get stronger |
+| Confused, anxious, or new (trials, first use of a feature) | Bold and optimistic soften; guidance gets more prescriptive |
+| Stressed, blocked, facing errors or deadlines | Practical takes priority |
+| Success, relief, pride | The wink appears, sparingly, and only if it works across cultures |
+
+([Voice and tone](https://atlassian.design/foundations/content/voice-tone))
+
+### Google Material: the tone map
+
+Material recommends plotting each message type on two axes, such as playful to serious and concise to detailed, to make tone decisions explicit. Errors sit toward serious and detailed; onboarding can sit toward warm. ([Material communication](https://codelabs.developers.google.com/codelabs/material-communication-guidance))
+
+```
+                    DETAILED
+                       │
+        Errors ●       │       ● Onboarding
+                       │
+ SERIOUS ──────────────┼────────────── PLAYFUL
+                       │
+     Confirmations ●   │     ● Success
+                       │
+                    CONCISE
+```
+
+### Apple: tone matched to the situation
+
+Apple's HIG contrasts two Apple Watch messages: a direct, serious tone when fall detection triggers, and a light, congratulatory tone for a record Activity streak. Same voice, very different tone. Apple also asks teams to keep a list of common terms to make language consistent. ([HIG: Writing](https://developer.apple.com/design/human-interface-guidelines/writing))
+
+### Salesforce: one voice across every content type
+
+Salesforce asks apps built on its platform to sound like Salesforce, and applies the same writing guidelines to in-app text, help, developer docs, and Trailhead training. ([SLDS voice and tone](https://spring-21.lightningdesignsystem.com/guidelines/voice-and-tone))
+
+### Shopify: one voice, shifting tone
+
+Shopify asks apps to keep a consistent voice that matches the Shopify admin, while letting tone shift with the situation: errors call for a more direct tone than onboarding tips. ([App content](https://shopify.dev/apps/design-guidelines/content))
+
+### Where companies disagree: "we"
+
+Apple avoids "we" because it's unclear who that refers to, especially in errors. Atlassian and Adobe use "we" for the system and "you" for the person, so it's clear who acts. Decide, and write the decision into this framework.
+
+### AI voice
+
+If an AI feature speaks in first person ("I found 3 results"), decide whether that voice is the product's or a distinct assistant's, and keep it consistent. Avoid a cheerful persona that contradicts the product's tone in serious moments. The Atlassian rule applies to AI too: when people are blocked, the AI should get practical, not chatty.
+
+More detail: [How Leading Companies Design Content for AI](../resources/industry-examples.md)
+
 ## Resources
 
 **Voice references:**

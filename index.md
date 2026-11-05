@@ -1,6 +1,8 @@
+![Words that make AI worth trusting: the AI Content Design Handbook](assets/banner.png)
+
 # AI Content Design Handbook
 
-The comprehensive guide for designing content in the age of AI. Practical templates, workflows, and ethical guidelines for AI-powered experiences, conversational interfaces, and responsible content practices.
+Templates, workflows, and ethical guidelines for designing the words in AI products: assistants, agents, and everything around them. Every guide includes examples from how Google, Microsoft, Apple, Amazon, Meta, IBM, Salesforce, Adobe, Atlassian, and Shopify design their own content, with links to the public sources.
 
 ## What Makes This Different
 
@@ -10,10 +12,14 @@ The comprehensive guide for designing content in the age of AI. Practical templa
 
 📊 **Measurement-Focused** - Real frameworks for testing, metrics, and A/B testing content
 
+🏢 **Grounded in Industry Practice** - [How 10 leading companies design content for AI](resources/industry-examples.md), with sources
+
+🤝 **Ready for Agents** - [Content patterns for AI that takes actions](templates/ai-content/agentic-experiences.md)
+
 ## Get Started
 
 **New to AI content design?**
-1. Start with [AI Content Strategy](templates/ai-content/ai-content-strategy.md)
+1. Start with [AI Content Strategy](templates/ai-content/ai-content-strategy.md) and [How Leading Companies Design Content for AI](resources/industry-examples.md)
 2. Review [Ethical AI Guidelines](resources/ethical-ai/ethical-ai-guidelines.md)
 3. Learn [Prompt Design](templates/ai-content/prompt-design.md)
 4. Understand [Transparency Guidelines](resources/ethical-ai/transparency-guidelines.md)
@@ -43,6 +49,7 @@ The comprehensive guide for designing content in the age of AI. Practical templa
 - [Content as Data](templates/ai-content/content-as-data.md) - Structure content for AI consumption
 - [AI Content Strategy](templates/ai-content/ai-content-strategy.md) - Plan AI-powered content experiences
 - [Conversation Flows](templates/conversational/conversation-flows.md) - Design chatbot and conversational UI
+- [Agentic AI Experiences](templates/ai-content/agentic-experiences.md) - Plans, approvals, progress, and receipts for AI agents
 
 ### Core Content Patterns
 - [Error Messages](templates/messages/error-messages.md) - Clear, actionable error content
@@ -60,6 +67,7 @@ The comprehensive guide for designing content in the age of AI. Practical templa
 - [Content Metrics](workflows/testing/content-metrics.md) - Measure effectiveness and ROI
 - [A/B Testing for Content](workflows/testing/ab-testing-content.md) - Run rigorous experiments
 - [AI Content Evaluation](workflows/testing/ai-content-evaluation.md) - Assess AI-generated content quality
+- [LLM-as-a-Judge](workflows/testing/llm-as-a-judge.md) - Calibrate automated judges against people
 
 ### Version Control & Review
 - [Git Workflow for Content Designers](workflows/git-workflow.md) - Version control basics
@@ -76,6 +84,9 @@ The comprehensive guide for designing content in the age of AI. Practical templa
 ### Accessibility
 - [Accessibility Guidelines](resources/accessibility-guidelines.md) - Create inclusive content for everyone
 
+### Industry Practice
+- [How Leading Companies Design Content for AI](resources/industry-examples.md) - What 10 companies' public guidance teaches, side by side
+
 ## Who This Is For
 
 - **AI/ML Teams** - Building AI-powered products and conversational interfaces
@@ -87,25 +98,29 @@ The comprehensive guide for designing content in the age of AI. Practical templa
 
 ## Featured Topics
 
-✨ **Prompt Engineering** - Design effective prompts for AI systems
+**Prompt Engineering** - Design effective prompts for AI systems
 
-✨ **Conversational Design** - Build natural, helpful chatbot experiences
+**Conversational Design** - Build natural, helpful chatbot experiences
 
-✨ **Ethical AI** - Ensure fairness, safety, and transparency
+**Ethical AI** - Ensure fairness, safety, and transparency
 
-✨ **Content Testing** - Measure what works with data
+**Content Testing** - Measure what works with data
 
-✨ **Bias Mitigation** - Create inclusive AI experiences
+**Bias Mitigation** - Create inclusive AI experiences
+
+**Agentic AI** - Design approvals and receipts for AI that acts
+
+**AI Evaluation** - Calibrate LLM judges against human reviewers
 
 ## About
 
-Created by **[Jen Kelleman](https://github.com/jkelleman)**, Principal Content Designer at Microsoft.
+Created by **[Jen Kelleman](https://github.com/jkelleman)**, a content designer for AI and data experiences, based on years of designing content for enterprise data and AI platforms, conversational interfaces, and responsible AI practices.
 
-Based on real-world experience designing content for Microsoft Fabric, Azure, and enterprise data platforms—including extensive work with AI-powered experiences, conversational interfaces, and responsible AI practices.
+Company examples are paraphrased from public guidance and linked. This handbook isn't affiliated with or endorsed by any of the companies it cites.
 
 ### Connect
 - 💼 [LinkedIn](https://www.linkedin.com/in/jenniferkelleman)
-- ✍️ [Medium](https://www.jenkelleman.medium.com)
+- ✍️ [Medium](https://jenkelleman.medium.com)
 - 🐙 [GitHub](https://github.com/jkelleman)
 
 ## Contributing
