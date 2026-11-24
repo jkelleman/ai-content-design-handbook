@@ -198,7 +198,7 @@ Option C (confident):
 "Let's get started. Creating your first pipeline takes about 5 minutes."
 
 Results:
-- 4/10 preferred A (felt welcoming but some found emoji unprofessional)
+- 4/10 preferred A (felt welcoming but some found "Hey there!" too casual)
 - 2/10 preferred B (clear but felt cold)
 - 4/10 preferred C (confident, no-nonsense)
 

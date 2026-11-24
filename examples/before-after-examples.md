@@ -559,7 +559,7 @@ If this affected you, please reschedule your pipelines.
 **Improvements:**
 - User-benefit focused
 - Plain language
-- Emoji visual markers
+- Descriptive feature headings
 - Links to learn more
 - Quantified improvements
 
