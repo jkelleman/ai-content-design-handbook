@@ -2,6 +2,8 @@
 
 Real-world before/after examples showing content improvements across different types.
 
+> **In brief:** Before-and-after rewrites across errors, onboarding, empty states, release notes and AI messages. Each pair lists what was wrong and what the rewrite fixes.
+
 ## Error Messages
 
 ### Example 1: Network Error

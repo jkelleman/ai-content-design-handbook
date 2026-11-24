@@ -2,6 +2,8 @@
 
 A framework for establishing consistent word choice and terminology across your product.
 
+> **In brief:** Use one term for one concept, everywhere. A terminology list with approved terms, terms to avoid and the reason for each keeps writers, engineers and models consistent.
+
 ## Why Terminology Matters
 
 **Consistency builds trust:**
@@ -294,7 +296,7 @@ Then: "RDI"
 ### Product Names
 
 **Your product:** [Your capitalization rule]
-- Example: "Microsoft Fabric" (title case)
+- Example: "DataFlow Studio" (title case)
 - Example: "GitHub" (specific capitalization)
 
 ### Features & Capabilities

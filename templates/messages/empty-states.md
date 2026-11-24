@@ -2,6 +2,8 @@
 
 An empty state is the screen people see when there's nothing to show yet. It's one of the few moments when you have someone's full attention and no competing content, so use it to explain what belongs here and how to get started.
 
+> **In brief:** An empty screen has someone's full attention. Name what belongs here, why it's empty and the one action that fills it. Identify the type of empty state first; each needs different words.
+
 ## The template
 
 ```

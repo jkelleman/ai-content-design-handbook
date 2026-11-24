@@ -2,6 +2,8 @@
 
 How to use a language model to grade AI-generated content against your content standards, and how to prove the grades can be trusted. This is where content design and AI evaluation meet: a judge is only as good as the rubric it applies, and writing rubrics is content design work.
 
+> **In brief:** A judge is only as good as its rubric, and writing rubrics is content design work. Turn principles into rules, use one judge per dimension, calibrate against a labeled golden set, and keep checking it in production.
+
 ## When you need a judge
 
 | Situation | Method |

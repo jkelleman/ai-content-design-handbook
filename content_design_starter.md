@@ -2,6 +2,8 @@
 
 Use this template to plan content for any new feature, product, or experience.
 
+> **In brief:** A planning template for any new feature: goals, audience, voice, AI considerations, structure, terminology, measurement, accessibility and ethics. Fill it in before drafting, and revisit it at launch.
+
 ---
 
 ## Project Overview

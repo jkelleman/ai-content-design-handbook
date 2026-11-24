@@ -2,6 +2,8 @@
 
 A framework for measuring content effectiveness and making data-informed improvements.
 
+> **In brief:** Measure whether content helps people finish what they came to do: task completion, errors, time and support contacts. Pick a few metrics per content type and review them on a regular rhythm.
+
 ## Why Measure Content?
 
 **Prove impact:**
@@ -376,6 +378,8 @@ track('task_complete', {
 ## Creating a Content Metrics Dashboard
 
 ### Dashboard Template
+
+*Sample dashboard for illustration. The numbers are made up.*
 
 ```
 === Content Performance Dashboard ===

@@ -2,6 +2,8 @@
 
 A comprehensive framework for preventing harmful content and protecting users in AI-powered experiences.
 
+> **In brief:** Plan for harmful content before launch: know the categories, set safeguards for each, write clear refusals, and give people a way to report problems. Safety is designed in layers, not added at the end.
+
 ## What is Content Safety?
 
 **Content safety** = Protecting users from harmful, inappropriate, or dangerous content
@@ -707,6 +709,8 @@ class SafetyMonitor:
 ```
 
 **Dashboard metrics:**
+
+*Sample dashboard for illustration. The numbers are made up.*
 
 ```markdown
 === Safety Dashboard ===

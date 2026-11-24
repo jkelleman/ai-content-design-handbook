@@ -2,6 +2,8 @@
 
 Onboarding gets people to their first success as fast as possible, and teaches only what they need for it. For AI features, it also has to set honest expectations about what the AI can do and how reliable it is.
 
+> **In brief:** Get people to their first success fast, and teach only what that success needs. For AI features, set honest expectations about what the AI does well and where it can be wrong.
+
 ## Template Structure
 
 ```

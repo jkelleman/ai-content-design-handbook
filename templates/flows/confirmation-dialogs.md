@@ -2,6 +2,8 @@
 
 Use confirmation dialogs to stop people before a consequential mistake, without slowing down the decisions they make every day. A confirmation that appears too often stops protecting anyone: people learn to click through it without reading.
 
+> **In brief:** Confirm only consequential, hard-to-undo actions. A dialog that appears too often teaches people to click through it. Name the action and its consequence in the title and the button.
+
 The same pattern now covers a new case: **approving an action an AI agent wants to take**. See [Approving AI agent actions](#approving-ai-agent-actions).
 
 ## Template Structure

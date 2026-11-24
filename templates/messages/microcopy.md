@@ -2,6 +2,8 @@
 
 Use this template to write the small but mighty words that guide users through your product.
 
+> **In brief:** Buttons, links, labels and tooltips carry most of an interface. Label buttons with the action they take, write links that say where they go, and keep one word for one thing.
+
 ## What is Microcopy?
 
 Microcopy includes:

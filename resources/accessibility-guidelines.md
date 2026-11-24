@@ -2,6 +2,8 @@
 
 Creating content that everyone can access, understand, and use—regardless of ability, device, or context.
 
+> **In brief:** Write content everyone can perceive, operate and understand: plain language, meaningful link text, alt text that says what an image shows, and errors that don't rely on color alone.
+
 ## Why Accessibility Matters
 
 **It's the law:** Many regions require digital accessibility (ADA, Section 508, WCAG)

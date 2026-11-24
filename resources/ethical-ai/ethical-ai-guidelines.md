@@ -2,6 +2,8 @@
 
 A framework for creating responsible, transparent, and inclusive AI-powered content experiences.
 
+> **In brief:** Six principles for AI content: transparency, accuracy, fairness, privacy, safety and accountability. Tell people when they're talking to AI, say what it can't do, and never let it sound more certain than it is.
+
 ## Why Ethical AI Matters
 
 AI-generated content can:
@@ -543,10 +545,10 @@ Would you like help analyzing your specific situation?"
 
 **System prompts:**
 ```markdown
-You are a helpful AI assistant for Fabric platform.
+You are a helpful AI assistant for DataFlow.
 
 Your role:
-- Answer questions about Fabric features
+- Answer questions about DataFlow features
 - Help troubleshoot common issues
 - Guide users through workflows
 

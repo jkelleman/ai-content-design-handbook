@@ -2,6 +2,8 @@
 
 A practical guide to using Git and GitHub for content design work, even if you've never used version control before.
 
+> **In brief:** Version control for content designers who've never used it: branches, commits and pull requests, with a daily workflow and the scenarios you'll hit most.
+
 ## Why Use Git for Content?
 
 **Version control benefits:**

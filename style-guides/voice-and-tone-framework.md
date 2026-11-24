@@ -2,6 +2,8 @@
 
 A template for defining your product's voice and tone guidelines.
 
+> **In brief:** Voice is the personality that stays the same; tone is how it adapts to the moment. Pick three to five voice attributes, then map tone to situations like errors, success and onboarding.
+
 ## Voice vs. Tone
 
 **Voice** = Your product's personality (consistent across all content)
@@ -214,7 +216,7 @@ Why it's bad: Unnecessarily complex language, jargon-heavy
 
 **Tone:** Encouraging, clear, patient
 **Structure:** [Welcome/Context] + [Simple explanation] + [Clear next step]
-**Example:** "Welcome to Fabric! Let's create your first pipeline. It takes about 2 minutes."
+**Example:** "Welcome to DataFlow! Let's create your first pipeline. It takes about 2 minutes."
 
 ### Documentation
 

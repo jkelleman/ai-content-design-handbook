@@ -2,6 +2,8 @@
 
 Content patterns for AI that takes actions on someone's behalf: sending messages, editing files, booking meetings, running queries, changing settings. When AI only answers, a bad answer costs a moment. When it acts, a bad action can be sent, deleted, or paid for. The content around agent actions is what keeps people in control.
 
+> **In brief:** When AI acts instead of answering, mistakes can be sent, deleted or paid for. Every agent action passes through up to four moments (plan, approve, progress, receipt), and each one needs its own content. Ask for approval only where an action is hard to undo.
+
 ## What's different about agents
 
 | Chat assistant | Agent |

@@ -2,6 +2,8 @@
 
 Use this template to write clear, user-focused release notes that highlight value and changes.
 
+> **In brief:** Lead each change with what people can now do, not what the team built. Group by impact, say who's affected, and link to details for anyone who wants them.
+
 ## Template Structure
 
 ```

@@ -2,6 +2,8 @@
 
 A framework for designing effective prompts that guide AI systems to generate useful, consistent, brand-aligned content.
 
+> **In brief:** A prompt is a set of writing rules for a model: its role, context, task, output format and examples. Write it like a style guide, test it on real inputs, and change one thing at a time.
+
 ## What is Prompt Design?
 
 Prompts are instructions that tell an AI system how to generate language. Unlike traditional content where you write every word, prompt design means writing the rules that govern how AI writes.
@@ -20,7 +22,7 @@ Prompts are instructions that tell an AI system how to generate language. Unlike
 Tell the AI what role it's playing and how it should behave.
 
 ```
-You are a helpful data assistant for Microsoft Fabric. You provide clear, 
+You are a helpful data assistant for DataFlow. You provide clear, 
 accurate guidance about data pipelines, transformations, and analytics.
 
 Behavior guidelines:
@@ -38,7 +40,7 @@ Provide relevant information the AI needs to generate appropriate responses.
 ```
 Context:
 - User: Data engineer with 3+ years experience
-- Product: Microsoft Fabric Data Pipelines
+- Product: DataFlow Pipelines
 - Current task: Troubleshooting pipeline failure
 - Error type: Connection timeout
 ```
@@ -85,7 +87,7 @@ Output:
 Your pipeline couldn't connect to the SQL database within the timeout period.
 
 Try these steps:
-1. Check your firewall allows connections from Fabric IP addresses
+1. Check your firewall allows connections from DataFlow IP addresses
 2. Verify the connection string is correct in pipeline settings
 3. Test the connection using the "Test Connection" button
 

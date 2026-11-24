@@ -2,6 +2,8 @@
 
 A framework for structuring content so AI systems can retrieve, understand, and generate appropriate responses at scale.
 
+> **In brief:** Write content as structured parts (issue, cause, solution) instead of finished strings, so AI can find, combine and reuse it. One well-modeled component replaces dozens of hand-written variations.
+
 ## What is Content as Data?
 
 Traditional content is written for humans to read. Content as data is structured so machines can process, retrieve, and reason about it. This enables AI systems to:
@@ -77,7 +79,7 @@ content_type: error_message
 title: "Connection Timeout"
 explanation: "Your pipeline couldn't connect to the SQL database within the timeout period."
 solution_steps:
-  - "Check your firewall allows connections from Fabric IP addresses"
+  - "Check your firewall allows connections from DataFlow IP addresses"
   - "Verify the connection string is correct in pipeline settings"
   - "Test the connection using the Test Connection button"
 documentation_link: "https://docs.example.com/troubleshooting/connections"
@@ -166,7 +168,7 @@ Structure content so AI can find and use it.
 Pipeline fails with "Connection timeout" when connecting to SQL database
 
 ### Causes
-1. Firewall blocking Fabric IP addresses
+1. Firewall blocking DataFlow IP addresses
 2. Incorrect connection string format
 3. Database server not responding
 4. Network connectivity issues

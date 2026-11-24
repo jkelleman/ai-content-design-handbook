@@ -1,0 +1,45 @@
+---
+---
+// Site look matched to aiwithjen.com: Geist for text, Newsreader for headings, one blue accent, warm paper background.
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500&family=Geist+Mono&display=swap");
+
+$base-font-family: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$base-font-size: 17px;
+$base-line-height: 1.6;
+$text-color: #1a1a1a;
+$background-color: #f7f6f2;
+$brand-color: #2347e8;
+$grey-color: #6b6860;
+$grey-color-light: #dedbd2;
+$content-width: 820px;
+
+@import "minima";
+
+h1, h2, h3, .site-title, .post-title, .footer-heading {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+h1 { font-size: 2.4rem; line-height: 1.15; }
+h2 { margin-top: 2.2rem; }
+a { color: #2347e8; }
+a:visited { color: #1b38c4; }
+.site-header { border-top: 3px solid #2347e8; border-bottom-color: #dedbd2; background: #fbfaf7; }
+.site-title, .site-title:visited { color: #1a1a1a; }
+.site-nav .page-link { color: #1a1a1a; font-size: 15px; }
+.site-footer { border-top-color: #dedbd2; }
+.footer-note { margin-top: 0.5rem; font-size: 14px; }
+code, pre { font-family: "Geist Mono", ui-monospace, monospace; font-size: 14px; }
+pre, code { background: #fbfaf7; border-color: #dedbd2; }
+table { background: #fbfaf7; }
+table th { background: #f2f0ea; }
+table td, table th { border-color: #dedbd2; }
+
+// "In brief" summaries and the Start here cards
+blockquote { color: #1a1a1a; font-size: 17px; letter-spacing: 0; font-style: normal; border-left: 3px solid #2347e8; background: #fbfaf7; padding: 12px 16px; }
+blockquote > :last-child { margin-bottom: 0; }
+.start-here { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin: 1rem 0 2rem; }
+.start-here a { display: block; padding: 16px; border: 1px solid #dedbd2; border-radius: 12px; background: #fff; color: #1a1a1a; text-decoration: none; }
+.start-here a:hover { border-color: #2347e8; }
+.start-here strong { display: block; font-family: "Newsreader", Georgia, serif; font-size: 1.2rem; font-weight: 500; color: #2347e8; }
+.start-here span { display: block; margin-top: 4px; font-size: 15px; color: #6b6860; }

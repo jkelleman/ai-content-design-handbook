@@ -2,6 +2,8 @@
 
 A framework for honest, clear disclosure about AI use in content experiences.
 
+> **In brief:** Tell people when content comes from AI, what it's based on and where it can be wrong. Disclose at the start, cite sources where you can, and match the disclosure to the stakes.
+
 ## Why Transparency Matters
 
 **Users deserve to know when they're interacting with AI.**
@@ -120,7 +122,7 @@ In privacy policy
 "I'm an AI trained on [type of data] to [purpose]"
 
 Example:
-"I'm an AI assistant trained on Fabric documentation
+"I'm an AI assistant trained on DataFlow documentation
 to help answer questions about the platform."
 ```
 
@@ -131,7 +133,7 @@ I was trained on [data sources] and can [capabilities]."
 
 Example:
 "I use natural language processing to understand your questions
-and search through Fabric documentation to find relevant answers.
+and search through DataFlow documentation to find relevant answers.
 I was trained on our help articles, user guides, and API docs."
 ```
 
@@ -319,7 +321,7 @@ Sources:
 ━━━━━━━━━━━━━━━━━━━━
 
 Confidence with source:
-"According to the Fabric API guide (docs.fabric.com/api):
+"According to the DataFlow API guide (docs.dataflow.example/api):
 [quoted information]"
 
 Multiple sources:
@@ -337,10 +339,10 @@ Multiple sources:
 **First interaction:**
 
 ```markdown
-Hi! I'm Fabric AI Assistant
+Hi! I'm DataFlow AI Assistant
 
 I'm an AI trained to help with:
-• Questions about Fabric features
+• Questions about DataFlow features
 • Troubleshooting common issues
 • Guidance through workflows
 
@@ -390,7 +392,7 @@ Initial (brief):
 AI Assistant
 
 On hover/click:
-"AI-powered help based on Fabric documentation.
+"AI-powered help based on DataFlow documentation.
 Click for details."
 
 Details page:
@@ -400,7 +402,7 @@ Our AI assistant uses natural language processing
 to understand your questions and provide helpful answers.
 
 How it works:
-• Trained on Fabric documentation and guides
+• Trained on DataFlow documentation and guides
 • Searches knowledge base for relevant info
 • Generates responses based on verified content
 • May not always be perfect - verify important info
@@ -449,9 +451,9 @@ AI Opinion (Not fact-based)
 **Example:**
 
 ```markdown
-Fabric AI Assistant
+DataFlow AI Assistant
 
-I'm an AI here to help with Fabric questions.
+I'm an AI here to help with DataFlow questions.
 
 I can help with:
 ✓ Platform features and how-tos
@@ -502,7 +504,7 @@ Last reviewed: March 15, 2024
 
 ```markdown
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Article: Getting Started with Fabric
+Article: Getting Started with DataFlow
 Written by: Sarah Chen (Content Designer)
 AI-assisted drafting | Human edited and verified
 Updated: March 15, 2024

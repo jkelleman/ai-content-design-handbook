@@ -2,6 +2,8 @@
 
 A practical guide to running rigorous content experiments that drive measurable improvements.
 
+> **In brief:** Test one change at a time, decide the success metric and sample size before you start, and let the test run its full length. A result only counts if it's statistically significant.
+
 ## What is A/B Testing?
 
 **Definition:**
@@ -305,15 +307,15 @@ We'll measure by button click rate
 **Test setup:**
 ```
 Control (A):
-Headline: "Welcome to Fabric"
+Headline: "Welcome to DataFlow"
 Button: "Get Started"
 
 Variant B:
-Headline: "Welcome to Fabric"
+Headline: "Welcome to DataFlow"
 Button: "Create Your First Pipeline"
 
 Variant C:
-Headline: "Welcome to Fabric"
+Headline: "Welcome to DataFlow"
 Button: "Build Something Amazing"
 
 Sample size: 3,000 users per variation

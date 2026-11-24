@@ -2,6 +2,8 @@
 
 A practical framework for identifying and mitigating bias in content, especially AI-generated content.
 
+> **In brief:** AI repeats the biases in its training data at scale. Check content for seven kinds of bias, from gender and race to age, ability and geography, and fix examples, defaults and word choices that leave people out.
+
 ## What is Bias in Content?
 
 **Bias** = Systematic favoritism or unfair treatment of certain groups over others

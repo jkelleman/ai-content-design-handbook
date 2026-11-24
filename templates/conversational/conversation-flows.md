@@ -2,6 +2,8 @@
 
 A framework for designing clear, helpful conversational experiences for chatbots and AI assistants.
 
+> **In brief:** Map what the assistant can and can't do before you write a single turn. Cover the happy path, the misunderstandings and the hand-off to a person, and keep each turn to one question.
+
 ## What are Conversation Flows?
 
 Conversation flows map out how a chatbot guides users through tasks, answers questions, and handles various scenarios. Unlike traditional UI where users click through screens, conversations are dynamic exchanges that adapt to user input.
@@ -417,7 +419,7 @@ global_commands:
 
 **First-time user:**
 ```
-"Hi! I'm the Fabric Assistant. I can help you:
+"Hi! I'm the DataFlow Assistant. I can help you:
 • Create and manage pipelines
 • Troubleshoot errors
 • Learn about features

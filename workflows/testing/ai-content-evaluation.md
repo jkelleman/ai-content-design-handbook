@@ -2,6 +2,8 @@
 
 A framework for assessing quality, accuracy, and appropriateness of AI-generated content before it reaches users.
 
+> **In brief:** Grade AI output on accuracy, helpfulness, tone, safety and consistency before it reaches people. Use a shared rubric, test with real inputs, and escalate red flags like unsafe advice right away.
+
 ## Why Evaluate AI Content?
 
 AI models can generate fluent, confident-sounding content that is:
@@ -30,7 +32,7 @@ AI models can generate fluent, confident-sounding content that is:
 
 ```markdown
 AI Output:
-"Fabric supports up to 500 concurrent pipeline runs per workspace."
+"DataFlow supports up to 500 concurrent pipeline runs per workspace."
 
 Evaluation:
 ✗ Incorrect - Limit is 100, not 500
@@ -422,6 +424,8 @@ Alert immediately if: Any
 ```
 
 ### Quality Dashboard
+
+*Sample dashboard for illustration. The numbers are made up.*
 
 ```markdown
 === AI Content Quality Dashboard ===

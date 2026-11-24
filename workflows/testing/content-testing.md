@@ -2,6 +2,8 @@
 
 A practical framework for testing and validating content effectiveness before and after launch.
 
+> **In brief:** Five ways to test content, from quick comprehension checks to usability sessions. Test early with real people and real tasks, before the words are locked in.
+
 ## Why Test Content?
 
 **Assumptions are risky:**

@@ -2,6 +2,8 @@
 
 Write error messages that tell people what happened, why it matters to them, and what to do next, including errors from AI features, which fail in ways traditional software doesn't.
 
+> **In brief:** Every error says what happened, why it matters and what to do next. Prevent the error if you can, choose where it appears, then write it. AI errors need their own patterns, because AI fails in ways traditional software doesn't.
+
 ## The template
 
 ```

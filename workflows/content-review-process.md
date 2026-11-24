@@ -2,6 +2,8 @@
 
 A structured approach to reviewing and approving content changes to ensure quality and consistency.
 
+> **In brief:** Review content in four stages: self-review, peer review, stakeholder review and a final check. Agree up front who approves what, so reviews don't restart with every new reader.
+
 ## Review Process Overview
 
 ```

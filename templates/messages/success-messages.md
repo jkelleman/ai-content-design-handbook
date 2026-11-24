@@ -2,6 +2,8 @@
 
 Confirm that something worked, say what happens next, and get out of the way. Good success messages build trust because they're specific; vague ones ("Success!") make people wonder what actually happened.
 
+> **In brief:** Say specifically what worked and what happens next, then get out of the way. Vague confirmations like “Success!” make people wonder what actually happened.
+
 ## The template
 
 ```
