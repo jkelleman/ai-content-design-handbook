@@ -1,0 +1,41 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+  <style>
+    /* Check and cross marks: green for good, red for bad. Both pass WCAG AA on white and on code blocks. */
+    .mark-ok { color: #1f7a4d; font-weight: 700; }
+    .mark-no { color: #b42318; font-weight: 700; }
+  </style>
+  <script>
+    // Color every ✓ green and every ✗ red, including inside code blocks, without changing the text.
+    document.addEventListener("DOMContentLoaded", function () {
+      var root = document.querySelector(".page-content") || document.body;
+      var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+        acceptNode: function (n) { return /[✓✗]/.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT; }
+      });
+      var nodes = [];
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+      nodes.forEach(function (node) {
+        var frag = document.createDocumentFragment();
+        node.nodeValue.split(/([✓✗])/).forEach(function (part) {
+          if (part === "✓" || part === "✗") {
+            var s = document.createElement("span");
+            s.className = part === "✓" ? "mark-ok" : "mark-no";
+            s.textContent = part;
+            frag.appendChild(s);
+          } else if (part) {
+            frag.appendChild(document.createTextNode(part));
+          }
+        });
+        node.parentNode.replaceChild(frag, node);
+      });
+    });
+  </script>
+</head>
