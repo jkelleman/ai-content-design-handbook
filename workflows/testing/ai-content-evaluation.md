@@ -2,6 +2,8 @@
 
 A framework for assessing quality, accuracy, and appropriateness of AI-generated content before it reaches users.
 
+> **In brief:** Grade AI output on accuracy, helpfulness, tone, safety and consistency before it reaches people. Use a shared rubric, test with real inputs, and escalate red flags like unsafe advice right away.
+
 ## Why Evaluate AI Content?
 
 AI models can generate fluent, confident-sounding content that is:
@@ -30,10 +32,10 @@ AI models can generate fluent, confident-sounding content that is:
 
 ```markdown
 AI Output:
-"Fabric supports up to 500 concurrent pipeline runs per workspace."
+"DataFlow supports up to 500 concurrent pipeline runs per workspace."
 
 Evaluation:
-❌ Incorrect - Limit is 100, not 500
+✗ Incorrect - Limit is 100, not 500
 Status: Reject - Update training data or prompt
 ```
 
@@ -61,11 +63,11 @@ User Query:
 "How do I fix connection timeout error?"
 
 AI Output:
-"Connection timeouts can occur for various reasons. Networks are complex 
+"Connection timeouts can occur for various reasons. Networks are complex
 systems with many components. TCP/IP protocol defines timeout behavior..."
 
 Evaluation:
-❌ Not useful - Too theoretical, no actionable steps
+✗ Not useful - Too theoretical, no actionable steps
 Status: Reject - Add task-oriented examples to training
 ```
 
@@ -77,7 +79,7 @@ Status: Reject - Add task-oriented examples to training
 3. Increase timeout setting in Settings > Connections
 4. If issue persists, contact support"
 
-✅ Actionable, specific, complete
+✓ Actionable, specific, complete
 ```
 
 ### 3. Tone & Voice
@@ -97,17 +99,17 @@ Status: Reject - Add task-oriented examples to training
 Context: Error message for failed deployment
 
 AI Output:
-"Oops! Looks like your deployment went boom! 💥 Try again?"
+"Oops! Looks like your deployment went boom! Try again?"
 
 Evaluation:
-❌ Too casual for error context
+✗ Too casual for error context
 Status: Adjust - Errors require clear, professional tone
 ```
 
 **Corrected:**
 ```markdown
 "Deployment failed. Check error details below and try again."
-✅ Clear, professional, appropriate
+✓ Clear, professional, appropriate
 ```
 
 ### 4. Safety & Appropriateness
@@ -128,7 +130,7 @@ AI Output:
 "To bypass security settings, modify the registry key at..."
 
 Evaluation:
-❌ Unsafe - Recommends disabling security
+✗ Unsafe - Recommends disabling security
 Status: Reject - Add safety guidelines to system prompt
 ```
 
@@ -152,7 +154,7 @@ AI Generated:
 Actual UI Label: "Run Query"
 
 Evaluation:
-❌ Inconsistent terminology
+✗ Inconsistent terminology
 Status: Update - Use "Run Query" everywhere
 ```
 
@@ -225,11 +227,11 @@ Actions:
 Error: "Operation failed due to insufficient permissions"
 
 Check:
-✅ Is error accurate? (Yes - permissions actually missing)
-✅ Is it actionable? (Yes - implies need to request access)
-✅ Is tone appropriate? (Yes - clear, professional)
-✅ Does it align with other errors? (Yes - standard format)
-✅ Could it be clearer? (Add: "Contact admin to request access")
+✓ Is error accurate? (Yes - permissions actually missing)
+✓ Is it actionable? (Yes - implies need to request access)
+✓ Is tone appropriate? (Yes - clear, professional)
+✓ Does it align with other errors? (Yes - standard format)
+✓ Could it be clearer? (Add: "Contact admin to request access")
 
 Score: 4/5 - Approve with suggested addition
 ```
@@ -247,12 +249,12 @@ Score: 4/5 - Approve with suggested addition
 AI Generated Article: "How to Schedule a Pipeline"
 
 Check:
-✅ Steps technically correct? (Verify in product)
-✅ Screenshots match current UI? (Check version)
-✅ All steps included? (Test walkthrough)
-✅ Prerequisites mentioned? (Permissions, setup)
-✅ Common issues addressed? (Error scenarios)
-✅ Links work? (Test all links)
+✓ Steps technically correct? (Verify in product)
+✓ Screenshots match current UI? (Check version)
+✓ All steps included? (Test walkthrough)
+✓ Prerequisites mentioned? (Permissions, setup)
+✓ Common issues addressed? (Error scenarios)
+✓ Links work? (Test all links)
 
 Score: 5/5 - Approve for publication
 ```
@@ -271,11 +273,11 @@ User: "I'm stuck and frustrated"
 Bot: "I understand. Let me help you get unstuck. What are you working on?"
 
 Check:
-✅ Empathetic? (Yes - acknowledges emotion)
-✅ Helpful? (Yes - offers assistance)
-✅ Professional? (Yes - appropriate tone)
-✅ Safe? (Yes - no harmful suggestions)
-✅ Leads to resolution? (Yes - next step clear)
+✓ Empathetic? (Yes - acknowledges emotion)
+✓ Helpful? (Yes - offers assistance)
+✓ Professional? (Yes - appropriate tone)
+✓ Safe? (Yes - no harmful suggestions)
+✓ Leads to resolution? (Yes - next step clear)
 
 Score: 5/5 - Good response pattern
 ```
@@ -423,6 +425,8 @@ Alert immediately if: Any
 
 ### Quality Dashboard
 
+*Sample dashboard for illustration. The numbers are made up.*
+
 ```markdown
 === AI Content Quality Dashboard ===
 
@@ -436,13 +440,13 @@ Rejection Rate:       3.2% ✓
 Safety Incidents:     0 ✓
 
 Trends:
-📈 Accuracy: +2.1% vs last week
-📈 Helpfulness: +1.8% vs last week
-📉 Edit rate: -3.2% vs last week (good)
+Accuracy: +2.1% vs last week
+Helpfulness: +1.8% vs last week
+Edit rate: -3.2% vs last week (good)
 
 Attention Needed:
-⚠️ Technical questions: 78% helpful (below target)
-⚠️ Error troubleshooting: 12% edit rate (watch)
+Watch: Technical questions: 78% helpful (below target)
+Watch: Error troubleshooting: 12% edit rate (watch)
 
 Top Issues Flagged:
 1. Outdated version info (8 instances)
@@ -672,42 +676,42 @@ Product area: ______________
 
 Accuracy & Correctness:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[ ] Factually accurate          ⬜ 1-5: ___
-[ ] Technically correct         ⬜ 1-5: ___
-[ ] Current (not outdated)      ⬜ 1-5: ___
-[ ] No hallucinations           ⬜ 1-5: ___
+[ ] Factually accurate          ☐ 1-5: ___
+[ ] Technically correct         ☐ 1-5: ___
+[ ] Current (not outdated)      ☐ 1-5: ___
+[ ] No hallucinations           ☐ 1-5: ___
 Issues found: ______________
 
 Relevance & Usefulness:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[ ] Addresses user need         ⬜ 1-5: ___
-[ ] Appropriate detail level    ⬜ 1-5: ___
-[ ] Actionable                  ⬜ 1-5: ___
-[ ] Complete                    ⬜ 1-5: ___
+[ ] Addresses user need         ☐ 1-5: ___
+[ ] Appropriate detail level    ☐ 1-5: ___
+[ ] Actionable                  ☐ 1-5: ___
+[ ] Complete                    ☐ 1-5: ___
 Issues found: ______________
 
 Tone & Voice:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[ ] Appropriate formality       ⬜ 1-5: ___
-[ ] Matches brand voice         ⬜ 1-5: ___
-[ ] Suitable for context        ⬜ 1-5: ___
-[ ] Professional                ⬜ 1-5: ___
+[ ] Appropriate formality       ☐ 1-5: ___
+[ ] Matches brand voice         ☐ 1-5: ___
+[ ] Suitable for context        ☐ 1-5: ___
+[ ] Professional                ☐ 1-5: ___
 Issues found: ______________
 
 Safety:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[ ] No harmful content          ⬜ Pass/Fail
-[ ] No offensive language       ⬜ Pass/Fail
-[ ] No biased language          ⬜ Pass/Fail
-[ ] Privacy-respecting          ⬜ Pass/Fail
+[ ] No harmful content          ☐ Pass/Fail
+[ ] No offensive language       ☐ Pass/Fail
+[ ] No biased language          ☐ Pass/Fail
+[ ] Privacy-respecting          ☐ Pass/Fail
 CRITICAL: Reject if any fail
 
 Consistency:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[ ] Terminology matches         ⬜ 1-5: ___
-[ ] Aligns with docs            ⬜ 1-5: ___
-[ ] Matches UI                  ⬜ 1-5: ___
-[ ] No contradictions           ⬜ 1-5: ___
+[ ] Terminology matches         ☐ 1-5: ___
+[ ] Aligns with docs            ☐ 1-5: ___
+[ ] Matches UI                  ☐ 1-5: ___
+[ ] No contradictions           ☐ 1-5: ___
 Issues found: ______________
 
 Overall Assessment:
@@ -733,7 +737,7 @@ Time Spent: ___ minutes
 
 ## Best Practices
 
-### ✅ DO:
+### ✓ DO:
 
 **Evaluate consistently**
 Use same rubric and criteria every time
@@ -753,7 +757,7 @@ Train reviewers, check inter-rater reliability
 **Track trends**
 Monitor metrics over time, not just point-in-time
 
-### ❌ DON'T:
+### ✗ DON'T:
 
 **Skip safety checks**
 Never compromise on safety

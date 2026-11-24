@@ -2,6 +2,8 @@
 
 A framework for establishing consistent word choice and terminology across your product.
 
+> **In brief:** Use one term for one concept, everywhere. A terminology list with approved terms, terms to avoid and the reason for each keeps writers, engineers and models consistent.
+
 ## Why Terminology Matters
 
 **Consistency builds trust:**
@@ -77,7 +79,7 @@ Consistent language for system states:
 
 ### Use Universal Terms When Possible
 
-✅ **Universal (widely understood):**
+✓ **Universal (widely understood):**
 - User
 - Settings
 - Help
@@ -88,14 +90,14 @@ Consistent language for system states:
 - Export
 - Import
 
-❌ **Avoid inventing new terms for common concepts:**
+✗ **Avoid inventing new terms for common concepts:**
 - "Crew member" instead of "user"
 - "Control center" instead of "settings"
 - "Quick finder" instead of "search"
 
 ### When to Create Product-Specific Terms
 
-✅ **Create new terms when:**
+✓ **Create new terms when:**
 - Concept is unique to your product
 - Industry-standard term is confusing
 - Need to differentiate from competitors
@@ -146,20 +148,20 @@ Consistent language for system states:
 
 ### Words to Avoid
 
-❌ **Technical jargon without explanation:**
+✗ **Technical jargon without explanation:**
 - API (unless your audience is developers)
 - Deprecated
 - Instantiate
 - Utilize (use "use")
 - Execute (use "run")
 
-❌ **Vague language:**
+✗ **Vague language:**
 - Stuff
 - Things
 - Items (be specific)
 - Various
 
-❌ **Unnecessarily complex:**
+✗ **Unnecessarily complex:**
 - Utilize → use
 - Commence → start
 - Terminate → end/stop
@@ -167,7 +169,7 @@ Consistent language for system states:
 - Purchase → buy
 - Facilitate → help
 
-❌ **Colloquial/Slang:**
+✗ **Colloquial/Slang:**
 - ASAP → quickly, immediately
 - Info → information
 - Pics → images, photos
@@ -177,14 +179,14 @@ Consistent language for system states:
 
 ### Gender-Neutral
 
-✅ **Use:**
+✓ **Use:**
 - They/them (singular)
 - People, everyone, users
 - Humanity, humankind
 - Staffing
 - Synthetic, artificial
 
-❌ **Avoid:**
+✗ **Avoid:**
 - He/him, she/her (generic)
 - Guys, mankind
 - Manpower, man-hours
@@ -192,13 +194,13 @@ Consistent language for system states:
 
 ### Ability-Inclusive
 
-✅ **Use:**
+✓ **Use:**
 - People with disabilities
 - Person who is blind/deaf
 - Wheelchair user
 - Cognitive impairment
 
-❌ **Avoid:**
+✗ **Avoid:**
 - Disabled person
 - The blind, the deaf
 - Wheelchair-bound
@@ -206,13 +208,13 @@ Consistent language for system states:
 
 ### Global-Friendly
 
-✅ **Use:**
+✓ **Use:**
 - Clear, simple language
 - Define acronyms
 - Explain idioms
 - Universal examples
 
-❌ **Avoid:**
+✗ **Avoid:**
 - US-only idioms ("home run")
 - Cultural references
 - Puns that don't translate
@@ -222,7 +224,7 @@ Consistent language for system states:
 
 ### When to Use Technical Terms
 
-✅ **Use technical terms when:**
+✓ **Use technical terms when:**
 - Audience is technical
 - Term is industry-standard
 - Simpler alternative doesn't exist
@@ -230,13 +232,13 @@ Consistent language for system states:
 
 **Example for developers:**
 ```
-✅ "Configure OAuth 2.0 authentication"
+✓ "Configure OAuth 2.0 authentication"
 (Developers know OAuth)
 ```
 
 **Example for general users:**
 ```
-✅ "Sign in with Google"
+✓ "Sign in with Google"
 (User doesn't need to know it's OAuth)
 ```
 
@@ -265,25 +267,25 @@ When you must use technical terms:
 
 **First mention:** Spell out + abbreviation
 ```
-✅ "Application Programming Interface (API)"
+✓ "Application Programming Interface (API)"
 Then: "API" in subsequent uses
 ```
 
 **Common acronyms:** Can use without spelling out
 ```
-✅ "PDF", "URL", "FAQ"
+✓ "PDF", "URL", "FAQ"
 (Most users know these)
 ```
 
 **Product-specific:** Always spell out first
 ```
-✅ "Real-time Data Integration (RDI)"
+✓ "Real-time Data Integration (RDI)"
 Then: "RDI"
 ```
 
 ### When NOT to Abbreviate
 
-❌ **Don't abbreviate:**
+✗ **Don't abbreviate:**
 - When it makes text harder to read
 - In headings (usually)
 - In navigation labels
@@ -294,7 +296,7 @@ Then: "RDI"
 ### Product Names
 
 **Your product:** [Your capitalization rule]
-- Example: "Microsoft Fabric" (title case)
+- Example: "DataFlow Studio" (title case)
 - Example: "GitHub" (specific capitalization)
 
 ### Features & Capabilities
@@ -336,11 +338,11 @@ Then: "RDI"
 
 **Spell out or use numerals?**
 
-✅ **Spell out:**
+✓ **Spell out:**
 - Numbers one through nine in body text
 - Numbers at start of sentence
 
-✅ **Use numerals:**
+✓ **Use numerals:**
 - Numbers 10 and above
 - Measurements (5 MB, 3 minutes)
 - Percentages (5%)
@@ -348,9 +350,9 @@ Then: "RDI"
 
 **Examples:**
 ```
-✅ "You have five datasets"
-✅ "Upload up to 100 MB"
-✅ "Processing takes 3-5 minutes"
+✓ "You have five datasets"
+✓ "Upload up to 100 MB"
+✓ "Processing takes 3-5 minutes"
 ```
 
 ### Units of Measurement
@@ -371,12 +373,12 @@ Then: "RDI"
 
 ### Periods
 
-✅ **Use periods:**
+✓ **Use periods:**
 - Complete sentences
 - Body text
 - Multi-sentence descriptions
 
-❌ **Don't use periods:**
+✗ **Don't use periods:**
 - Button labels ("Save changes")
 - Single-sentence field labels
 - Navigation items
@@ -390,20 +392,20 @@ Then: "RDI"
 
 **Lists:**
 ```
-✅ "Enter your name, email, and password"
+✓ "Enter your name, email, and password"
 ```
 
 ### Colons
 
 **Use for introducing:**
 ```
-✅ "Required fields: Name, Email, Password"
+✓ "Required fields: Name, Email, Password"
 ```
 
 **Don't use in field labels:**
 ```
-❌ "Name:"
-✅ "Name"
+✗ "Name:"
+✓ "Name"
 ```
 
 ## Tone Consistency in Terminology
@@ -414,12 +416,12 @@ Then: "RDI"
 
 **Formal:**
 ```
-✅ "Select 'Create Workspace' to begin"
+✓ "Select 'Create Workspace' to begin"
 ```
 
 **Casual:**
 ```
-✅ "Let's create a workspace"
+✓ "Let's create a workspace"
 ```
 
 **Mixed (context-dependent):**
@@ -450,31 +452,31 @@ Before publishing content, check:
 
 **Creating something:**
 ```
-✅ "Create [item]"
+✓ "Create [item]"
 Not: "New [item]", "Add [item]"
 ```
 
 **Confirming deletion:**
 ```
-✅ "Delete [item]? This action cannot be undone."
+✓ "Delete [item]? This action cannot be undone."
 Not: "Are you sure?", "Really delete?"
 ```
 
 **Empty states:**
 ```
-✅ "No [items] yet. Create your first one?"
+✓ "No [items] yet. Create your first one?"
 Not: "There are no [items] here"
 ```
 
 **Success:**
 ```
-✅ "[Item] created successfully"
+✓ "[Item] created successfully"
 Not: "Success!", "[Item] has been created"
 ```
 
 **Errors:**
 ```
-✅ "[Action] failed. [Reason]. [What to do]."
+✓ "[Action] failed. [Reason]. [What to do]."
 Not: "Error occurred", "Something went wrong"
 ```
 

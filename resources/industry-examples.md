@@ -2,6 +2,8 @@
 
 A reference to the public content and AI design guidance from 10 of the largest technology companies, with what each one teaches and where to read it. Every page in this handbook links back here when it uses one of these examples.
 
+> **In brief:** Compiled from public sources: what 10 large technology companies publish about writing for AI, paraphrased and linked. Use the table to find the strongest guidance for your problem, then read the original.
+
 > **How to use this page:** Skim the summary table to find which company has the strongest guidance for your problem, then read the source. Everything here is paraphrased from each company's public guidance and linked so you can check the original. Guidance changes; when in doubt, the source wins.
 
 ## At a glance

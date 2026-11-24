@@ -2,6 +2,8 @@
 
 A strategic framework for managing content in AI-powered products, where language is generated dynamically rather than written statically.
 
+> **In brief:** In AI products, content strategists design the system that writes: content models, generation rules, constraints and evaluation. Start with the architecture, then the rules, then how you'll check the output.
+
 ## What is AI Content Strategy?
 
 AI content strategy defines how language functions within AI systems. Instead of writing every word users see, content strategists create the systems, rules, and components that enable AI to generate appropriate, consistent, and helpful content at scale.

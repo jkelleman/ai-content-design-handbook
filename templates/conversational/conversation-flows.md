@@ -2,6 +2,8 @@
 
 A framework for designing clear, helpful conversational experiences for chatbots and AI assistants.
 
+> **In brief:** Map what the assistant can and can't do before you write a single turn. Cover the happy path, the misunderstandings and the hand-off to a person, and keep each turn to one question.
+
 ## What are Conversation Flows?
 
 Conversation flows map out how a chatbot guides users through tasks, answers questions, and handles various scenarios. Unlike traditional UI where users click through screens, conversations are dynamic exchanges that adapt to user input.
@@ -329,14 +331,14 @@ node_4_close:
 
 ### 1. Be Conversational, Not Robotic
 
-**❌ Robotic:**
+**✗ Robotic:**
 ```
 "Initiate pipeline creation process"
 "Please provide required input parameters"
 "Process completed successfully"
 ```
 
-**✅ Conversational:**
+**✓ Conversational:**
 ```
 "Let's create a pipeline"
 "I'll need a few details from you"
@@ -345,12 +347,12 @@ node_4_close:
 
 ### 2. Provide Clear Options
 
-**❌ Open-ended (when guidance needed):**
+**✗ Open-ended (when guidance needed):**
 ```
 Bot: "What would you like to do?"
 ```
 
-**✅ Structured options:**
+**✓ Structured options:**
 ```
 Bot: "What would you like to do?"
 [Button: Create pipeline]
@@ -360,13 +362,13 @@ Bot: "What would you like to do?"
 
 ### 3. Confirm Understanding
 
-**❌ Assumes understanding:**
+**✗ Assumes understanding:**
 ```
 User: "My pipeline is broken"
 Bot: [Launches into troubleshooting]
 ```
 
-**✅ Confirms:**
+**✓ Confirms:**
 ```
 User: "My pipeline is broken"
 Bot: "I'll help you fix that. Is your pipeline failing with an error, or is it not running at all?"
@@ -374,13 +376,13 @@ Bot: "I'll help you fix that. Is your pipeline failing with an error, or is it n
 
 ### 4. Handle Uncertainty Gracefully
 
-**❌ Pretends to understand:**
+**✗ Pretends to understand:**
 ```
 User: "The thing isn't working"
 Bot: "Let me help you fix the connection issue"
 ```
 
-**✅ Asks for clarification:**
+**✓ Asks for clarification:**
 ```
 User: "The thing isn't working"
 Bot: "I want to help! Can you tell me what's not working? For example:
@@ -417,7 +419,7 @@ global_commands:
 
 **First-time user:**
 ```
-"Hi! I'm the Fabric Assistant. I can help you:
+"Hi! I'm the DataFlow Assistant. I can help you:
 • Create and manage pipelines
 • Troubleshoot errors
 • Learn about features
@@ -644,14 +646,14 @@ Track conversation effectiveness:
 **Clarify instead of guessing (Microsoft G10):**
 ```
 User: Show me the numbers for last quarter.
-❌ Here's revenue for Q3: $4.2M.
-✅ Do you mean revenue, orders, or new customers for Q3 (July–September)?
+✗ Here's revenue for Q3: $4.2M.
+✓ Do you mean revenue, orders, or new customers for Q3 (July–September)?
 ```
 
 **Offer a substitute (Google PAIR):**
 ```
 User: Book the 6:00 PM table at Luca.
-✅ Luca is full at 6:00. I can book 5:30 or 7:15, or check Bellora nearby at 6:00.
+✓ Luca is full at 6:00. I can book 5:30 or 7:15, or check Bellora nearby at 6:00.
 ```
 
 **Write for the ear (Amazon):** responses should make sense by listening alone. Limit how many options you read out, and use punctuation to add pauses between list items so people can follow.

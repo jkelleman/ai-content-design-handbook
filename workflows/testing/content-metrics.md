@@ -2,6 +2,8 @@
 
 A framework for measuring content effectiveness and making data-informed improvements.
 
+> **In brief:** Measure whether content helps people finish what they came to do: task completion, errors, time and support contacts. Pick a few metrics per content type and review them on a regular rhythm.
+
 ## Why Measure Content?
 
 **Prove impact:**
@@ -377,6 +379,8 @@ track('task_complete', {
 
 ### Dashboard Template
 
+*Sample dashboard for illustration. The numbers are made up.*
+
 ```
 === Content Performance Dashboard ===
 
@@ -448,24 +452,24 @@ Onboarding:
 
 ### Good Metric Patterns
 
-**✅ High task completion + Low time** 
+**✓ High task completion + Low time** 
 Content is clear and efficient
 
-**✅ High satisfaction + Low support**
+**✓ High satisfaction + Low support**
 Content successfully solves problems
 
-**✅ High engagement + Low bounce**
+**✓ High engagement + Low bounce**
 Content is relevant and valuable
 
 ### Warning Signs
 
-**⚠️ High time + Low completion**
+**High time + Low completion**
 Content may be confusing
 
-**⚠️ High bounce + Low scroll**
+**High bounce + Low scroll**
 Content doesn't match expectations
 
-**⚠️ Low satisfaction + High support**
+**Low satisfaction + High support**
 Content isn't helping users
 
 ### Context Matters
@@ -487,42 +491,42 @@ Error message time to resolve:
 
 ## Common Mistakes
 
-**❌ Tracking vanity metrics**
+**✗ Tracking vanity metrics**
 Page views don't indicate success
 
-**✅ Track outcome metrics**
+**✓ Track outcome metrics**
 Did content help users accomplish goals?
 
 ---
 
-**❌ No baseline or targets**
+**✗ No baseline or targets**
 Can't tell if improvements are meaningful
 
-**✅ Establish baseline first**
+**✓ Establish baseline first**
 Then set realistic improvement targets
 
 ---
 
-**❌ Looking at metrics in isolation**
+**✗ Looking at metrics in isolation**
 One metric doesn't tell full story
 
-**✅ Triangulate multiple metrics**
+**✓ Triangulate multiple metrics**
 Combine behavioral + feedback + business
 
 ---
 
-**❌ Not segmenting data**
+**✗ Not segmenting data**
 Averages can hide important patterns
 
-**✅ Segment by user type, device, etc**
+**✓ Segment by user type, device, etc**
 Understand different audience needs
 
 ---
 
-**❌ Obsessing over small changes**
+**✗ Obsessing over small changes**
 3.9 vs 4.0 rating rarely matters
 
-**✅ Focus on meaningful deltas**
+**✓ Focus on meaningful deltas**
 >20% improvements indicate real impact
 
 ## Reporting Framework
@@ -538,9 +542,9 @@ Understand different audience needs
 ## Key Metrics
 | Metric | This Month | Last Month | Change |
 |--------|------------|------------|--------|
-| Satisfaction | 4.2/5 | 4.0/5 | +5% ⬆️ |
-| Task completion | 78% | 72% | +6% ⬆️ |
-| Support deflection | 42% | 38% | +4% ⬆️ |
+| Satisfaction | 4.2/5 | 4.0/5 | +5% |
+| Task completion | 78% | 72% | +6% |
+| Support deflection | 42% | 38% | +4% |
 
 ## Highlights
 

@@ -2,6 +2,8 @@
 
 An empty state is the screen people see when there's nothing to show yet. It's one of the few moments when you have someone's full attention and no competing content, so use it to explain what belongs here and how to get started.
 
+> **In brief:** An empty screen has someone's full attention. Name what belongs here, why it's empty and the one action that fills it. Identify the type of empty state first; each needs different words.
+
 ## The template
 
 ```
@@ -40,10 +42,10 @@ The right message depends entirely on *why* the space is empty. A first-time use
 ### First use
 
 ```
-❌ Nothing here yet
+✗ Nothing here yet
    Click the button below to get started.
 
-✅ No pipelines yet
+✓ No pipelines yet
    Pipelines move and transform data between your sources on a schedule.
    [Create pipeline]   [Start from a template]
 ```
@@ -52,7 +54,7 @@ The right message depends entirely on *why* the space is empty. A first-time use
 ### First use, with sample data
 
 ```
-✅ Your dashboard will show sales by region
+✓ Your dashboard will show sales by region
    Connect a data source to see your numbers, or explore with sample data first.
    [Connect data]   [Use sample data]
 ```
@@ -61,9 +63,9 @@ Sample data lets people see the value before doing setup work. It's especially u
 ### No results
 
 ```
-❌ No results found
+✗ No results found
 
-✅ No results for "sales reprot"
+✓ No results for "sales reprot"
    Check the spelling or try a broader term. Showing 3 filters: Region, Owner, Last 30 days.
    [Clear filters]
 ```
@@ -72,7 +74,7 @@ Sample data lets people see the value before doing setup work. It's especially u
 ### Cleared, a moment of completion
 
 ```
-✅ You're all caught up
+✓ You're all caught up
    New notifications will appear here.
 ```
 This is one of the few places a light touch fits. Atlassian reserves its playful "wink" for moments of success and relief.
@@ -80,9 +82,9 @@ This is one of the few places a light touch fits. Atlassian reserves its playful
 ### Waiting for data
 
 ```
-❌ Loading…   (shown for 10 minutes)
+✗ Loading…   (shown for 10 minutes)
 
-✅ Your first sync is running
+✓ Your first sync is running
    This usually takes 5–10 minutes for a workspace this size. We'll email you when it's done.
 ```
 *Why:* It sets an expectation and lets people leave. A spinner with no end is not an empty state; it's a worry.
@@ -90,7 +92,7 @@ This is one of the few places a light touch fits. Atlassian reserves its playful
 ### No access
 
 ```
-✅ This folder is restricted
+✓ This folder is restricted
    Only members of the Finance team can see its reports. Ask Priya Shah, the folder owner, for access.
    [Request access]
 ```
@@ -98,9 +100,9 @@ This is one of the few places a light touch fits. Atlassian reserves its playful
 ### AI feature with nothing to suggest
 
 ```
-❌ No suggestions available.
+✗ No suggestions available.
 
-✅ No suggestions for this document yet
+✓ No suggestions for this document yet
    Suggestions appear once a document has at least a few paragraphs. You can also ask a question directly.
    [Ask a question]
 ```
@@ -109,7 +111,7 @@ This is one of the few places a light touch fits. Atlassian reserves its playful
 ### AI chat, first open
 
 ```
-✅ Ask about your sales data
+✓ Ask about your sales data
    I can answer questions about orders, revenue, and customers in this workspace, and show the query I used.
    Try: "Which region grew fastest last quarter?"
    [Example prompt 1]  [Example prompt 2]  [Example prompt 3]

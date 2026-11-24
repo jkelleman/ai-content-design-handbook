@@ -2,6 +2,8 @@
 
 Use this template to write the small but mighty words that guide users through your product.
 
+> **In brief:** Buttons, links, labels and tooltips carry most of an interface. Label buttons with the action they take, write links that say where they go, and keep one word for one thing.
+
 ## What is Microcopy?
 
 Microcopy includes:
@@ -16,25 +18,25 @@ Microcopy includes:
 ## Microcopy Principles
 
 **1. Be specific, not generic**
-❌ Submit | ✅ Create pipeline
+✗ Submit | ✓ Create pipeline
 
 **2. Use active verbs**
-❌ Deletion | ✅ Delete
+✗ Deletion | ✓ Delete
 
 **3. Match user mental models**
-❌ Terminate | ✅ Stop
+✗ Terminate | ✓ Stop
 
 **4. Keep it concise**
-❌ Click here to save your changes | ✅ Save changes
+✗ Click here to save your changes | ✓ Save changes
 
 **5. Front-load important words**
-❌ Learn more about pipelines | ✅ Pipeline documentation
+✗ Learn more about pipelines | ✓ Pipeline documentation
 
 ## Button Labels
 
 ### Primary Actions
 ```
-✅ GOOD:
+✓ GOOD:
 - Create pipeline
 - Send invite
 - Publish report
@@ -42,7 +44,7 @@ Microcopy includes:
 - Start trial
 - Upload file
 
-❌ BAD:
+✗ BAD:
 - Submit
 - OK
 - Go
@@ -52,14 +54,14 @@ Microcopy includes:
 
 ### Secondary Actions
 ```
-✅ GOOD:
+✓ GOOD:
 - Cancel
 - Go back
 - Skip for now
 - Learn more
 - Not now
 
-❌ BAD:
+✗ BAD:
 - No
 - Exit
 - Dismiss
@@ -67,13 +69,13 @@ Microcopy includes:
 
 ### Destructive Actions
 ```
-✅ GOOD:
+✓ GOOD:
 - Delete pipeline
 - Remove user
 - Discard changes
 - Archive workspace
 
-❌ BAD:
+✗ BAD:
 - Yes, delete
 - Are you sure? OK
 - Confirm
@@ -85,13 +87,13 @@ Microcopy includes:
 Front-load the action, make destination clear
 
 ```
-✅ GOOD:
+✓ GOOD:
 - View all pipelines
 - Edit connection settings
 - Download as CSV
 - Read documentation
 
-❌ BAD:
+✗ BAD:
 - Click here
 - Learn more
 - See all
@@ -102,12 +104,12 @@ Front-load the action, make destination clear
 Match user expectations, use consistent language
 
 ```
-✅ GOOD:
+✓ GOOD:
 - Back to workspace
 - Return to dashboard
 - Go to settings
 
-❌ BAD:
+✗ BAD:
 - Go back
 - Previous
 - Navigate
@@ -119,13 +121,13 @@ Match user expectations, use consistent language
 Clear, specific, no trailing colons
 
 ```
-✅ GOOD:
+✓ GOOD:
 - Email address
 - Pipeline name
 - Connection string
 - Workspace description
 
-❌ BAD:
+✗ BAD:
 - Email:
 - Name:
 - Enter your...
@@ -135,13 +137,13 @@ Clear, specific, no trailing colons
 Show format or provide example
 
 ```
-✅ GOOD:
+✓ GOOD:
 - name@example.com
 - My Sales Pipeline
 - Server=myserver;Database=mydb
 - Describe what this workspace is for
 
-❌ BAD:
+✗ BAD:
 - Enter email
 - Type here
 - ...
@@ -151,12 +153,12 @@ Show format or provide example
 Provide context or requirements
 
 ```
-✅ GOOD:
+✓ GOOD:
 - Passwords must be at least 8 characters
 - You'll use this name to identify your pipeline later
 - Choose a unique name that describes your data source
 
-❌ BAD:
+✗ BAD:
 - Required field
 - See help for more information
 ```
@@ -167,12 +169,12 @@ Provide context or requirements
 Clarify meaning, provide context
 
 ```
-✅ GOOD:
+✓ GOOD:
 - Incremental refresh: Only sync data that changed since the last run
 - Batch size: Number of rows processed at once. Higher numbers = faster but more memory
 - TTL: How long cached data remains valid before refreshing
 
-❌ BAD:
+✗ BAD:
 - More info
 - See documentation
 - Help
@@ -182,13 +184,13 @@ Clarify meaning, provide context
 Describe what happens when clicked
 
 ```
-✅ GOOD:
+✓ GOOD:
 - Refresh data
 - Edit pipeline
 - Delete connection
 - Copy to clipboard
 
-❌ BAD:
+✗ BAD:
 - Refresh
 - Edit
 - More
@@ -199,13 +201,13 @@ Describe what happens when clicked
 Keep short, front-load key words, use parallel structure
 
 ```
-✅ GOOD:
+✓ GOOD:
 - Pipelines
 - Data sources
 - Settings
 - Activity log
 
-❌ BAD:
+✗ BAD:
 - View all pipelines
 - Manage your data sources
 - Configuration and settings
@@ -216,12 +218,12 @@ Keep short, front-load key words, use parallel structure
 
 ### Loading States
 ```
-✅ GOOD:
+✓ GOOD:
 - Loading pipelines...
 - Connecting to database...
 - Uploading file... (45%)
 
-❌ BAD:
+✗ BAD:
 - Please wait...
 - Loading...
 - Processing...
@@ -229,12 +231,12 @@ Keep short, front-load key words, use parallel structure
 
 ### Inline Validation
 ```
-✅ GOOD:
+✓ GOOD:
 - ✓ Available
 - ✗ Name already taken
 - ✓ Valid email format
 
-❌ BAD:
+✗ BAD:
 - OK
 - Error
 - Invalid
@@ -245,14 +247,14 @@ Keep short, front-load key words, use parallel structure
 Be direct, describe the choice clearly
 
 ```
-✅ GOOD:
+✓ GOOD:
 ☐ Send me email notifications
 ☐ Make this workspace private
 ○ Run once
 ○ Run on schedule
 ○ Run manually
 
-❌ BAD:
+✗ BAD:
 ☐ Notifications
 ☐ Private
 ○ Option 1
@@ -264,12 +266,12 @@ Be direct, describe the choice clearly
 Provide clear next action
 
 ```
-✅ GOOD:
+✓ GOOD:
 - Create your first pipeline
 - Add a data source
 - Import sample data
 
-❌ BAD:
+✗ BAD:
 - Get started
 - Click here
 - Begin
@@ -308,7 +310,7 @@ AI features add a new set of small strings that need the same care as buttons an
 | **Prompt box placeholder** | Suggest a task, not a personality | "Ask about orders, revenue, or customers" (not "Ask me anything!") |
 | **Example prompts** | 2–3 that reliably work well | "Which region grew fastest last quarter?" |
 | **Regenerate** | Its own button, separate from the AI label | [Regenerate] |
-| **Feedback** | Ask about the specific output | 👍 / 👎 "Was this summary accurate?" |
+| **Feedback** | Ask about the specific output | Thumbs up / thumbs down "Was this summary accurate?" |
 | **Disclaimers** | Short, placed at the output, specific to the risk | "Check figures before sharing. AI can make mistakes." |
 | **Stop / cancel** | Always available while generating | [Stop generating] |
 | **Citations** | Point to the source, not the model | "From Q3-report.pdf, page 4" |
@@ -320,8 +322,8 @@ IBM's Carbon design system says the AI label shouldn't double as an action butto
 Apple's HIG gives a useful rule: describe what a setting does **when it's on**, and people will infer the opposite. Its example is the Apple Watch Handwashing Timer, whose description explains that the watch can start a 20-second timer when it detects handwashing, with no need to explain what happens when it's off.
 
 ```
-❌ Enable or disable AI suggestions in this workspace.
-✅ Suggest replies based on the conversation. Suggestions are only visible to you.
+✗ Enable or disable AI suggestions in this workspace.
+✓ Suggest replies based on the conversation. Suggestions are only visible to you.
 ```
 
 ## Tone Guidance
@@ -340,25 +342,25 @@ Apple's HIG gives a useful rule: describe what a setting does **when it's on**, 
 
 ## Common Microcopy Mistakes
 
-❌ **Using "Click here"**
+✗ **Using "Click here"**
 Links should describe destination, not action
 
-❌ **Trailing colons on labels**
+✗ **Trailing colons on labels**
 Modern forms don't need them
 
-❌ **Vague button labels**
+✗ **Vague button labels**
 "Submit", "OK", "Continue" don't describe action
 
-❌ **Long placeholder text**
+✗ **Long placeholder text**
 Keep placeholders short and example-based
 
-❌ **Redundant text**
+✗ **Redundant text**
 "Enter your email address" label + "Enter email" placeholder
 
-❌ **ALL CAPS**
+✗ **ALL CAPS**
 Use title case or sentence case
 
-❌ **Exclamation marks everywhere!!**
+✗ **Exclamation marks everywhere!!**
 Use sparingly, only for genuine celebration
 
 ## Microcopy Checklist

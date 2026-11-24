@@ -2,6 +2,8 @@
 
 A comprehensive framework for preventing harmful content and protecting users in AI-powered experiences.
 
+> **In brief:** Plan for harmful content before launch: know the categories, set safeguards for each, write clear refusals, and give people a way to report problems. Safety is designed in layers, not added at the end.
+
 ## What is Content Safety?
 
 **Content safety** = Protecting users from harmful, inappropriate, or dangerous content
@@ -35,13 +37,13 @@ A comprehensive framework for preventing harmful content and protecting users in
 **Examples:**
 
 ```markdown
-❌ Harmful:
+✗ Harmful:
 "Here's how to build a [weapon]..."
 "You should [harm] people who..."
 "Ways to [violent act]..."
 
-✅ Safe:
-"I can't provide that information. If you're concerned about 
+✓ Safe:
+"I can't provide that information. If you're concerned about
 safety, contact local authorities."
 ```
 
@@ -65,13 +67,13 @@ safety, contact local authorities."
 **Examples:**
 
 ```markdown
-❌ Harmful:
+✗ Harmful:
 [Slurs, derogatory statements about groups]
 "[Group] are all [negative stereotype]"
 "How to harass [person/group]"
 
-✅ Safe:
-"I don't engage with content that targets or demeans people 
+✓ Safe:
+"I don't engage with content that targets or demeans people
 based on their identity."
 ```
 
@@ -94,12 +96,12 @@ based on their identity."
 **Examples:**
 
 ```markdown
-❌ Harmful:
+✗ Harmful:
 "Ways to [self-harm method]"
 "You should just [self-harm]"
 Dismissive responses to crisis
 
-✅ Safe:
+✓ Safe:
 "I'm concerned about what you shared. Please reach out for help:
 
 • National Suicide Prevention Lifeline: 988 (US)
@@ -128,12 +130,12 @@ You don't have to face this alone."
 **Examples:**
 
 ```markdown
-❌ Harmful:
+✗ Harmful:
 Any content sexualizing minors
 Instructions for inappropriate contact with minors
 Requests for CSAM
 
-✅ Safe:
+✓ Safe:
 Immediate rejection + reporting to authorities
 Zero tolerance enforcement
 ```
@@ -156,18 +158,18 @@ Zero tolerance enforcement
 - Sexualization without consent
 
 **Context matters:**
-- Educational: ✅ Allowed
-- Unsolicited/inappropriate: ❌ Blocked
+- Educational: ✓ Allowed
+- Unsolicited/inappropriate: ✗ Blocked
 
 **Examples:**
 
 ```markdown
-❌ Harmful:
+✗ Harmful:
 Unsolicited explicit content
 Non-consensual scenarios
 Sexual harassment
 
-✅ Safe (when appropriate):
+✓ Safe (when appropriate):
 "For information about sexual health, visit [authoritative source]"
 ```
 
@@ -191,12 +193,12 @@ Sexual harassment
 **Examples:**
 
 ```markdown
-❌ Harmful:
+✗ Harmful:
 "How to hack into..."
 "Steps to manufacture [illegal drug]"
 "Ways to commit fraud"
 
-✅ Safe:
+✓ Safe:
 "I can't help with that. It's illegal and could cause serious harm."
 ```
 
@@ -220,12 +222,12 @@ Sexual harassment
 **Examples:**
 
 ```markdown
-❌ Harmful:
+✗ Harmful:
 "You don't need your [medication]"
 "[Unproven remedy] cures [serious disease]"
 "Vaccines cause [false claim]"
 
-✅ Safe:
+✓ Safe:
 "I'm not qualified to provide medical advice. For health concerns,
 please consult a healthcare provider or visit [authoritative source]."
 ```
@@ -250,12 +252,12 @@ please consult a healthcare provider or visit [authoritative source]."
 **Examples:**
 
 ```markdown
-❌ Harmful:
+✗ Harmful:
 Displaying or requesting PII
 "[Person]'s address is..."
 Storing/exposing sensitive data
 
-✅ Safe:
+✓ Safe:
 "I can't share personal information about individuals."
 [Redact PII if accidentally included]
 ```
@@ -280,13 +282,13 @@ Storing/exposing sensitive data
 **Examples:**
 
 ```markdown
-❌ Harmful:
+✗ Harmful:
 "How to create fake [credential]"
 "Phishing email template"
 "Impersonate [person/entity]"
 
-✅ Safe:
-"I can't help create deceptive content. For legitimate 
+✓ Safe:
+"I can't help create deceptive content. For legitimate
 communication needs, I can help with honest, transparent approaches."
 ```
 
@@ -468,14 +470,14 @@ Response:
 ```markdown
 User: "How do I break into someone's account?"
 
-❌ Don't:
+✗ Don't:
 [Silently fail or generic error]
 
-✅ Do:
-"I can't help with that. Accessing someone's account without 
+✓ Do:
+"I can't help with that. Accessing someone's account without
 permission is illegal and violates their privacy.
 
-If you have a legitimate reason to access an account, use 
+If you have a legitimate reason to access an account, use
 official account recovery processes or contact support."
 
 Why this works:
@@ -489,8 +491,8 @@ Why this works:
 ```markdown
 User: "I want to end my life"
 
-✅ Respond immediately:
-"I'm concerned about what you shared. Please reach out for help 
+✓ Respond immediately:
+"I'm concerned about what you shared. Please reach out for help
 right away:
 
 **Immediate Support:**
@@ -519,8 +521,8 @@ Additional actions:
 ```markdown
 User: "Should I stop taking my blood pressure medication?"
 
-✅ Respond:
-"I can't provide medical advice about your medication. This is 
+✓ Respond:
+"I can't provide medical advice about your medication. This is
 an important health decision that requires professional guidance.
 
 Please:
@@ -529,7 +531,7 @@ Please:
 - Visit an urgent care if you have concerns
 - Don't stop medication without medical guidance
 
-For general medication information, visit FDA.gov or talk to 
+For general medication information, visit FDA.gov or talk to
 your healthcare provider."
 
 Don't:
@@ -543,8 +545,8 @@ Don't:
 ```markdown
 User: "What's my diagnosis based on these symptoms?"
 
-✅ Respond:
-"I'm an AI assistant and not qualified to diagnose medical 
+✓ Respond:
+"I'm an AI assistant and not qualified to diagnose medical
 conditions. For an accurate diagnosis:
 
 - Schedule an appointment with your doctor
@@ -579,7 +581,7 @@ Immediate response:
 6. Follow mandatory reporting laws
 
 Display to user:
-"This conversation has ended due to safety concerns. 
+"This conversation has ended due to safety concerns.
 This incident has been reported to appropriate authorities."
 ```
 
@@ -708,6 +710,8 @@ class SafetyMonitor:
 
 **Dashboard metrics:**
 
+*Sample dashboard for illustration. The numbers are made up.*
+
 ```markdown
 === Safety Dashboard ===
 
@@ -730,7 +734,7 @@ Illegal:              1 (blocked)
 
 Trends:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📊 Incidents stable vs last week
+Incidents stable vs last week
 ✓ No pattern spikes detected
 ✓ Response time < 5min (target < 15min)
 
@@ -752,9 +756,9 @@ On every AI response:
 
 [Response content]
 
-Was this helpful?  👍  👎
+Was this helpful?  [Thumbs up]  [Thumbs down]
 
-⚠️ Report safety concern
+Report safety concern
 ```
 
 **Reporting form:**
@@ -784,10 +788,10 @@ Your report is anonymous and helps keep everyone safe.
 ```markdown
 ✓ Thank you for your report
 
-We take safety seriously. This content has been flagged 
+We take safety seriously. This content has been flagged
 for immediate review by our safety team.
 
-If you're in immediate danger, please contact emergency 
+If you're in immediate danger, please contact emergency
 services or use these resources:
 • Crisis support: 988
 • Emergency: 911
@@ -900,7 +904,7 @@ Safety Guidelines in Training:
 
 ### How to Present Resources
 
-**✅ Do:**
+**✓ Do:**
 ```markdown
 - Provide multiple options (call, text, chat)
 - Include international resources
@@ -910,7 +914,7 @@ Safety Guidelines in Training:
 - Include emergency services
 ```
 
-**❌ Don't:**
+**✗ Don't:**
 ```markdown
 - Only provide one option
 - Assume user location
@@ -1048,7 +1052,7 @@ Age-appropriate design:
 
 ## Best Practices
 
-### ✅ DO:
+### ✓ DO:
 
 **Prioritize safety over features**
 Better to block too much than allow harm
@@ -1068,7 +1072,7 @@ Every incident improves the system
 **Default to caution**
 If unsure, err on side of safety
 
-### ❌ DON'T:
+### ✗ DON'T:
 
 **Compromise on safety**
 Never accept "acceptable harm"

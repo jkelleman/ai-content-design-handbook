@@ -2,6 +2,8 @@
 
 A practical framework for testing and validating content effectiveness before and after launch.
 
+> **In brief:** Five ways to test content, from quick comprehension checks to usability sessions. Test early with real people and real tasks, before the words are locked in.
+
 ## Why Test Content?
 
 **Assumptions are risky:**
@@ -187,7 +189,7 @@ Improvements:
 Test: Welcome message tone
 
 Option A (friendly):
-"Hey there! 👋 Ready to build your first pipeline? We'll guide you through it step-by-step."
+"Hey there! Ready to build your first pipeline? We'll guide you through it step-by-step."
 
 Option B (professional):
 "Welcome to Data Pipelines. Follow these steps to create your first pipeline."
@@ -196,14 +198,14 @@ Option C (confident):
 "Let's get started. Creating your first pipeline takes about 5 minutes."
 
 Results:
-- 4/10 preferred A (felt welcoming but some found emoji unprofessional)
+- 4/10 preferred A (felt welcoming but some found "Hey there!" too casual)
 - 2/10 preferred B (clear but felt cold)
 - 4/10 preferred C (confident, no-nonsense)
 
 Insights:
 - Enterprise users prefer C
 - Individual users split between A and C
-- Nobody preferred B
+- B was the least preferred
 
 Decision: Use C as default, A for consumer products
 ```
@@ -253,10 +255,10 @@ Timeline: [when testing happens]
 - "What would you change?"
 
 **Avoid leading questions:**
-- ❌ "Is this clear?" (leads to yes)
-- ✅ "What does this mean to you?"
-- ❌ "Do you like this?" (subjective)
-- ✅ "Which helps you complete the task faster?"
+- ✗ "Is this clear?" (leads to yes)
+- ✓ "What does this mean to you?"
+- ✗ "Do you like this?" (subjective)
+- ✓ "Which helps you complete the task faster?"
 
 ### After Testing
 
@@ -439,42 +441,42 @@ Wrap-up:
 
 ## Common Pitfalls
 
-**❌ Testing too late**
+**✗ Testing too late**
 Content is already shipped, harder to change
 
-**✅ Test early and often**
+**✓ Test early and often**
 Test drafts, not just finals
 
 ---
 
-**❌ Testing only internally**
+**✗ Testing only internally**
 Team members aren't representative users
 
-**✅ Test with real users**
+**✓ Test with real users**
 Include people unfamiliar with the product
 
 ---
 
-**❌ Asking if users "like" content**
+**✗ Asking if users "like" content**
 Preference isn't the goal
 
-**✅ Test if content works**
+**✓ Test if content works**
 Can they understand and complete tasks?
 
 ---
 
-**❌ Testing everything at once**
+**✗ Testing everything at once**
 Hard to isolate what's working/not working
 
-**✅ Test specific changes**
+**✓ Test specific changes**
 One variable at a time when possible
 
 ---
 
-**❌ Ignoring results**
+**✗ Ignoring results**
 Testing is wasted if you don't act on findings
 
-**✅ Iterate based on learnings**
+**✓ Iterate based on learnings**
 Fix issues and test again
 
 ## Documenting Test Results

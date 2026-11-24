@@ -2,6 +2,8 @@
 
 Use confirmation dialogs to stop people before a consequential mistake, without slowing down the decisions they make every day. A confirmation that appears too often stops protecting anyone: people learn to click through it without reading.
 
+> **In brief:** Confirm only consequential, hard-to-undo actions. A dialog that appears too often teaches people to click through it. Name the action and its consequence in the title and the button.
+
 The same pattern now covers a new case: **approving an action an AI agent wants to take**. See [Approving AI agent actions](#approving-ai-agent-actions).
 
 ## Template Structure
@@ -62,12 +64,12 @@ The same pattern now covers a new case: **approving an action an AI agent wants 
 
 ### Delete Confirmation
 ```
-❌ BAD:
+✗ BAD:
 **Are you sure?**
 This action cannot be undone.
 [OK] [Cancel]
 
-✅ GOOD:
+✓ GOOD:
 **Delete "Sales Pipeline"?**
 This pipeline and its run history will be permanently deleted.
 [Cancel] [Delete pipeline]
@@ -75,12 +77,12 @@ This pipeline and its run history will be permanently deleted.
 
 ### Remove User Confirmation
 ```
-❌ BAD:
+✗ BAD:
 **Warning**
 Do you want to proceed?
 [Yes] [No]
 
-✅ GOOD:
+✓ GOOD:
 **Remove Sarah Chen from workspace?**
 Sarah will lose access to all projects and data in this workspace.
 [Cancel] [Remove user]
@@ -88,12 +90,12 @@ Sarah will lose access to all projects and data in this workspace.
 
 ### Archive Confirmation
 ```
-❌ BAD:
+✗ BAD:
 **Confirm**
 Click OK to continue.
 [OK] [Cancel]
 
-✅ GOOD:
+✓ GOOD:
 **Archive this workspace?**
 Archived workspaces are read-only. You can restore it later from settings.
 [Cancel] [Archive]
@@ -101,12 +103,12 @@ Archived workspaces are read-only. You can restore it later from settings.
 
 ### Publish Confirmation
 ```
-❌ BAD:
+✗ BAD:
 **Publish**
 Are you ready to publish?
 [Yes] [No]
 
-✅ GOOD:
+✓ GOOD:
 **Publish report to production?**
 This report will be visible to all users in your organization.
 [Cancel] [Publish]
@@ -258,10 +260,10 @@ When an AI agent proposes an action, the confirmation becomes an **approval**. T
 ### Example
 
 ```
-❌ The agent wants to run send_email(recipients=48). Allow?
+✗ The agent wants to run send_email(recipients=48). Allow?
    [Allow]   [Deny]
 
-✅ Send overdue-invoice reminders to 48 customers?
+✓ Send overdue-invoice reminders to 48 customers?
    From: dana@acme.com · Subject: "Your invoice is past due"
    I chose customers with invoices more than 30 days overdue, based on your request.
    Emails can't be unsent.

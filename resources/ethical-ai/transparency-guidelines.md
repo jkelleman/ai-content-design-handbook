@@ -2,6 +2,8 @@
 
 A framework for honest, clear disclosure about AI use in content experiences.
 
+> **In brief:** Tell people when content comes from AI, what it's based on and where it can be wrong. Disclose at the start, cite sources where you can, and match the disclosure to the stakes.
+
 ## Why Transparency Matters
 
 **Users deserve to know when they're interacting with AI.**
@@ -27,18 +29,18 @@ A framework for honest, clear disclosure about AI use in content experiences.
 
 **When to disclose:**
 
-✅ **Always disclose:**
+✓ **Always disclose:**
 - Chatbots and conversational AI
 - AI-generated content shown to users
 - AI making decisions affecting users
 - AI collecting or processing user data
 
-⚠️ **Consider disclosing:**
+**Consider disclosing:**
 - AI-assisted content (human-written with AI help)
 - Behind-the-scenes AI (recommendations, ranking)
 - AI in creative processes
 
-❌ **May not need to disclose:**
+✗ **May not need to disclose:**
 - Basic automation (not AI)
 - Standard algorithms
 - Internal tools not affecting users
@@ -52,7 +54,7 @@ Explicit (Recommended):
 "AI-assisted content, reviewed by experts"
 
 Visual Indicators:
-🤖 AI icon or avatar
+AI icon or avatar
 "AI" badge on messages
 Different visual styling
 
@@ -72,37 +74,37 @@ In privacy policy
 
 **Capabilities:**
 ```markdown
-✅ Clear:
+✓ Clear:
 "I can help you:
 • Answer questions about [specific topic]
 • Guide you through [specific process]
 • Provide information from [knowledge source]"
 
-❌ Vague:
+✗ Vague:
 "I can help with anything!"
 ```
 
 **Limitations:**
 ```markdown
-✅ Honest:
+✓ Honest:
 "I can't:
 • Provide medical, legal, or financial advice
 • Access your personal data or make changes
 • Know information after [training date]
 • Understand images or attachments"
 
-❌ Silent:
+✗ Silent:
 [Don't mention limitations, hope user doesn't notice]
 ```
 
 **Accuracy:**
 ```markdown
-✅ Transparent:
+✓ Transparent:
 "I might make mistakes. Always verify important information."
 "I'm powered by AI and may not always be accurate."
 "For critical decisions, consult a human expert."
 
-❌ Overconfident:
+✗ Overconfident:
 "I'm always accurate!"
 [No mention of potential errors]
 ```
@@ -120,7 +122,7 @@ In privacy policy
 "I'm an AI trained on [type of data] to [purpose]"
 
 Example:
-"I'm an AI assistant trained on Fabric documentation 
+"I'm an AI assistant trained on DataFlow documentation
 to help answer questions about the platform."
 ```
 
@@ -131,7 +133,7 @@ I was trained on [data sources] and can [capabilities]."
 
 Example:
 "I use natural language processing to understand your questions
-and search through Fabric documentation to find relevant answers.
+and search through DataFlow documentation to find relevant answers.
 I was trained on our help articles, user guides, and API docs."
 ```
 
@@ -178,7 +180,7 @@ Less detail needed when:
 **Essential controls:**
 
 ```markdown
-✅ Must provide:
+✓ Must provide:
 ☐ Option to talk to human instead
 ☐ Way to report issues
 ☐ Ability to delete conversation history
@@ -243,17 +245,17 @@ Prefer Human Support?
 **Don't fake confidence:**
 
 ```markdown
-❌ Bad (Confident but wrong):
+✗ Bad (Confident but wrong):
 User: "What's the maximum file size for uploads?"
 AI: "The maximum file size is 500MB."
 [Actual limit: 100MB]
 
-✅ Good (Honest about uncertainty):
-AI: "I'm not certain of the exact file size limit. 
+✓ Good (Honest about uncertainty):
+AI: "I'm not certain of the exact file size limit.
 Let me check the documentation."
 [Retrieves accurate info]
 
-Or: "I don't have that specific information. 
+Or: "I don't have that specific information.
 Check the documentation or contact support for the exact limit."
 ```
 
@@ -319,7 +321,7 @@ Sources:
 ━━━━━━━━━━━━━━━━━━━━
 
 Confidence with source:
-"According to the Fabric API guide (docs.fabric.com/api):
+"According to the DataFlow API guide (docs.dataflow.example/api):
 [quoted information]"
 
 Multiple sources:
@@ -337,10 +339,10 @@ Multiple sources:
 **First interaction:**
 
 ```markdown
-👋 Hi! I'm Fabric AI Assistant
+Hi! I'm DataFlow AI Assistant
 
 I'm an AI trained to help with:
-• Questions about Fabric features
+• Questions about DataFlow features
 • Troubleshooting common issues
 • Guidance through workflows
 
@@ -362,7 +364,7 @@ AI: [Response with step-by-step instructions]
 Confidence: ████████░░ 80% (High)
 
 This answer is based on current documentation.
-[View sources] [Was this helpful? 👍 👎]
+[View sources] [Was this helpful? Thumbs up / thumbs down]
 ```
 
 ### Pattern 3: Human Handoff
@@ -370,14 +372,14 @@ This answer is based on current documentation.
 **Clear transition:**
 
 ```markdown
-AI: "This question is outside my area. Let me connect 
+AI: "This question is outside my area. Let me connect
 you with a human expert who can help better."
 
 [Connecting you to support...]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Support Agent (Sarah): Hi! I can help with that. 
+Support Agent (Sarah): Hi! I can help with that.
 I see you were asking about [topic]. Let me look into this...
 ```
 
@@ -387,20 +389,20 @@ I see you were asking about [topic]. Let me look into this...
 
 ```markdown
 Initial (brief):
-🤖 AI Assistant
+AI Assistant
 
 On hover/click:
-"AI-powered help based on Fabric documentation.
+"AI-powered help based on DataFlow documentation.
 Click for details."
 
 Details page:
 "About AI Assistant
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Our AI assistant uses natural language processing 
+Our AI assistant uses natural language processing
 to understand your questions and provide helpful answers.
 
 How it works:
-• Trained on Fabric documentation and guides
+• Trained on DataFlow documentation and guides
 • Searches knowledge base for relevant info
 • Generates responses based on verified content
 • May not always be perfect - verify important info
@@ -419,19 +421,19 @@ Your privacy:
 
 ```markdown
 Medical query:
-⚠️ AI cannot provide medical advice
+Warning: AI cannot provide medical advice
 [AI attempts to help] → Redirects to qualified resources
 
 Financial query:
-ℹ️ Not financial advice - consult a professional
+Not financial advice - consult a professional
 [AI provides general information only]
 
 Legal query:
-⚠️ This is not legal advice
+Warning: This is not legal advice
 [AI gives educational info, suggests lawyer]
 
 Opinion query:
-ℹ️ AI Opinion (Not fact-based)
+AI Opinion (Not fact-based)
 [AI clarifies when offering subjective view]
 ```
 
@@ -449,9 +451,9 @@ Opinion query:
 **Example:**
 
 ```markdown
-🤖 Fabric AI Assistant
+DataFlow AI Assistant
 
-I'm an AI here to help with Fabric questions.
+I'm an AI here to help with DataFlow questions.
 
 I can help with:
 ✓ Platform features and how-tos
@@ -478,13 +480,13 @@ I can't:
 
 ```markdown
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📄 Pipeline Configuration Guide
+Pipeline Configuration Guide
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 [Content]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-ℹ️ AI-generated summary, reviewed by experts
+AI-generated summary, reviewed by experts
 Last reviewed: March 15, 2024
 
 [View full documentation] [Was this helpful?]
@@ -502,7 +504,7 @@ Last reviewed: March 15, 2024
 
 ```markdown
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Article: Getting Started with Fabric
+Article: Getting Started with DataFlow
 Written by: Sarah Chen (Content Designer)
 AI-assisted drafting | Human edited and verified
 Updated: March 15, 2024
@@ -523,7 +525,7 @@ Updated: March 15, 2024
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Support Ticket Priority: Medium
 
-This priority was automatically assigned by our AI system 
+This priority was automatically assigned by our AI system
 based on:
 • Keyword analysis
 • Similar ticket history
@@ -546,12 +548,12 @@ Think this should be different?
 
 ```markdown
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📊 Recommended for You
+Recommended for You
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 [Personalized content items]
 
-ℹ️ Recommended based on your usage patterns
+Recommended based on your usage patterns
 [Turn off personalization] [How this works]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
@@ -751,64 +753,64 @@ Measure:
 
 ## Common Mistakes
 
-### ❌ DON'T:
+### ✗ DON'T:
 
 **Hide AI in fine print**
 ```markdown
-❌ Bad:
+✗ Bad:
 Page 47 of terms: "May use automated systems"
 
-✅ Good:
+✓ Good:
 Clear, prominent disclosure on first use
 ```
 
 **Pretend to be human**
 ```markdown
-❌ Bad:
+✗ Bad:
 "Hi, I'm Sarah! How can I help?"
 [Actually AI with no disclosure]
 
-✅ Good:
+✓ Good:
 "Hi! I'm an AI assistant. How can I help?"
 ```
 
 **Over-promise capabilities**
 ```markdown
-❌ Bad:
+✗ Bad:
 "I can answer any question perfectly!"
 
-✅ Good:
+✓ Good:
 "I can help with [specific topics], but I might make mistakes."
 ```
 
 **Bury limitations**
 ```markdown
-❌ Bad:
+✗ Bad:
 [No mention of what AI can't do]
 
-✅ Good:
+✓ Good:
 Clear list of capabilities AND limitations
 ```
 
 **Make disclosure hard to find**
 ```markdown
-❌ Bad:
+✗ Bad:
 [About link] → [AI info link] → [Disclosure buried in text]
 
-✅ Good:
+✓ Good:
 Prominent disclosure, easy to access details
 ```
 
 **Use jargon**
 ```markdown
-❌ Bad:
+✗ Bad:
 "Powered by a fine-tuned large language model with RAG and vector embeddings"
 
-✅ Good:
+✓ Good:
 "AI assistant trained on our documentation"
 ```
 
-### ✅ DO:
+### ✓ DO:
 
 **Be clear and direct**
 State AI use plainly

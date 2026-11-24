@@ -147,19 +147,19 @@ Explore [ethical AI resources](resources/ethical-ai/) for bias detection, safety
 
 ## Key Features
 
-### 🤖 AI-First Approach
+### AI-First Approach
 Extensive resources specifically for AI-powered content experiences, prompt engineering, and conversational design
 
-### ⚖️ Ethics Built-In
+### Ethics Built-In
 Comprehensive guidelines ensuring fairness, safety, transparency, and responsible AI practices
 
-### 📊 Measurement-Focused
+### Measurement-Focused
 Real frameworks for testing content, tracking metrics, and running experiments
 
-### ♿ Accessibility-Centered
+### Accessibility-Centered
 Guidelines for creating inclusive content that works for everyone
 
-### 🔄 Process-Oriented
+### Process-Oriented
 Practical workflows for Git, review, testing, and quality assurance
 
 ## Contributing

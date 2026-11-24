@@ -2,6 +2,8 @@
 
 A practical framework for identifying and mitigating bias in content, especially AI-generated content.
 
+> **In brief:** AI repeats the biases in its training data at scale. Check content for seven kinds of bias, from gender and race to age, ability and geography, and fix examples, defaults and word choices that leave people out.
+
 ## What is Bias in Content?
 
 **Bias** = Systematic favoritism or unfair treatment of certain groups over others
@@ -24,38 +26,38 @@ A practical framework for identifying and mitigating bias in content, especially
 
 **Assumption of gender:**
 ```markdown
-❌ "The user should check his email"
-✅ "Users should check their email"
+✗ "The user should check his email"
+✓ "Users should check their email"
 
-❌ "Ask your account manager. She can help."
-✅ "Ask your account manager for help."
+✗ "Ask your account manager. She can help."
+✓ "Ask your account manager for help."
 ```
 
 **Gendered language:**
 ```markdown
-❌ "Hey guys, welcome to the platform!"
-✅ "Welcome to the platform!"
+✗ "Hey guys, welcome to the platform!"
+✓ "Welcome to the platform!"
 
-❌ "Manning the support desk"
-✅ "Staffing the support desk"
+✗ "Manning the support desk"
+✓ "Staffing the support desk"
 ```
 
 **Role stereotypes:**
 ```markdown
-❌ "The engineer (he) and the designer (she)..."
-✅ "The engineer and the designer..."
+✗ "The engineer (he) and the designer (she)..."
+✓ "The engineer and the designer..."
 
-❌ "Nurse...she" / "Doctor...he"
-✅ Avoid gendered pronouns with professions
+✗ "Nurse...she" / "Doctor...he"
+✓ Avoid gendered pronouns with professions
 ```
 
 **Gendered products/features:**
 ```markdown
-❌ Color schemes: "Blue for business, pink for personal"
-✅ Neutral or customizable color options
+✗ Color schemes: "Blue for business, pink for personal"
+✓ Neutral or customizable color options
 
-❌ "Ideal for busy moms"
-✅ "Ideal for busy parents" or "Ideal for families"
+✗ "Ideal for busy moms"
+✓ "Ideal for busy parents" or "Ideal for families"
 ```
 
 ---
@@ -64,38 +66,38 @@ A practical framework for identifying and mitigating bias in content, especially
 
 **Name assumptions:**
 ```markdown
-❌ AI example using only Western names (John, Sarah, Bob)
-✅ Diverse set of names (Aisha, Hiroshi, Maria, Chen)
+✗ AI example using only Western names (John, Sarah, Bob)
+✓ Diverse set of names (Aisha, Hiroshi, Maria, Chen)
 
-❌ "Difficult" or "unusual" names
-✅ All names treated with equal respect
+✗ "Difficult" or "unusual" names
+✓ All names treated with equal respect
 ```
 
 **Cultural assumptions:**
 ```markdown
-❌ "Obviously you'll want to celebrate with turkey dinner"
-✅ "Many people celebrate with special meals"
+✗ "Obviously you'll want to celebrate with turkey dinner"
+✓ "Many people celebrate with special meals"
 
-❌ Date format: "12/25/2024" (assumes US format)
-✅ Adapt to user locale or use clear format: "December 25, 2024"
+✗ Date format: "12/25/2024" (assumes US format)
+✓ Adapt to user locale or use clear format: "December 25, 2024"
 ```
 
 **Visual representation:**
 ```markdown
-❌ All example avatars showing light skin tones
-✅ Diverse range of skin tones in examples
+✗ All example avatars showing light skin tones
+✓ Diverse range of skin tones in examples
 
-❌ "Professional" depicted as clean-shaven white man in suit
-✅ Diverse visual representation of professionalism
+✗ "Professional" depicted as clean-shaven white man in suit
+✓ Diverse visual representation of professionalism
 ```
 
 **Language assumptions:**
 ```markdown
-❌ "Of course everyone speaks English"
-✅ Support for multiple languages, clear translation
+✗ "Of course everyone speaks English"
+✓ Support for multiple languages, clear translation
 
-❌ Idioms: "That's a home run!" (assumes US baseball knowledge)
-✅ Clear, universal language
+✗ Idioms: "That's a home run!" (assumes US baseball knowledge)
+✓ Clear, universal language
 ```
 
 ---
@@ -104,29 +106,29 @@ A practical framework for identifying and mitigating bias in content, especially
 
 **Assumptions about ability:**
 ```markdown
-❌ "Even your grandma can use this!"
-✅ "Easy for everyone to use"
+✗ "Even your grandma can use this!"
+✓ "Easy for everyone to use"
 
-❌ "Too complicated for older users"
-✅ "Simple, intuitive interface"
+✗ "Too complicated for older users"
+✓ "Simple, intuitive interface"
 ```
 
 **Age-related stereotypes:**
 ```markdown
-❌ "Young people love this feature"
-✅ "This feature is popular across all age groups"
+✗ "Young people love this feature"
+✓ "This feature is popular across all age groups"
 
-❌ "Unlike outdated systems baby boomers use..."
-✅ "Modern, up-to-date system"
+✗ "Unlike outdated systems baby boomers use..."
+✓ "Modern, up-to-date system"
 ```
 
 **Generational assumptions:**
 ```markdown
-❌ "Share on TikTok" (assumes young users)
-✅ "Share on social media" with multiple platform options
+✗ "Share on TikTok" (assumes young users)
+✓ "Share on social media" with multiple platform options
 
-❌ "Everyone uses Snapchat"
-✅ Offer variety of communication options
+✗ "Everyone uses Snapchat"
+✓ Offer variety of communication options
 ```
 
 ---
@@ -135,35 +137,35 @@ A practical framework for identifying and mitigating bias in content, especially
 
 **Ableist language:**
 ```markdown
-❌ "Blind spot in the data"
-✅ "Gap in the data"
+✗ "Blind spot in the data"
+✓ "Gap in the data"
 
-❌ "Crippled by technical debt"
-✅ "Hindered by technical debt"
+✗ "Crippled by technical debt"
+✓ "Hindered by technical debt"
 
-❌ "Insane performance improvements"
-✅ "Dramatic performance improvements"
+✗ "Insane performance improvements"
+✓ "Dramatic performance improvements"
 ```
 
 **Assumptions about ability:**
 ```markdown
-❌ "Simply click the button"
-✅ "Select the button"
+✗ "Simply click the button"
+✓ "Select the button"
 
-❌ "As you can see in the screenshot..."
-✅ "The screenshot shows..." (with alt text)
+✗ "As you can see in the screenshot..."
+✓ "The screenshot shows..." (with alt text)
 
-❌ "Just listen to the audio tutorial"
-✅ Provide transcript alongside audio
+✗ "Just listen to the audio tutorial"
+✓ Provide transcript alongside audio
 ```
 
 **Accessibility assumptions:**
 ```markdown
-❌ Color-only indicators: "Green means success"
-✅ "Success (indicated by green checkmark)"
+✗ Color-only indicators: "Green means success"
+✓ "Success (indicated by green checkmark)"
 
-❌ "Drag and drop files here"
-✅ "Drag and drop, or use the file picker button"
+✗ "Drag and drop files here"
+✓ "Drag and drop, or use the file picker button"
 ```
 
 ---
@@ -172,29 +174,29 @@ A practical framework for identifying and mitigating bias in content, especially
 
 **Economic assumptions:**
 ```markdown
-❌ "Upgrade to Pro for just $99/month"
-✅ "Pro plan: $99/month" with free tier prominently featured
+✗ "Upgrade to Pro for just $99/month"
+✓ "Pro plan: $99/month" with free tier prominently featured
 
-❌ "Obviously you have a backup laptop"
-✅ Consider that many have only one device
+✗ "Obviously you have a backup laptop"
+✓ Consider that many have only one device
 ```
 
 **Technology access:**
 ```markdown
-❌ "Download the app (WiFi required)"
-✅ "Download the app (Warning: large file, 250MB)"
+✗ "Download the app (WiFi required)"
+✓ "Download the app (Warning: large file, 250MB)"
 
-❌ Assumes latest devices, fast internet
-✅ Works on older devices, low bandwidth
+✗ Assumes latest devices, fast internet
+✓ Works on older devices, low bandwidth
 ```
 
 **Education assumptions:**
 ```markdown
-❌ "As any developer knows..."
-✅ "Developers: Here's what you need to know"
+✗ "As any developer knows..."
+✓ "Developers: Here's what you need to know"
 
-❌ Technical jargon without explanation
-✅ Clear explanations or link to glossary
+✗ Technical jargon without explanation
+✓ Clear explanations or link to glossary
 ```
 
 ---
@@ -203,29 +205,29 @@ A practical framework for identifying and mitigating bias in content, especially
 
 **Location assumptions:**
 ```markdown
-❌ "Business hours: 9-5 ET"
-✅ "Business hours: 9-5 in your timezone" or show all timezones
+✗ "Business hours: 9-5 ET"
+✓ "Business hours: 9-5 in your timezone" or show all timezones
 
-❌ "Shipping nationwide" (assumes US)
-✅ "Shipping in the US" or "Worldwide shipping"
+✗ "Shipping nationwide" (assumes US)
+✓ "Shipping in the US" or "Worldwide shipping"
 ```
 
 **Cultural references:**
 ```markdown
-❌ "Don't worry, it's not rocket science"
-✅ "It's straightforward to use"
+✗ "Don't worry, it's not rocket science"
+✓ "It's straightforward to use"
 
-❌ Sports metaphors (baseball, American football)
-✅ Universal concepts
+✗ Sports metaphors (baseball, American football)
+✓ Universal concepts
 ```
 
 **Format conventions:**
 ```markdown
-❌ Hardcoded date/time/currency formats
-✅ Locale-aware formatting
+✗ Hardcoded date/time/currency formats
+✓ Locale-aware formatting
 
-❌ "Call us at (555) 123-4567" (US format only)
-✅ International phone format or multiple regional numbers
+✗ "Call us at (555) 123-4567" (US format only)
+✓ International phone format or multiple regional numbers
 ```
 
 ---
@@ -234,29 +236,29 @@ A practical framework for identifying and mitigating bias in content, especially
 
 **Assuming knowledge:**
 ```markdown
-❌ "Obviously you'll use OAuth 2.0"
-✅ "For authentication, we recommend OAuth 2.0 (learn more)"
+✗ "Obviously you'll use OAuth 2.0"
+✓ "For authentication, we recommend OAuth 2.0 (learn more)"
 
-❌ "Just spin up a Kubernetes cluster"
-✅ "Deploy using Kubernetes (see setup guide)"
+✗ "Just spin up a Kubernetes cluster"
+✓ "Deploy using Kubernetes (see setup guide)"
 ```
 
 **Dismissive language:**
 ```markdown
-❌ "It's simple, just..."
-✅ "Here's how to..."
+✗ "It's simple, just..."
+✓ "Here's how to..."
 
-❌ "Everyone knows that..."
-✅ "As a reminder..." or "Here's what you need to know"
+✗ "Everyone knows that..."
+✓ "As a reminder..." or "Here's what you need to know"
 ```
 
 **Technical assumptions:**
 ```markdown
-❌ "Use the CLI" (no GUI option)
-✅ Provide both CLI and GUI options
+✗ "Use the CLI" (no GUI option)
+✓ Provide both CLI and GUI options
 
-❌ Assumes familiarity with technical concepts
-✅ Progressive disclosure: basic → advanced
+✗ Assumes familiarity with technical concepts
+✓ Progressive disclosure: basic → advanced
 ```
 
 ## Detecting Bias
@@ -452,7 +454,7 @@ Experience:
 **Use inclusive language:**
 
 ```markdown
-✅ DO:
+✓ DO:
 
 • Use "they/them" as singular pronoun
 • Use "people" instead of gendered groups
@@ -467,7 +469,7 @@ Experience:
 ```
 
 ```markdown
-❌ DON'T:
+✗ DON'T:
 
 • Assume gender ("he," "she")
 • Use gendered collective nouns ("guys," "mankind")
@@ -484,7 +486,7 @@ Experience:
 **Use diverse, authentic names:**
 
 ```markdown
-✅ Good example set:
+✓ Good example set:
 
 • Aisha (Arabic)
 • Chen (Chinese)
@@ -501,13 +503,13 @@ Experience:
 **Avoid stereotypical associations:**
 
 ```markdown
-❌ Bad:
+✗ Bad:
 • Raj (engineer)
 • Lakisha (support agent)
 • John (executive)
 • Maria (cleaner)
 
-✅ Better: Assign roles without stereotypical patterns
+✓ Better: Assign roles without stereotypical patterns
 ```
 
 ### Template Revision
@@ -515,7 +517,7 @@ Experience:
 **Before (biased):**
 
 ```markdown
-"Hey guys! Setting up your workspace is easy. Simply click the 
+"Hey guys! Setting up your workspace is easy. Simply click the
 button and you're done. Even your grandma could do it!
 
 Contact your account manager—she'll help you out."
@@ -560,14 +562,14 @@ Respect:
 - Treat all users with equal respect
 
 Examples:
-❌ "The user should check his email"
-✅ "Users should check their email"
+✗ "The user should check his email"
+✓ "Users should check their email"
 
-❌ "Simply click the button"
-✅ "Select the button"
+✗ "Simply click the button"
+✓ "Select the button"
 
-❌ "Insane performance"
-✅ "Remarkable performance"
+✗ "Insane performance"
+✓ "Remarkable performance"
 ```
 
 ## Bias Testing Framework
@@ -718,7 +720,7 @@ Assumes:
 Training: Include accessibility considerations
 System prompt: "Provide multiple interaction methods"
 
-Corrected: "Upload files by dragging them here, or select 
+Corrected: "Upload files by dragging them here, or select
 the 'Choose Files' button to browse."
 ```
 
@@ -760,8 +762,8 @@ AI: "Obviously you'll want to use OAuth 2.0 for authentication."
 Training: Explain technical concepts
 System prompt: "Never assume expertise, provide context"
 
-Corrected: "For authentication, we recommend OAuth 2.0, a secure 
-industry-standard protocol. Learn more about authentication 
+Corrected: "For authentication, we recommend OAuth 2.0, a secure
+industry-standard protocol. Learn more about authentication
 options in our security guide."
 ```
 
@@ -843,7 +845,7 @@ Recommendations:
 
 ## Best Practices
 
-### ✅ DO:
+### ✓ DO:
 
 **Be proactive**
 - Build bias detection into process
@@ -868,7 +870,7 @@ Recommendations:
 - Measure metrics
 - Iterate processes
 
-### ❌ DON'T:
+### ✗ DON'T:
 
 **Ignore bias**
 "It's not a big deal" → It is to affected users

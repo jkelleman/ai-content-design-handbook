@@ -2,6 +2,8 @@
 
 Creating content that everyone can access, understand, and use—regardless of ability, device, or context.
 
+> **In brief:** Write content everyone can perceive, operate and understand: plain language, meaningful link text, alt text that says what an image shows, and errors that don't rely on color alone.
+
 ## Why Accessibility Matters
 
 **It's the law:** Many regions require digital accessibility (ADA, Section 508, WCAG)
@@ -39,11 +41,11 @@ Content must work with current and future assistive technologies
 
 **Use plain language:**
 ```
-❌ "Utilize the aforementioned methodology"
-✅ "Use this method"
+✗ "Utilize the aforementioned methodology"
+✓ "Use this method"
 
-❌ "Facilitate the implementation"
-✅ "Help set it up"
+✗ "Facilitate the implementation"
+✓ "Help set it up"
 ```
 
 **Keep sentences short:**
@@ -53,14 +55,14 @@ Content must work with current and future assistive technologies
 
 **Use active voice:**
 ```
-❌ "The file was uploaded by the user"
-✅ "User uploaded the file"
-✅ "Upload the file"
+✗ "The file was uploaded by the user"
+✓ "User uploaded the file"
+✓ "Upload the file"
 ```
 
 **Define jargon and acronyms:**
 ```
-✅ "TTL (Time to Live) determines how long cached data remains valid"
+✓ "TTL (Time to Live) determines how long cached data remains valid"
 ```
 
 ---
@@ -77,24 +79,24 @@ Content must work with current and future assistive technologies
 
 **Don't skip heading levels:**
 ```
-❌ H1 → H3 (skipped H2)
-✅ H1 → H2 → H3
+✗ H1 → H3 (skipped H2)
+✓ H1 → H2 → H3
 ```
 
 **Use headings for structure, not styling:**
 ```
-❌ Using H3 because it "looks good"
-✅ Using H3 because it's a subsection of H2
+✗ Using H3 because it "looks good"
+✓ Using H3 because it's a subsection of H2
 ```
 
 **Use lists for lists:**
 ```html
-✅ Unordered lists for non-sequential items:
+✓ Unordered lists for non-sequential items:
 - Apple
 - Orange
 - Banana
 
-✅ Ordered lists for sequential items:
+✓ Ordered lists for sequential items:
 1. First, open the file
 2. Then, make changes
 3. Finally, save
@@ -106,25 +108,25 @@ Content must work with current and future assistive technologies
 
 **Link text should describe the destination:**
 ```
-❌ "Click [here](url) for documentation"
-❌ "Learn more [→](url)"
-❌ "[Read more](url)"
+✗ "Click [here](url) for documentation"
+✗ "Learn more [→](url)"
+✗ "[Read more](url)"
 
-✅ "Read the [API documentation](url)"
-✅ "Learn about [data pipeline scheduling](url)"
-✅ "See [examples of error messages](url)"
+✓ "Read the [API documentation](url)"
+✓ "Learn about [data pipeline scheduling](url)"
+✓ "See [examples of error messages](url)"
 ```
 
 **Links should make sense out of context:**
 Screen readers can list all links on a page. Each should be understandable alone.
 
 ```
-❌ List of links:
+✗ List of links:
 - "Click here"
 - "Learn more"
 - "Documentation"
 
-✅ List of links:
+✓ List of links:
 - "API authentication guide"
 - "Tutorial: Create your first pipeline"
 - "Error message documentation"
@@ -132,13 +134,13 @@ Screen readers can list all links on a page. Each should be understandable alone
 
 **Button text should describe the action:**
 ```
-❌ "Submit"
-❌ "OK"
-❌ "Click here"
+✗ "Submit"
+✗ "OK"
+✗ "Click here"
 
-✅ "Create pipeline"
-✅ "Save changes"
-✅ "Delete workspace"
+✓ "Create pipeline"
+✓ "Save changes"
+✓ "Delete workspace"
 ```
 
 ---
@@ -148,13 +150,13 @@ Screen readers can list all links on a page. Each should be understandable alone
 **Every meaningful image needs alt text:**
 
 ```markdown
-✅ Informative image:
+✓ Informative image:
 ![Dashboard showing 5 active pipelines and 2 errors](dashboard.png)
 
-✅ Decorative image (empty alt):
+✓ Decorative image (empty alt):
 ![](decorative-graphic.png)
 
-❌ Missing alt:
+✗ Missing alt:
 ![](important-diagram.png)
 ```
 
@@ -165,11 +167,11 @@ Screen readers can list all links on a page. Each should be understandable alone
 - Include text that appears in the image
 
 ```
-❌ "Screenshot"
-❌ "Image of dashboard"
+✗ "Screenshot"
+✗ "Image of dashboard"
 
-✅ "Pipeline dashboard with 5 successful runs and 2 failures"
-✅ "Error message: 'Connection timed out. Check your internet connection and try again.'"
+✓ "Pipeline dashboard with 5 successful runs and 2 failures"
+✓ "Error message: 'Connection timed out. Check your internet connection and try again.'"
 ```
 
 **For complex images:**
@@ -208,11 +210,11 @@ Screen readers can list all links on a page. Each should be understandable alone
 
 **Every input needs a visible label:**
 ```html
-✅
+✓
 <label for="email">Email address</label>
 <input type="email" id="email" name="email">
 
-❌ Placeholder as label (disappears when typing)
+✗ Placeholder as label (disappears when typing)
 <input type="email" placeholder="Email address">
 ```
 
@@ -226,11 +228,11 @@ Must be at least 8 characters and include a number
 
 **Write helpful error messages:**
 ```
-❌ "Invalid input"
-❌ "Error"
+✗ "Invalid input"
+✗ "Error"
 
-✅ "Email address is required"
-✅ "Password must be at least 8 characters"
+✓ "Email address is required"
+✓ "Password must be at least 8 characters"
 ```
 
 **Group related fields:**
@@ -249,11 +251,11 @@ ZIP:
 
 **Don't rely on color alone:**
 ```
-❌ "Click the green button to continue"
-✅ "Click Continue to proceed"
+✗ "Click the green button to continue"
+✓ "Click Continue to proceed"
 
-❌ Red text for errors, green for success (color only)
-✅ ✗ Error message | ✓ Success message (icon + color)
+✗ Red text for errors, green for success (color only)
+✓ ✗ Error message | ✓ Success message (icon + color)
 ```
 
 **Ensure sufficient contrast:**
@@ -269,15 +271,15 @@ ZIP:
 
 **Use descriptive headings:**
 ```
-❌ "Introduction" "Details" "More Information"
-✅ "What are data pipelines?" "How to create a pipeline" "Common pipeline patterns"
+✗ "Introduction" "Details" "More Information"
+✓ "What are data pipelines?" "How to create a pipeline" "Common pipeline patterns"
 ```
 
 **Front-load important information:**
 ```
-❌ "To connect to your database, after setting up authentication and configuring network settings, you need to..."
+✗ "To connect to your database, after setting up authentication and configuring network settings, you need to..."
 
-✅ "Connect to your database:
+✓ "Connect to your database:
 1. Set up authentication
 2. Configure network settings
 3. ..."
@@ -444,51 +446,51 @@ ZIP:
 
 **1. Using placeholder as label**
 ```html
-❌ <input placeholder="Email address">
-✅ <label>Email address</label>
+✗ <input placeholder="Email address">
+✓ <label>Email address</label>
    <input placeholder="name@example.com">
 ```
 
 **2. Skipping heading levels**
 ```
-❌ H1 → H3 → H2
-✅ H1 → H2 → H3
+✗ H1 → H3 → H2
+✓ H1 → H2 → H3
 ```
 
 **3. Generic link text**
 ```
-❌ "Click here for more information"
-✅ "Read the getting started guide"
+✗ "Click here for more information"
+✓ "Read the getting started guide"
 ```
 
 **4. Missing alt text**
 ```
-❌ ![](important-diagram.png)
-✅ ![Diagram showing data flow from source to destination through transformation pipeline](diagram.png)
+✗ ![](important-diagram.png)
+✓ ![Diagram showing data flow from source to destination through transformation pipeline](diagram.png)
 ```
 
 **5. Color-only indicators**
 ```
-❌ "Green = success, Red = error"
-✅ "✓ Success" "✗ Error"
+✗ "Green = success, Red = error"
+✓ "✓ Success" "✗ Error"
 ```
 
 **6. Non-descriptive buttons**
 ```
-❌ "Submit" "OK" "Cancel"
-✅ "Create pipeline" "Save changes" "Cancel edit"
+✗ "Submit" "OK" "Cancel"
+✓ "Create pipeline" "Save changes" "Cancel edit"
 ```
 
 **7. Complex language**
 ```
-❌ "Utilize the aforementioned configuration parameters"
-✅ "Use these settings"
+✗ "Utilize the aforementioned configuration parameters"
+✓ "Use these settings"
 ```
 
 **8. No keyboard access**
 ```
-❌ Click-only interactions
-✅ Works with mouse, keyboard, and touch
+✗ Click-only interactions
+✓ Works with mouse, keyboard, and touch
 ```
 
 ---

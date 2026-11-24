@@ -2,6 +2,8 @@
 
 Write error messages that tell people what happened, why it matters to them, and what to do next, including errors from AI features, which fail in ways traditional software doesn't.
 
+> **In brief:** Every error says what happened, why it matters and what to do next. Prevent the error if you can, choose where it appears, then write it. AI errors need their own patterns, because AI fails in ways traditional software doesn't.
+
 ## The template
 
 ```
@@ -87,19 +89,19 @@ Write the message first, then choose the component. Adobe's guidance warns again
 ### Input error
 
 ```
-❌ Invalid input
-❌ You entered an invalid email address.
+✗ Invalid input
+✗ You entered an invalid email address.
 
-✅ Enter an email address in the format name@example.com.
+✓ Enter an email address in the format name@example.com.
 ```
 *Why:* Apple's HIG says to show field errors next to the field and instruct rather than scold. "Use only letters for your name" beats "Don't use numbers or symbols."
 
 ### Permission error
 
 ```
-❌ Access denied
+✗ Access denied
 
-✅ You can view this file but not edit it
+✓ You can view this file but not edit it
    Ask the owner, Priya Shah, for edit access.
    [Request access]   [Close]
 ```
@@ -108,9 +110,9 @@ Write the message first, then choose the component. Adobe's guidance warns again
 ### Connection error
 
 ```
-❌ Connection timeout (ERR_NETWORK_408)
+✗ Connection timeout (ERR_NETWORK_408)
 
-✅ Can't reach the server
+✓ Can't reach the server
    Check your internet connection. If you're connected, the service may be down. Try again in a few minutes.
    [Retry]
 ```
@@ -118,9 +120,8 @@ Write the message first, then choose the component. Adobe's guidance warns again
 ### System error, cause unknown
 
 ```
-❌ Oops! Something went wrong 😬
-
-✅ This page didn't load
+✗ Oops! Something went wrong
+✓ This page didn't load
    Refresh the page. If it keeps happening, contact support and mention code 5F3A.
    [Refresh]   [Contact support]
 ```
@@ -129,9 +130,9 @@ Write the message first, then choose the component. Adobe's guidance warns again
 ### Limit error
 
 ```
-❌ File too large.
+✗ File too large.
 
-✅ This file is 40 MB. The limit is 25 MB.
+✓ This file is 40 MB. The limit is 25 MB.
    Compress the file or split it into smaller parts.
    [Choose another file]
 ```
@@ -140,7 +141,7 @@ Write the message first, then choose the component. Adobe's guidance warns again
 ### Conflict error
 
 ```
-✅ Someone else changed this record
+✓ Someone else changed this record
    Jordan Lee saved changes at 2:14 PM. Review their changes or keep yours.
    [Review changes]   [Keep mine]
 ```
@@ -148,7 +149,7 @@ Write the message first, then choose the component. Adobe's guidance warns again
 ### Data loss (the one time to apologize)
 
 ```
-✅ Your last 10 minutes of changes couldn't be saved
+✓ Your last 10 minutes of changes couldn't be saved
    We're sorry. A server problem interrupted saving. Your earlier version from 2:05 PM is safe.
    [Restore 2:05 PM version]   [Contact support]
 ```
@@ -161,9 +162,9 @@ AI features need error content for failures that have no equivalent in determini
 ### System limitation: say what the AI can't do and what it needs
 
 ```
-❌ I'm sorry, I can't help with that.
+✗ I'm sorry, I can't help with that.
 
-✅ I can only answer questions about data in this workspace, and I don't see a table about refunds here.
+✓ I can only answer questions about data in this workspace, and I don't see a table about refunds here.
    Try asking about orders or payments, or add a refunds table to the workspace.
 ```
 *Why:* Google PAIR says AI error messages should explain specifically what the system can't do and what input would work, and use the moment to explain how the AI works.
@@ -171,9 +172,9 @@ AI features need error content for failures that have no equivalent in determini
 ### Low confidence: show uncertainty, don't hide it
 
 ```
-❌ Revenue grew 12% last quarter.
+✗ Revenue grew 12% last quarter.
 
-✅ Revenue appears to have grown about 12% last quarter, but two months of data are missing from the source table, so this may change.
+✓ Revenue appears to have grown about 12% last quarter, but two months of data are missing from the source table, so this may change.
    [View the query]   [See which months are missing]
 ```
 *Why:* Microsoft's Copilot transparency documentation describes reminding people that AI content may contain errors and citing sources so people can verify.
@@ -181,7 +182,7 @@ AI features need error content for failures that have no equivalent in determini
 ### Context error: make correction and dismissal easy
 
 ```
-✅ Summary based on the "Q3 Results" section.
+✓ Summary based on the "Q3 Results" section.
    Not what you needed? [Summarize the whole document]   [Dismiss]
 ```
 *Why:* Microsoft's Guidelines for Human-AI Interaction G8 and G9: support efficient dismissal and efficient correction.
@@ -189,16 +190,16 @@ AI features need error content for failures that have no equivalent in determini
 ### Refused request: be brief and offer an alternative
 
 ```
-❌ As an AI language model, I cannot comply with that request because it violates our content policy.
+✗ As an AI language model, I cannot comply with that request because it violates our content policy.
 
-✅ I can't write that, but I can help you draft a respectful message that makes the same point.
+✓ I can't write that, but I can help you draft a respectful message that makes the same point.
 ```
 *Why:* A clear refusal with an alternative keeps the person moving. See [Content Safety](../../resources/ethical-ai/content-safety.md) for refusal patterns.
 
 ### Agent action failed partway
 
 ```
-✅ 3 of 5 files were renamed
+✓ 3 of 5 files were renamed
    2 files are locked by another user: budget.xlsx and forecast.xlsx. Nothing else changed.
    [Retry locked files]   [View details]
 ```

@@ -2,6 +2,8 @@
 
 Onboarding gets people to their first success as fast as possible, and teaches only what they need for it. For AI features, it also has to set honest expectations about what the AI can do and how reliable it is.
 
+> **In brief:** Get people to their first success fast, and teach only what that success needs. For AI features, set honest expectations about what the AI does well and where it can be wrong.
+
 ## Template Structure
 
 ```
@@ -167,7 +169,7 @@ Choose where your data lives. You can add more sources later.
 
 **Example:**
 ```
-**Your first pipeline is running! 🎉**
+**Your first pipeline is running!**
 Data will appear in your workspace within a few minutes.
 
 Next: Invite teammates to collaborate on this workspace.
@@ -279,9 +281,9 @@ AI features need different onboarding, because people's main question isn't "whe
 4. **How to start:** two or three example prompts that are likely to work well.
 
 ```
-❌ Meet your new AI assistant! ✨ It can help you with anything.
+✗ Meet your new AI assistant! It can help you with anything.
 
-✅ Ask questions about your sales data
+✓ Ask questions about your sales data
    Get answers in plain language, with the query behind each one so you can check it.
    It can't see other workspaces or change your data.
    Try: "Which products sold best last month?"

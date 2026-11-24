@@ -1,10 +1,12 @@
-# 🧾 Content Design Starter Template
+# Content Design Starter Template
 
 Use this template to plan content for any new feature, product, or experience.
 
+> **In brief:** A planning template for any new feature: goals, audience, voice, AI considerations, structure, terminology, measurement, accessibility and ethics. Fill it in before drafting, and revisit it at launch.
+
 ---
 
-## 📋 Project Overview
+## Project Overview
 
 ### Project Name
 *Example: AI-Powered Data Assistant*
@@ -28,7 +30,7 @@ What is this project trying to achieve?
 
 ---
 
-## 🎯 Audience Definition
+## Audience Definition
 
 ### Primary Audience
 Who is the main user?
@@ -56,7 +58,7 @@ Who else will use this?
 
 ---
 
-## 🗣️ Voice and Tone Guidelines
+## Voice and Tone Guidelines
 
 ### Product Voice
 How should the product always sound?
@@ -80,7 +82,7 @@ How should the product always sound?
 
 ### Words We Use / Avoid
 
-| ✅ Use | ❌ Avoid | Why |
+| ✓ Use | ✗ Avoid | Why |
 |--------|----------|-----|
 | "Create" | "Provision" | Simpler, more common |
 | "Delete" | "Terminate" | Less technical |
@@ -89,23 +91,23 @@ How should the product always sound?
 
 ---
 
-## 🤖 AI Content Considerations
+## AI Content Considerations
 
 *Complete this section if your feature uses AI*
 
 ### AI Disclosure
 How will you tell users this is AI-powered?
 
-*Example: "💬 I'm an AI assistant. I can help with questions about your data, but I might make mistakes. Always verify important information."*
+*Example: "I'm an AI assistant. I can help with questions about your data, but I might make mistakes. Always verify important information."*
 
 ### AI Capabilities
 What can the AI actually do?
 
-✅ **Can:**
+✓ **Can:**
 - 
 - 
 
-❌ **Cannot:**
+✗ **Cannot:**
 - 
 - 
 
@@ -133,7 +135,7 @@ When should users talk to a real person?
 
 ---
 
-## 🧱 Content Structure
+## Content Structure
 
 ### Information Architecture
 How is content organized?
@@ -166,7 +168,7 @@ Step-by-step journey through the experience:
 
 ---
 
-## 📚 Terminology
+## Terminology
 
 ### Product-Specific Terms
 
@@ -194,7 +196,7 @@ Step-by-step journey through the experience:
 
 ---
 
-## 📊 Measurement & Testing
+## Measurement & Testing
 
 ### Success Metrics
 How will you know if the content works?
@@ -217,13 +219,13 @@ How will you know if the content works?
 ### Content to Test
 Which content needs validation?
 
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 ---
 
-## ♿ Accessibility Checklist
+## Accessibility Checklist
 
 - [ ] **Plain language:** Written at 8th grade reading level or lower
 - [ ] **Alt text:** All images have descriptive alt text
@@ -236,7 +238,7 @@ Which content needs validation?
 
 ---
 
-## 🛡️ Ethical AI Checklist
+## Ethical AI Checklist
 
 *Complete if your feature uses AI*
 
@@ -272,7 +274,7 @@ Which content needs validation?
 
 ---
 
-## 📝 Content Drafts
+## Content Drafts
 
 ### Key Messages
 
@@ -314,7 +316,7 @@ Which content needs validation?
 
 ---
 
-## ✅ Review Checklist
+## ✓ Review Checklist
 
 Before launching, verify:
 
@@ -356,7 +358,7 @@ Before launching, verify:
 
 ---
 
-## 🔄 Iteration Plan
+## Iteration Plan
 
 ### Feedback Channels
 How will you collect user feedback?
@@ -375,7 +377,7 @@ What will you track post-launch?
 
 ---
 
-## 🏢 Benchmark Against Industry Guidance
+## Benchmark Against Industry Guidance
 
 Before writing, check which published guidance applies to your feature. Note what you'll adopt and where you'll differ.
 
@@ -394,7 +396,7 @@ All 10 companies' guidance: [How Leading Companies Design Content for AI](resour
 
 ---
 
-## 💡 Notes & Decisions
+## Notes & Decisions
 
 ### Open Questions
 - 
@@ -413,7 +415,7 @@ All 10 companies' guidance: [How Leading Companies Design Content for AI](resour
 
 ---
 
-## 📎 Appendix
+## Appendix
 
 ### Related Templates
 - [Prompt Design](templates/ai-content/prompt-design.md) - For AI prompt engineering

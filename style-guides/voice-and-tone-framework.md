@@ -2,6 +2,8 @@
 
 A template for defining your product's voice and tone guidelines.
 
+> **In brief:** Voice is the personality that stays the same; tone is how it adapts to the moment. Pick three to five voice attributes, then map tone to situations like errors, success and onboarding.
+
 ## Voice vs. Tone
 
 **Voice** = Your product's personality (consistent across all content)
@@ -118,7 +120,7 @@ API docs: More technical acceptable
 
 ### Words We Avoid
 
-❌ **Avoid:**
+✗ **Avoid:**
 - Jargon without definition
 - Cutesy language ("Oopsie!")
 - Diminishing words ("just," "simply," "easy")
@@ -146,52 +148,52 @@ API docs: More technical acceptable
 
 ## Voice Examples
 
-### ✅ Good Examples
+### ✓ Good Examples
 
 Show your voice in action across different content types:
 
 **Error message:**
 ```
-✅ "Connection timeout. Check your network settings and try again."
+✓ "Connection timeout. Check your network settings and try again."
 
 Why it works: Clear, actionable, maintains helpful tone even in error state
 ```
 
 **Success message:**
 ```
-✅ "Pipeline created! You can monitor its progress in the dashboard."
+✓ "Pipeline created! You can monitor its progress in the dashboard."
 
 Why it works: Affirming but not overly excited, points user to next step
 ```
 
 **Empty state:**
 ```
-✅ "No pipelines yet. Ready to create your first one?"
+✓ "No pipelines yet. Ready to create your first one?"
 
 Why it works: Encouraging without being pushy, clear call to action
 ```
 
-### ❌ Bad Examples
+### ✗ Bad Examples
 
 Show what NOT to do:
 
 **Error message:**
 ```
-❌ "Oops! Something went wrong. 😕"
+✗ "Oops! Something went wrong. "
 
 Why it's bad: Not helpful, no actionable guidance, inappropriate tone for error
 ```
 
 **Success message:**
 ```
-❌ "OMG! You totally crushed it! 🎉🎉🎉"
+✗ "OMG! You totally crushed it! "
 
 Why it's bad: Overly enthusiastic, unprofessional, too casual
 ```
 
 **Technical content:**
 ```
-❌ "Utilize the pipeline orchestration service to facilitate data ingestion workflows"
+✗ "Utilize the pipeline orchestration service to facilitate data ingestion workflows"
 
 Why it's bad: Unnecessarily complex language, jargon-heavy
 ```
@@ -214,7 +216,7 @@ Why it's bad: Unnecessarily complex language, jargon-heavy
 
 **Tone:** Encouraging, clear, patient
 **Structure:** [Welcome/Context] + [Simple explanation] + [Clear next step]
-**Example:** "Welcome to Fabric! Let's create your first pipeline. It takes about 2 minutes."
+**Example:** "Welcome to DataFlow! Let's create your first pipeline. It takes about 2 minutes."
 
 ### Documentation
 
@@ -242,17 +244,17 @@ If your product includes AI features, define how voice applies to AI interaction
 
 **Always disclose AI:**
 ```
-✅ "I'm an AI assistant trained to help with [product]."
+✓ "I'm an AI assistant trained to help with [product]."
 ```
 
 **Admit uncertainty:**
 ```
-✅ "I'm not certain about that. Let me connect you with a human expert."
+✓ "I'm not certain about that. Let me connect you with a human expert."
 ```
 
 **Never fake human:**
 ```
-❌ "Hi, I'm Sarah from support!"
+✗ "Hi, I'm Sarah from support!"
 [When it's actually AI]
 ```
 
@@ -265,7 +267,7 @@ If your product includes AI features, define how voice applies to AI interaction
 
 **Example:**
 ```
-✅ "I can help with common questions about pipelines, but complex issues 
+✓ "I can help with common questions about pipelines, but complex issues
 may need human support. What can I help with?"
 ```
 
@@ -392,14 +394,14 @@ Contact: [Content team contact]
 3. [Attribute]
 
 **We are / We're NOT:**
-✅ [We are] / ❌ Not [This]
-✅ [We are] / ❌ Not [This]
-✅ [We are] / ❌ Not [This]
+✓ [We are] / ✗ Not [This]
+✓ [We are] / ✗ Not [This]
+✓ [We are] / ✗ Not [This]
 
 **Top 3 words to avoid:**
-❌ [Word 1]
-❌ [Word 2]
-❌ [Word 3]
+✗ [Word 1]
+✗ [Word 2]
+✗ [Word 3]
 
 **When in doubt:**
 Ask: "Would our users understand this?" and "Does this sound like us?"

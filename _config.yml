@@ -1,8 +1,7 @@
 title: AI Content Design Handbook
 description: Templates, workflows, and ethical guidelines for designing the words in AI products, with examples from how leading tech companies design their own content.
 theme: minima
-author:
-  name: Jen Kelleman
+author: Jen Kelleman
 show_excerpts: true
 baseurl: "/ai-content-design-handbook"
 url: "https://jkelleman.github.io"
@@ -11,3 +10,17 @@ minima:
   skin: auto
   social_links:
     github: https://github.com/jkelleman/ai-content-design-handbook
+
+# A short top navigation: the three guides to read first, and the industry reference.
+header_pages:
+  - templates/ai-content/agentic-experiences.md
+  - workflows/testing/llm-as-a-judge.md
+  - templates/messages/error-messages.md
+  - resources/industry-examples.md
+
+# Repo housekeeping stays on GitHub and out of the published site.
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - STRUCTURE.md
+  - assets/banner.html

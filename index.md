@@ -2,134 +2,98 @@
 
 # AI Content Design Handbook
 
-Templates, workflows, and ethical guidelines for designing the words in AI products: assistants, agents, and everything around them. Every guide includes examples from how Google, Microsoft, Apple, Amazon, Meta, IBM, Salesforce, Adobe, Atlassian, and Shopify design their own content, with links to the public sources.
+A working handbook for designing the words in AI products: what an assistant or agent says, the guidelines and prompts that teach it to say it, and the rubrics that check what it wrote.
 
-## What Makes This Different
+By **Jen Kelleman**, principal content designer at Microsoft. Portfolio and case studies at [aiwithjen.com](https://aiwithjen.com).
 
-🤖 **AI-First Approach** - Extensive resources for prompt engineering, AI content strategy, and conversational design
+## Start here
 
-⚖️ **Ethics Built-In** - Comprehensive guidelines for bias detection, content safety, and transparency
+If you read three pages, read these. Together they cover what changes when AI acts on its own, how to grade what it writes, and the pattern every message needs.
 
-📊 **Measurement-Focused** - Real frameworks for testing, metrics, and A/B testing content
+<div class="start-here">
+  <a href="templates/ai-content/agentic-experiences.html"><strong>Agentic AI experiences</strong><span>Plans, approvals, progress and receipts for AI that takes actions on someone's behalf.</span></a>
+  <a href="workflows/testing/llm-as-a-judge.html"><strong>LLM-as-a-judge</strong><span>Turn content principles into rules a model can grade against, and prove the grades can be trusted.</span></a>
+  <a href="templates/messages/error-messages.html"><strong>Error messages</strong><span>What happened, why it matters and what to do next, including errors only AI features make.</span></a>
+</div>
 
-🏢 **Grounded in Industry Practice** - [How 10 leading companies design content for AI](resources/industry-examples.md), with sources
+## How the handbook is organized
 
-🤝 **Ready for Agents** - [Content patterns for AI that takes actions](templates/ai-content/agentic-experiences.md)
+- **Templates and frameworks** are written to be used as-is: copy a template, follow the steps, check against the list at the end.
+- **Industry reference** is compiled from public sources. [How 10 leading companies design content for AI](resources/industry-examples.md) paraphrases each company's published guidance and links to it. Every other page draws on it where a company's example helps.
+- **Examples** use a fictional product, DataFlow. Numbers in sample dashboards and test results are illustrative.
 
-## Get Started
+Each guide opens with an **In brief** summary, so you can skim the whole handbook in a few minutes.
 
-**New to AI content design?**
-1. Start with [AI Content Strategy](templates/ai-content/ai-content-strategy.md) and [How Leading Companies Design Content for AI](resources/industry-examples.md)
-2. Review [Ethical AI Guidelines](resources/ethical-ai/ethical-ai-guidelines.md)
-3. Learn [Prompt Design](templates/ai-content/prompt-design.md)
-4. Understand [Transparency Guidelines](resources/ethical-ai/transparency-guidelines.md)
+## Find what you need
 
-**Building a chatbot or conversational interface?**
-1. Explore [Conversation Flows](templates/conversational/conversation-flows.md)
-2. Apply [Prompt Design](templates/ai-content/prompt-design.md) principles
-3. Check [Content Safety](resources/ethical-ai/content-safety.md) guidelines
-4. Review [Bias Detection](resources/ethical-ai/bias-detection.md) framework
+**Designing for AI assistants and agents**
+1. [AI Content Strategy](templates/ai-content/ai-content-strategy.md) and [How Leading Companies Design Content for AI](resources/industry-examples.md)
+2. [Agentic AI Experiences](templates/ai-content/agentic-experiences.md)
+3. [Prompt Design](templates/ai-content/prompt-design.md)
+4. [Transparency Guidelines](resources/ethical-ai/transparency-guidelines.md)
 
-**Need to measure content effectiveness?**
-1. Start with [Content Testing](workflows/testing/content-testing.md) methods
-2. Track [Content Metrics](workflows/testing/content-metrics.md)
-3. Run [A/B Tests](workflows/testing/ab-testing-content.md)
-4. Evaluate [AI Content Quality](workflows/testing/ai-content-evaluation.md)
+**Building a chatbot or conversational interface**
+1. [Conversation Flows](templates/conversational/conversation-flows.md)
+2. [Prompt Design](templates/ai-content/prompt-design.md)
+3. [Content Safety](resources/ethical-ai/content-safety.md)
+4. [Bias Detection](resources/ethical-ai/bias-detection.md)
 
-**Working on traditional content?**
-1. Browse [message templates](templates/messages/)
-2. Review [accessibility guidelines](resources/accessibility-guidelines.md)
-3. Follow [Git workflow](workflows/git-workflow.md)
-4. Implement [content review process](workflows/content-review-process.md)
+**Checking quality and measuring results**
+1. [Evaluating AI-Generated Content](workflows/testing/ai-content-evaluation.md)
+2. [LLM-as-a-Judge](workflows/testing/llm-as-a-judge.md)
+3. [Content Testing](workflows/testing/content-testing.md) and [Content Metrics](workflows/testing/content-metrics.md)
+4. [A/B Testing for Content](workflows/testing/ab-testing-content.md)
 
-## Templates
+**Writing product messages**
+1. [Error Messages](templates/messages/error-messages.md), [Success Messages](templates/messages/success-messages.md) and [Empty States](templates/messages/empty-states.md)
+2. [Microcopy](templates/messages/microcopy.md)
+3. [Accessibility Guidelines](resources/accessibility-guidelines.md)
+4. [Content Review Process](workflows/content-review-process.md)
 
-### AI & Conversational Content
-- [Prompt Design](templates/ai-content/prompt-design.md) - Engineer effective prompts for AI systems
-- [Content as Data](templates/ai-content/content-as-data.md) - Structure content for AI consumption
-- [AI Content Strategy](templates/ai-content/ai-content-strategy.md) - Plan AI-powered content experiences
-- [Conversation Flows](templates/conversational/conversation-flows.md) - Design chatbot and conversational UI
-- [Agentic AI Experiences](templates/ai-content/agentic-experiences.md) - Plans, approvals, progress, and receipts for AI agents
+## All guides
 
-### Core Content Patterns
-- [Error Messages](templates/messages/error-messages.md) - Clear, actionable error content
-- [Success Messages](templates/messages/success-messages.md) - Effective confirmations
-- [Empty States](templates/messages/empty-states.md) - Guide users when content is missing
-- [Microcopy](templates/messages/microcopy.md) - Buttons, links, and UI text
-- [Onboarding Flows](templates/flows/onboarding.md) - First-time user experiences
-- [Confirmation Dialogs](templates/flows/confirmation-dialogs.md) - Prevent errors with clear confirmations
-- [Release Notes](templates/documentation/release-notes.md) - User-focused release communication
+### AI and conversational content
+- [Agentic AI Experiences](templates/ai-content/agentic-experiences.md): plans, approvals, progress and receipts for AI agents
+- [AI Content Strategy](templates/ai-content/ai-content-strategy.md): plan content for products where language is generated
+- [Prompt Design](templates/ai-content/prompt-design.md): write the instructions that govern how AI writes
+- [Content as Data](templates/ai-content/content-as-data.md): structure content so AI can retrieve and reuse it
+- [Conversation Flows](templates/conversational/conversation-flows.md): map how a chatbot guides people through a task
 
-## Workflows
+### Product messages and flows
+- [Error Messages](templates/messages/error-messages.md): clear, actionable errors
+- [Success Messages](templates/messages/success-messages.md): specific confirmations
+- [Empty States](templates/messages/empty-states.md): what belongs here and how to start
+- [Microcopy](templates/messages/microcopy.md): buttons, links and UI text
+- [Onboarding Flows](templates/flows/onboarding.md): first success, fast
+- [Confirmation Dialogs](templates/flows/confirmation-dialogs.md): stop the mistakes that matter, and only those
+- [Release Notes](templates/documentation/release-notes.md): changes written for the people affected
+- [Before and After Examples](examples/before-after-examples.md): rewrites across message types
 
-### Testing & Measurement
-- [Content Testing](workflows/testing/content-testing.md) - 5 testing methods with frameworks
-- [Content Metrics](workflows/testing/content-metrics.md) - Measure effectiveness and ROI
-- [A/B Testing for Content](workflows/testing/ab-testing-content.md) - Run rigorous experiments
-- [AI Content Evaluation](workflows/testing/ai-content-evaluation.md) - Assess AI-generated content quality
-- [LLM-as-a-Judge](workflows/testing/llm-as-a-judge.md) - Calibrate automated judges against people
+### Voice and terminology
+- [Voice and Tone Framework](style-guides/voice-and-tone-framework.md): define a voice and how it adapts
+- [Terminology Guidelines](style-guides/terminology-guidelines.md): one word for one thing
+- [Content Design Starter Template](content_design_starter.md): plan content for a new feature
 
-### Version Control & Review
-- [Git Workflow for Content Designers](workflows/git-workflow.md) - Version control basics
-- [Content Review Process](workflows/content-review-process.md) - Structured review and approval
+### Quality, testing and measurement
+- [Evaluating AI-Generated Content](workflows/testing/ai-content-evaluation.md): a rubric for accuracy, helpfulness, tone and safety
+- [LLM-as-a-Judge](workflows/testing/llm-as-a-judge.md): calibrate automated judges against people
+- [Content Testing](workflows/testing/content-testing.md): five ways to test content
+- [Content Metrics](workflows/testing/content-metrics.md): measure whether content works
+- [A/B Testing for Content](workflows/testing/ab-testing-content.md): run experiments you can trust
+- [Content Review Process](workflows/content-review-process.md): structured review and approval
 
-## Ethical AI Resources
+### Responsible AI
+- [Ethical AI Guidelines](resources/ethical-ai/ethical-ai-guidelines.md): six principles for responsible AI content
+- [Bias Detection](resources/ethical-ai/bias-detection.md): find and fix seven types of bias
+- [Content Safety](resources/ethical-ai/content-safety.md): prevent harm and protect people
+- [Transparency Guidelines](resources/ethical-ai/transparency-guidelines.md): disclose AI use clearly
+- [Accessibility Guidelines](resources/accessibility-guidelines.md): content everyone can use
 
-### Core Principles
-- [Ethical AI Guidelines](resources/ethical-ai/ethical-ai-guidelines.md) - 6 principles for responsible AI content
-- [Bias Detection](resources/ethical-ai/bias-detection.md) - Identify and mitigate 7 types of bias
-- [Content Safety](resources/ethical-ai/content-safety.md) - Prevent harm, protect users
-- [Transparency Guidelines](resources/ethical-ai/transparency-guidelines.md) - Disclose AI use appropriately
-
-### Accessibility
-- [Accessibility Guidelines](resources/accessibility-guidelines.md) - Create inclusive content for everyone
-
-### Industry Practice
-- [How Leading Companies Design Content for AI](resources/industry-examples.md) - What 10 companies' public guidance teaches, side by side
-
-## Who This Is For
-
-- **AI/ML Teams** - Building AI-powered products and conversational interfaces
-- **Content Designers** - Writing for chatbots, virtual assistants, and AI features
-- **Product Teams** - Establishing ethical AI content practices
-- **Content Strategists** - Planning AI content experiences
-- **UX Writers** - Expanding skills into AI and conversational design
-- **Anyone** - Responsible for AI-generated content quality and safety
-
-## Featured Topics
-
-**Prompt Engineering** - Design effective prompts for AI systems
-
-**Conversational Design** - Build natural, helpful chatbot experiences
-
-**Ethical AI** - Ensure fairness, safety, and transparency
-
-**Content Testing** - Measure what works with data
-
-**Bias Mitigation** - Create inclusive AI experiences
-
-**Agentic AI** - Design approvals and receipts for AI that acts
-
-**AI Evaluation** - Calibrate LLM judges against human reviewers
+### Industry reference (compiled from public sources)
+- [How Leading Companies Design Content for AI](resources/industry-examples.md): what 10 companies' public guidance teaches, side by side
 
 ## About
 
-Created by **[Jen Kelleman](https://github.com/jkelleman)**, a content designer for AI and data experiences, based on years of designing content for enterprise data and AI platforms, conversational interfaces, and responsible AI practices.
+Written by Jen Kelleman, a content designer for AI and data products. Read her case studies at [aiwithjen.com](https://aiwithjen.com), or find her on [LinkedIn](https://www.linkedin.com/in/jenniferkelleman), [Medium](https://jenkelleman.medium.com) and [GitHub](https://github.com/jkelleman).
 
-Company examples are paraphrased from public guidance and linked. This handbook isn't affiliated with or endorsed by any of the companies it cites.
-
-### Connect
-- 💼 [LinkedIn](https://www.linkedin.com/in/jenniferkelleman)
-- ✍️ [Medium](https://jenkelleman.medium.com)
-- 🐙 [GitHub](https://github.com/jkelleman)
-
-## Contributing
-
-This handbook is a living resource. Contributions welcome:
-- Add new AI content patterns
-- Share real-world examples
-- Improve ethical guidelines
-- Contribute testing frameworks
-- Expand accessibility resources
-
-[View on GitHub](https://github.com/jkelleman/ai-content-design-handbook) | [Submit an Issue](https://github.com/jkelleman/ai-content-design-handbook/issues)
+Company examples are paraphrased from public guidance and linked. This handbook isn't affiliated with or endorsed by any of the companies it cites. Suggestions are welcome as [issues on GitHub](https://github.com/jkelleman/ai-content-design-handbook/issues).

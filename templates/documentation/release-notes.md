@@ -2,6 +2,8 @@
 
 Use this template to write clear, user-focused release notes that highlight value and changes.
 
+> **In brief:** Lead each change with what people can now do, not what the team built. Group by impact, say who's affected, and link to details for anyone who wants them.
+
 ## Template Structure
 
 ```
@@ -49,10 +51,10 @@ Use this template to write clear, user-focused release notes that highlight valu
 
 ### New Feature Entry
 ```
-❌ BAD:
+✗ BAD:
 - Added pipeline scheduling functionality
 
-✅ GOOD:
+✓ GOOD:
 **Schedule pipelines to run automatically**
 Set pipelines to run on a schedule so your data stays up to date without manual triggers. Perfect for daily reports and automated workflows.
 
@@ -61,20 +63,20 @@ Set pipelines to run on a schedule so your data stays up to date without manual 
 
 ### Improvement Entry
 ```
-❌ BAD:
+✗ BAD:
 - Improved performance of data refresh
 
-✅ GOOD:
+✓ GOOD:
 **Faster data refresh**
 Large datasets now refresh up to 3x faster, reducing wait times for big reports.
 ```
 
 ### Bug Fix Entry
 ```
-❌ BAD:
+✗ BAD:
 - Fixed bug #1234
 
-✅ GOOD:
+✓ GOOD:
 **Fixed: Connection errors with Azure SQL Database**
 Resolved an issue where connections to Azure SQL would time out during large data transfers.
 ```
@@ -285,9 +287,9 @@ AI changes need clearer communication than most releases, because the same input
 **Announce behavior changes, not just features.** Microsoft's Guidelines for Human-AI Interaction include G14, update and adapt cautiously, and G18, notify users about changes. If a model update changes tone, accuracy, or what the assistant will and won't do, say so, even when there's no new button.
 
 ```
-❌ Improved AI performance.
+✗ Improved AI performance.
 
-✅ Summaries are now shorter and cite their sources
+✓ Summaries are now shorter and cite their sources
    Summaries now average 3 sentences instead of 6, and each one links to the comments it draws from.
    If you relied on longer summaries, choose "Detailed" in Summary settings.
 ```
