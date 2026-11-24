@@ -1,3 +1,8 @@
+---
+layout: default
+title: AI Content Design Handbook
+---
+
 ![Words that make AI worth trusting: the AI Content Design Handbook](assets/banner.png)
 
 # AI Content Design Handbook
