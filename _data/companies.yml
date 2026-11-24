@@ -1,0 +1,12 @@
+# The 11 companies on the industry reference page: logo file, display height (so logos look even), brand color.
+- { id: google,     name: Google,     logo: google.svg,     h: 26, color: "#4285F4" }
+- { id: microsoft,  name: Microsoft,  logo: microsoft.svg,  h: 24, color: "#0067B8" }
+- { id: apple,      name: Apple,      logo: apple.svg,      h: 30, color: "#1d1d1f" }
+- { id: amazon,     name: Amazon,     logo: amazon.svg,     h: 26, color: "#E68A00" }
+- { id: meta,       name: Meta,       logo: meta.svg,       h: 22, color: "#0866FF" }
+- { id: ibm,        name: IBM,        logo: ibm.svg,        h: 24, color: "#0F62FE" }
+- { id: salesforce, name: Salesforce, logo: salesforce.svg, h: 34, color: "#0176D3" }
+- { id: adobe,      name: Adobe,      logo: adobe.svg,      h: 24, color: "#EB1000" }
+- { id: atlassian,  name: Atlassian,  logo: atlassian.svg,  h: 18, color: "#0052CC" }
+- { id: shopify,    name: Shopify,    logo: shopify.svg,    h: 28, color: "#5E8E3E" }
+- { id: airbnb,     name: Airbnb,     logo: airbnb.svg,     h: 26, color: "#E00B41" }

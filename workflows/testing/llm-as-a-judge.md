@@ -4,6 +4,8 @@ How to use a language model to grade AI-generated content against your content s
 
 > **In brief:** A judge is only as good as its rubric, and writing rubrics is content design work. Turn principles into rules, use one judge per dimension, calibrate against a labeled golden set, and keep checking it in production.
 
+<div data-section-tabs></div>
+
 ## When you need a judge
 
 | Situation | Method |

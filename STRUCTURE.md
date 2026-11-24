@@ -49,7 +49,7 @@ ai-content-design-handbook/
 │
 ├── resources/                          # Guidelines and references
 │   ├── accessibility-guidelines.md    # Accessibility best practices
-│   ├── industry-examples.md           # How 10 companies design content for AI
+│   ├── industry-examples.md           # How 11 companies design content for AI
 │   │
 │   └── ethical-ai/                    # Ethical AI guidelines
 │       ├── ethical-ai-guidelines.md   # 6 core principles
@@ -103,7 +103,7 @@ ai-content-design-handbook/
 - Comprehensive accessibility guidelines for inclusive content
 
 **Industry Practice:**
-- What Google, Microsoft, Apple, Amazon, Meta, IBM, Salesforce, Adobe, Atlassian, and Shopify publish about content design, with sources
+- What Google, Microsoft, Apple, Amazon, Meta, IBM, Salesforce, Adobe, Atlassian, Shopify, and Airbnb publish about content design, with sources
 
 **Ethical AI:**
 - Core principles for responsible AI content (transparency, accuracy, fairness, safety, privacy, accountability)

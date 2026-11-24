@@ -1,10 +1,16 @@
-# How Leading Companies Design Content for AI
+---
+title: How Leading Companies Design Content for AI
+---
 
-A reference to the public content and AI design guidance from 10 of the largest technology companies, with what each one teaches and where to read it. Every page in this handbook links back here when it uses one of these examples.
+A reference to the public content and AI design guidance from 11 leading technology companies, with what each one teaches and where to read it. Every page in this handbook links back here when it uses one of these examples.
 
-> **In brief:** Compiled from public sources: what 10 large technology companies publish about writing for AI, paraphrased and linked. Use the table to find the strongest guidance for your problem, then read the original.
+> **In brief:** Compiled from public sources: what 11 leading technology companies publish about writing for AI, paraphrased and linked. Use the table to find the strongest guidance for your problem, then read the original.
 
 > **How to use this page:** Skim the summary table to find which company has the strongest guidance for your problem, then read the source. Everything here is paraphrased from each company's public guidance and linked so you can check the original. Guidance changes; when in doubt, the source wins.
+
+{% include logo-marquee.html %}
+
+{% include company-tabs.html %}
 
 ## At a glance
 
@@ -20,6 +26,7 @@ A reference to the public content and AI design guidance from 10 of the largest 
 | **Adobe** | [Spectrum: Writing for errors](https://spectrum.adobe.com/page/writing-for-errors), [Content Credentials](https://helpx.adobe.com/in/creative-cloud/apps/adobe-content-authenticity/content-credentials/overview.html) | Error tone by severity, provenance for AI-generated media |
 | **Atlassian** | [Voice and tone](https://atlassian.design/foundations/content/voice-tone), [Error messages](https://atlassian.design/foundations/content/designing-messages/error-messages) | Tone that shifts with user state, message anatomy |
 | **Shopify** | [App content guidelines](https://shopify.dev/apps/design-guidelines/content) | Plain language for a global audience, consistent terms, strong-verb calls to action |
+| **Airbnb** | [Content Strategy at Airbnb](https://airbnb.design/content-strategy-at-airbnb/), its AI customer service agent ([TechCrunch](https://techcrunch.com/2025/05/02/airbnb-is-quietly-rolling-out-an-ai-customer-service-bot-in-the-us/)) | Voice attributes tested against hard moments, AI support where accuracy matters most |
 
 ---
 
@@ -120,9 +127,16 @@ Its writing advice: say specifically what the system can't do and what input it 
 
 **Content for a global audience.** Shopify's app guidelines ask for writing that works for merchants worldwide with varied reading skills and first languages: aim for about a US grade 7 reading level, use headings, bullets, and short sentences, and avoid idioms that mistranslate. Pick one term per concept and keep it (not "Upload image" in one place and "Add photos" in another). Calls to action open with a strong verb, as in "Create template." Errors take a more direct tone than onboarding tips. ([App content guidelines](https://shopify.dev/apps/design-guidelines/content))
 
+
+## Airbnb
+
+**A voice tested against hard moments.** Airbnb doesn't publish its style guide, but its head of content strategy described how the team defined its voice. After workshops, it chose four attributes: straightforward, inclusive, thoughtful and spirited. Then it tested them against real situations, such as whether "spirited" belongs in an error message or an account suspension. In practice that means inclusive language for sensitive topics like discrimination, explaining the reasons behind policy changes, and anticipating what people need when they're stressed. ([Content Strategy at Airbnb](https://airbnb.design/content-strategy-at-airbnb/))
+
+**Starting AI where the stakes are highest.** Airbnb chose customer service for its first AI agent because, as its CEO put it, the stakes are high, answers have to be fast, and the risk of hallucination is high. The agent knows which reservation a guest means when they ask to cancel, and Airbnb said it cut the share of people who needed a human agent by 15%. The lesson for content designers: an AI agent's answers have to be grounded in the person's own situation, and accuracy matters more than personality. ([TechCrunch](https://techcrunch.com/2025/05/02/airbnb-is-quietly-rolling-out-an-ai-customer-service-bot-in-the-us/), [Constellation Research](https://www.constellationr.com/insights/news/airbnb-look-its-ai-strategy))
+
 ---
 
-## Patterns across all 10
+## Patterns across all 11
 
 When companies with different products and cultures agree, it's a strong signal:
 
@@ -131,7 +145,7 @@ When companies with different products and cultures agree, it's a strong signal:
 3. **Label buttons with specific verbs,** not "OK" or clever phrases: Apple, Atlassian, Shopify.
 4. **Mark AI content consistently** and make the marker lead to an explanation: IBM, Microsoft, Adobe, Meta.
 5. **Document AI limits publicly:** Microsoft transparency notes, AWS AI Service Cards.
-6. **Tone follows the person's state,** not the brand's mood: Material, Apple, Atlassian, Adobe.
+6. **Tone follows the person's state,** not the brand's mood: Material, Apple, Atlassian, Adobe, Airbnb.
 7. **Skip "please" and "sorry" for routine problems:** Google, Microsoft, Atlassian, Adobe.
 
 ## Related resources
