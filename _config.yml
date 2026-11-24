@@ -24,3 +24,7 @@ exclude:
   - CONTRIBUTING.md
   - STRUCTURE.md
   - assets/banner.html
+
+# Use each page's first heading as its title once, in the layout, instead of twice.
+titles_from_headings:
+  strip_title: true

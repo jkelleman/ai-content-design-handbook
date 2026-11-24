@@ -1,3 +1,8 @@
+---
+layout: default
+title: AI Content Design Handbook
+---
+
 ![Words that make AI worth trusting: the AI Content Design Handbook](assets/banner.png)
 
 # AI Content Design Handbook
@@ -19,7 +24,7 @@ If you read three pages, read these. Together they cover what changes when AI ac
 ## How the handbook is organized
 
 - **Templates and frameworks** are written to be used as-is: copy a template, follow the steps, check against the list at the end.
-- **Industry reference** is compiled from public sources. [How 10 leading companies design content for AI](resources/industry-examples.md) paraphrases each company's published guidance and links to it. Every other page draws on it where a company's example helps.
+- **Industry reference** is compiled from public sources. [How 11 leading companies design content for AI](resources/industry-examples.md) paraphrases each company's published guidance and links to it. Every other page draws on it where a company's example helps.
 - **Examples** use a fictional product, DataFlow. Numbers in sample dashboards and test results are illustrative.
 
 Each guide opens with an **In brief** summary, so you can skim the whole handbook in a few minutes.
@@ -90,7 +95,7 @@ Each guide opens with an **In brief** summary, so you can skim the whole handboo
 - [Accessibility Guidelines](resources/accessibility-guidelines.md): content everyone can use
 
 ### Industry reference (compiled from public sources)
-- [How Leading Companies Design Content for AI](resources/industry-examples.md): what 10 companies' public guidance teaches, side by side
+- [How Leading Companies Design Content for AI](resources/industry-examples.md): what 11 companies' public guidance teaches, side by side
 
 ## About
 

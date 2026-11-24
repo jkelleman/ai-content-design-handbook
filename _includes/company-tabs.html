@@ -1,0 +1,46 @@
+{%- comment -%} One tab per company. It sticks to the top while you read, and the tab for the section on screen is highlighted in that company's color. {%- endcomment -%}
+<nav class="page-tabs" aria-label="Jump to a company">
+  <ul>
+    <li><a href="#at-a-glance" data-tab="at-a-glance" style="--brand: #2347e8">All</a></li>
+    {%- for c in site.data.companies -%}
+    <li><a href="#{{ c.id }}" data-tab="{{ c.id }}" style="--brand: {{ c.color }}">{{ c.name }}</a></li>
+    {%- endfor -%}
+  </ul>
+</nav>
+<style>
+  {%- for c in site.data.companies %}
+  .page-content h2#{{ c.id }} { border-left: 4px solid {{ c.color }}; padding-left: 12px; }
+  {%- endfor %}
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll(".page-tabs a"));
+    var bar = document.querySelector(".page-tabs");
+    var byId = {};
+    links.forEach(function (a) { byId[a.dataset.tab] = a; });
+    function setActive(id) {
+      links.forEach(function (a) {
+        var on = a.dataset.tab === id;
+        a.classList.toggle("is-active", on);
+        if (on) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
+      });
+      var active = byId[id];
+      if (active && bar) {
+        var left = active.offsetLeft - bar.clientWidth / 2 + active.clientWidth / 2;
+        bar.scrollTo({ left: left, behavior: "smooth" });
+      }
+    }
+    var headings = links.map(function (a) { return document.getElementById(a.dataset.tab); }).filter(Boolean);
+    var current = null, ticking = false;
+    function update() {
+      ticking = false;
+      var id = headings[0] && headings[0].id;
+      for (var i = 0; i < headings.length; i++) {
+        if (headings[i].getBoundingClientRect().top <= 120) id = headings[i].id; else break;
+      }
+      if (id !== current) { current = id; setActive(id); }
+    }
+    window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    update();
+  });
+</script>

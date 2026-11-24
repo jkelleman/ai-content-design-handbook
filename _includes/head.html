@@ -38,4 +38,52 @@
       });
     });
   </script>
+  <script>
+    // Section tabs: on pages with <div data-section-tabs></div>, turn the page's section headings into a
+    // sticky row of tabs. The tab for the section on screen is highlighted as you scroll.
+    document.addEventListener("DOMContentLoaded", function () {
+      var slot = document.querySelector("[data-section-tabs]");
+      if (!slot) return;
+      var skip = /^(related resources)$/i;
+      var heads = Array.prototype.slice.call(document.querySelectorAll(".page-content h2[id]")).filter(function (h) { return !skip.test(h.textContent.trim()); });
+      if (heads.length < 3) return;
+      var nav = document.createElement("nav");
+      nav.className = "page-tabs";
+      nav.setAttribute("aria-label", "Sections on this page");
+      var ul = document.createElement("ul");
+      var links = heads.map(function (h) {
+        var text = h.textContent.trim();
+        var m = text.match(/^Step (\d+):\s*(.*)$/i);
+        var label = m ? m[1] + ". " + m[2] : text;
+        if (label.length > 40) label = label.slice(0, 38).replace(/\s+\S*$/, "") + "…";
+        var li = document.createElement("li");
+        var a = document.createElement("a");
+        a.href = "#" + h.id;
+        a.textContent = label;
+        a.title = text;
+        a.style.setProperty("--brand", "#2347e8");
+        li.appendChild(a);
+        ul.appendChild(li);
+        return a;
+      });
+      nav.appendChild(ul);
+      slot.replaceWith(nav);
+      var current = -1, ticking = false;
+      function update() {
+        ticking = false;
+        var idx = 0;
+        for (var i = 0; i < heads.length; i++) { if (heads[i].getBoundingClientRect().top <= 120) idx = i; else break; }
+        if (idx === current) return;
+        current = idx;
+        links.forEach(function (a, i) {
+          a.classList.toggle("is-active", i === idx);
+          if (i === idx) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
+        });
+        var a = links[idx];
+        nav.scrollTo({ left: a.offsetLeft - nav.clientWidth / 2 + a.clientWidth / 2, behavior: "smooth" });
+      }
+      window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+      update();
+    });
+  </script>
 </head>

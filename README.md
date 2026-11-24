@@ -5,7 +5,7 @@
 <p>
   <a href="https://jkelleman.github.io/ai-content-design-handbook/"><img alt="Read online" src="https://img.shields.io/badge/read-online-C2410C"></a>
   <img alt="29 guides" src="https://img.shields.io/badge/guides-29-1C1A27">
-  <a href="resources/industry-examples.md"><img alt="Examples from 10 companies" src="https://img.shields.io/badge/examples-10%20companies-C2410C"></a>
+  <a href="resources/industry-examples.md"><img alt="Examples from 11 companies" src="https://img.shields.io/badge/examples-11%20companies-C2410C"></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-1C1A27"></a>
   <a href="CONTRIBUTING.md"><img alt="Contributions welcome" src="https://img.shields.io/badge/contributions-welcome-1B7F4B"></a>
   <br>
@@ -20,7 +20,7 @@
 
 ## What's new
 
-- **[How Leading Companies Design Content for AI](resources/industry-examples.md):** what 10 companies' public guidance teaches, side by side, including where they disagree
+- **[How Leading Companies Design Content for AI](resources/industry-examples.md):** what 11 companies' public guidance teaches, side by side, including where they disagree
 - **[Agentic AI Experiences](templates/ai-content/agentic-experiences.md):** content for AI that acts: plans, approvals, progress, receipts, and recovery
 - **[LLM-as-a-Judge](workflows/testing/llm-as-a-judge.md):** turn content principles into rubrics and calibrate automated judges against people
 - **EU AI Act Article 50**, in force since August 2, 2026: what it requires of AI disclosures, in the [Transparency Guidelines](resources/ethical-ai/transparency-guidelines.md)
@@ -73,7 +73,7 @@
 
 | Guide | What it covers |
 |---|---|
-| [How Leading Companies Design Content for AI](resources/industry-examples.md) | 10 companies' guidance, with sources and patterns across them |
+| [How Leading Companies Design Content for AI](resources/industry-examples.md) | 11 companies' guidance, with sources and patterns across them |
 | [Accessibility Guidelines](resources/accessibility-guidelines.md) | WCAG for content, plus AI and accessibility |
 | [Ethical AI Guidelines](resources/ethical-ai/ethical-ai-guidelines.md) | Six principles, and how companies make principles concrete |
 | [Bias Detection](resources/ethical-ai/bias-detection.md) | Seven types of bias and how to find them |

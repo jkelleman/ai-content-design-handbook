@@ -392,7 +392,7 @@ Before writing, check which published guidance applies to your feature. Note wha
 | A global audience | [Shopify app content guidelines](https://shopify.dev/apps/design-guidelines/content) | Is it about a US grade 7 reading level, with no idioms? |
 | A voice interface | [Amazon Alexa situational design](https://developer.amazon.com/alexa-skills-kit/situational-design) | Does it make sense by listening alone? |
 
-All 10 companies' guidance: [How Leading Companies Design Content for AI](resources/industry-examples.md)
+All 11 companies' guidance: [How Leading Companies Design Content for AI](resources/industry-examples.md)
 
 ---
 
