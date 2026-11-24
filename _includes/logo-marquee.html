@@ -4,7 +4,7 @@
     {%- for copy in (1..2) -%}
     <ul class="logo-marquee-row"{% if copy == 2 %} aria-hidden="true"{% endif %}>
       {%- for c in site.data.companies -%}
-      <li><a href="#{{ c.id }}" tabindex="{% if copy == 2 %}-1{% else %}0{% endif %}"><img src="{{ '/assets/logos/' | append: c.logo | relative_url }}" alt="{% if copy == 1 %}{{ c.name }}{% endif %}" style="height: {{ c.h }}px" loading="lazy"></a></li>
+      <li><a href="#{{ c.id }}" tabindex="{% if copy == 2 %}-1{% else %}0{% endif %}"><img src="{{ '/assets/logos/' | append: c.logo | relative_url }}" alt="{% if copy == 1 %}{{ c.name }}{% endif %}" style="height: {{ c.h }}px"></a></li>
       {%- endfor -%}
     </ul>
     {%- endfor -%}
