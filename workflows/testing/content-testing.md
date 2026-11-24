@@ -205,7 +205,7 @@ Results:
 Insights:
 - Enterprise users prefer C
 - Individual users split between A and C
-- Nobody preferred B
+- B was the least preferred
 
 Decision: Use C as default, A for consumer products
 ```
