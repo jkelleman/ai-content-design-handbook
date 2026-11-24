@@ -167,7 +167,7 @@ Choose where your data lives. You can add more sources later.
 
 **Example:**
 ```
-**Your first pipeline is running! 🎉**
+**Your first pipeline is running!**
 Data will appear in your workspace within a few minutes.
 
 Next: Invite teammates to collaborate on this workspace.
@@ -279,9 +279,9 @@ AI features need different onboarding, because people's main question isn't "whe
 4. **How to start:** two or three example prompts that are likely to work well.
 
 ```
-❌ Meet your new AI assistant! ✨ It can help you with anything.
+✗ Meet your new AI assistant! It can help you with anything.
 
-✅ Ask questions about your sales data
+✓ Ask questions about your sales data
    Get answers in plain language, with the query behind each one so you can check it.
    It can't see other workspaces or change your data.
    Try: "Which products sold best last month?"

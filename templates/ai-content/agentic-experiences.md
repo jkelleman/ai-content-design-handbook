@@ -27,7 +27,7 @@ Every agent action passes through up to four moments, and each needs its own con
 For multi-step work, show the plan in plain language before starting, so people can catch a misunderstanding early.
 
 ```
-✅ Here's my plan:
+✓ Here's my plan:
    1. Find invoices more than 30 days overdue (read only)
    2. Draft a reminder for each customer
    3. Send the reminders from dana@acme.com. I'll ask before this step.
@@ -50,10 +50,10 @@ Scale the friction to the risk. Not every action needs a dialog; some need more 
 An approval must say **what** will happen, **with which details**, **from whose account**, **whether it can be undone**, and **why** the agent chose this. See [Confirmation Dialogs](../flows/confirmation-dialogs.md#approving-ai-agent-actions) for examples.
 
 ```
-❌ Allow the agent to call update_permissions?
+✗ Allow the agent to call update_permissions?
    [Allow]  [Deny]
 
-✅ Give the Contractors group edit access to "Q3 Budget"?
+✓ Give the Contractors group edit access to "Q3 Budget"?
    7 people would be able to change figures and share the file.
    I'm suggesting this because you asked to let the agency update the forecast.
    You can remove access later in Share settings.
@@ -72,7 +72,7 @@ An approval must say **what** will happen, **with which details**, **from whose 
 The receipt is the most important agent content. Write it like a transaction record.
 
 ```
-✅ Sent 46 of 48 reminders
+✓ Sent 46 of 48 reminders
    From dana@acme.com · Subject: "Your invoice is past due"
    2 bounced: billing@oldco.com, ap@northwind.io
    Nothing else changed. Drafts are saved in "Agent drafts."
@@ -92,9 +92,9 @@ A good receipt:
 Agents fail partway through. The worst content outcome is a vague error that leaves people unsure what state things are in.
 
 ```
-❌ The task failed. Please try again.
+✗ The task failed. Please try again.
 
-✅ Stopped after step 2 of 3
+✓ Stopped after step 2 of 3
    I drafted 48 reminders but didn't send any, because your email connection expired.
    [Reconnect email and send]   [Review drafts]
 ```

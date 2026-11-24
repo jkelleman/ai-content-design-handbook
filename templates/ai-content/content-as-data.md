@@ -120,7 +120,7 @@ AI composes:
 - Solution: "Check your internet connection"
 
 Output:
-"Can't connect to data source. Network connection lost. 
+"Can't connect to data source. Network connection lost.
 Check your internet connection and try again."
 ```
 
@@ -507,7 +507,7 @@ content_template:
 
 ## Common Mistakes
 
-**❌ Too granular**
+**✗ Too granular**
 ```yaml
 # Creating separate entry for every tiny variation
 error_001: "Can't connect"
@@ -515,7 +515,7 @@ error_002: "Cannot connect"
 error_003: "Unable to connect"
 ```
 
-**✅ Use variables**
+**✓ Use variables**
 ```yaml
 template: "{connection_verb} to {service}"
 variables:
@@ -525,13 +525,13 @@ variables:
 
 ---
 
-**❌ No metadata**
+**✗ No metadata**
 ```yaml
 # Just storing content without context
 content: "Check your connection settings"
 ```
 
-**✅ Rich metadata**
+**✓ Rich metadata**
 ```yaml
 content: "Check your connection settings"
 tags: ["troubleshooting", "connection", "settings"]
@@ -541,13 +541,13 @@ user_level: "beginner"
 
 ---
 
-**❌ Unstructured content**
+**✗ Unstructured content**
 ```
 Long paragraph mixing problems, causes, and solutions all together
 making it hard for AI to extract relevant pieces...
 ```
 
-**✅ Structured sections**
+**✓ Structured sections**
 ```yaml
 problem: "Pipeline fails with timeout"
 causes: ["Network issue", "Firewall blocking", "Server down"]

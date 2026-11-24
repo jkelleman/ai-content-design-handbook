@@ -336,12 +336,12 @@ Verify outputs don't:
 
 ## Common Prompt Design Mistakes
 
-**❌ Too Vague**
+**✗ Too Vague**
 ```
 "Write something helpful"
 ```
 
-**✅ Specific**
+**✓ Specific**
 ```
 "Write a 2-sentence tooltip explaining what 'incremental refresh' means, 
 targeted at data analysts who are new to the product"
@@ -349,36 +349,36 @@ targeted at data analysts who are new to the product"
 
 ---
 
-**❌ Conflicting Instructions**
+**✗ Conflicting Instructions**
 ```
 "Be very brief but provide detailed explanations"
 ```
 
-**✅ Clear Priorities**
+**✓ Clear Priorities**
 ```
 "Be concise (under 100 words). Prioritize actionability over completeness."
 ```
 
 ---
 
-**❌ Assumes Too Much**
+**✗ Assumes Too Much**
 ```
 "Generate the standard response"
 ```
 
-**✅ Explicit**
+**✓ Explicit**
 ```
 "Generate an error message following this format: [format]. Use this tone: [tone]."
 ```
 
 ---
 
-**❌ No Examples**
+**✗ No Examples**
 ```
 "Match our brand voice"
 ```
 
-**✅ Examples Provided**
+**✓ Examples Provided**
 ```
 "Match this brand voice:
 Example 1: [good example]

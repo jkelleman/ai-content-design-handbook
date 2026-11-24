@@ -197,7 +197,7 @@ Decision: Not worth implementing - too small to matter
 
 ### One Variable at a Time
 
-**❌ Bad test:**
+**✗ Bad test:**
 ```
 Version A:
 "OK" button (blue, bottom-right)
@@ -207,7 +207,7 @@ Version B:
 ```
 *Can't tell if label, color, or position caused difference*
 
-**✅ Good test:**
+**✓ Good test:**
 ```
 Version A:
 "OK" button (blue, bottom-right)
@@ -221,13 +221,13 @@ Version B:
 
 **Make differences obvious:**
 
-**❌ Too subtle:**
+**✗ Too subtle:**
 ```
 A: "Learn more about our features"
 B: "Learn more about our great features"
 ```
 
-**✅ Clear difference:**
+**✓ Clear difference:**
 ```
 A: "Learn more"
 B: "See how it works"
@@ -506,18 +506,18 @@ analytics.track('error_resolved', {
 ### Quality Checks
 
 **Before launching:**
-- ✅ Randomization working correctly?
-- ✅ Even traffic split (49-51% is fine)?
-- ✅ Tracking firing properly?
-- ✅ Test documented?
-- ✅ Sample size calculated?
-- ✅ Success criteria defined?
+- ✓ Randomization working correctly?
+- ✓ Even traffic split (49-51% is fine)?
+- ✓ Tracking firing properly?
+- ✓ Test documented?
+- ✓ Sample size calculated?
+- ✓ Success criteria defined?
 
 **During test:**
-- ✅ Traffic split staying even?
-- ✅ No technical errors?
-- ✅ Data coming through?
-- ✅ Unexpected behavior?
+- ✓ Traffic split staying even?
+- ✓ No technical errors?
+- ✓ Data coming through?
+- ✓ Unexpected behavior?
 
 ### Duration
 
@@ -530,8 +530,8 @@ Maximum: 4 weeks (diminishing returns)
 
 **Don't stop early:**
 ```
-❌ Day 2: "B is winning! Ship it!"
-✅ Day 14: "B reached significance with full sample size"
+✗ Day 2: "B is winning! Ship it!"
+✓ Day 14: "B reached significance with full sample size"
 ```
 
 **Account for cycles:**
@@ -602,19 +602,19 @@ Confidence: [High/Medium/Low]
 
 ### Common Analysis Mistakes
 
-**❌ Stopping test when significance reached**
+**✗ Stopping test when significance reached**
 Run for planned duration
 
-**❌ Looking at results too frequently**
+**✗ Looking at results too frequently**
 Increases false positive rate
 
-**❌ Cherry-picking winning metrics**
+**✗ Cherry-picking winning metrics**
 Use pre-defined primary metric
 
-**❌ Ignoring negative secondary metrics**
+**✗ Ignoring negative secondary metrics**
 Might indicate broader issues
 
-**❌ Testing multiple hypotheses without correction**
+**✗ Testing multiple hypotheses without correction**
 Increases false positive rate
 
 ## Multivariate Testing

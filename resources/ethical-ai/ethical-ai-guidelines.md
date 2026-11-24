@@ -27,11 +27,11 @@ AI-generated content can:
 
 **How to implement:**
 ```markdown
-❌ Don't hide AI:
+✗ Don't hide AI:
 "Our support team is here to help!"
 [Actually a chatbot]
 
-✅ Be transparent:
+✓ Be transparent:
 "I'm an AI assistant trained to help with common questions."
 ```
 
@@ -48,10 +48,10 @@ AI-generated content can:
 - "AI" badge or label
 
 **When to disclose:**
-- ✅ Always for chatbots
-- ✅ Always for user-facing generated content
-- ✅ For AI-assisted writing (author's choice)
-- ⚠️ Consider for behind-the-scenes automation
+- ✓ Always for chatbots
+- ✓ Always for user-facing generated content
+- ✓ For AI-assisted writing (author's choice)
+- Consider for behind-the-scenes automation
 
 ---
 
@@ -72,13 +72,13 @@ Result: User tries to create 256-char name, gets error, frustrated
 
 **Admit uncertainty:**
 ```markdown
-✅ "I'm not certain about the exact character limit. 
+✓ "I'm not certain about the exact character limit.
 Check the documentation or contact support for the specific limit."
 ```
 
 **Cite sources:**
 ```markdown
-✅ "According to the documentation (link), workspace names 
+✓ "According to the documentation (link), workspace names
 have a 64-character limit."
 ```
 
@@ -105,38 +105,38 @@ elif confidence < 0.6:
 
 **Language bias:**
 ```markdown
-❌ "Hey guys, here's how to..."
-✅ "Here's how to..."
+✗ "Hey guys, here's how to..."
+✓ "Here's how to..."
 
-❌ "The user should configure his workspace..."
-✅ "Users should configure their workspace..."
+✗ "The user should configure his workspace..."
+✓ "Users should configure their workspace..."
 ```
 
 **Cultural bias:**
 ```markdown
-❌ Assumes US date formats, holidays, business hours
-✅ Adapts to user locale and preferences
+✗ Assumes US date formats, holidays, business hours
+✓ Adapts to user locale and preferences
 ```
 
 **Ability bias:**
 ```markdown
-❌ "Simply click the button"
-✅ "Select the Create button"
+✗ "Simply click the button"
+✓ "Select the Create button"
 
-❌ "As you can see in the image..."
-✅ "The diagram shows..." [with alt text]
+✗ "As you can see in the image..."
+✓ "The diagram shows..." [with alt text]
 ```
 
 **Expertise bias:**
 ```markdown
-❌ "It's easy to set up OAuth authentication"
-✅ "To set up OAuth authentication, follow these steps..."
+✗ "It's easy to set up OAuth authentication"
+✓ "To set up OAuth authentication, follow these steps..."
 ```
 
 **Economic bias:**
 ```markdown
-❌ Assumes access to high-end devices, fast internet
-✅ Designs for variable connectivity and device capabilities
+✗ Assumes access to high-end devices, fast internet
+✓ Designs for variable connectivity and device capabilities
 ```
 
 **Mitigation strategies:**
@@ -171,30 +171,30 @@ elif confidence < 0.6:
 
 **Physical harm:**
 ```markdown
-❌ AI suggesting dangerous workarounds
-❌ Medical advice from non-medical AI
-❌ Instructions that could cause injury
+✗ AI suggesting dangerous workarounds
+✗ Medical advice from non-medical AI
+✗ Instructions that could cause injury
 ```
 
 **Psychological harm:**
 ```markdown
-❌ Insensitive responses to distressed users
-❌ Gaslighting or dismissing concerns
-❌ Encouraging harmful behaviors
+✗ Insensitive responses to distressed users
+✗ Gaslighting or dismissing concerns
+✗ Encouraging harmful behaviors
 ```
 
 **Financial harm:**
 ```markdown
-❌ Unauthorized purchases or changes
-❌ Misleading pricing information
-❌ Inappropriate financial advice
+✗ Unauthorized purchases or changes
+✗ Misleading pricing information
+✗ Inappropriate financial advice
 ```
 
 **Privacy harm:**
 ```markdown
-❌ Exposing personal information
-❌ Inappropriate data collection
-❌ Violating user consent
+✗ Exposing personal information
+✗ Inappropriate data collection
+✗ Violating user consent
 ```
 
 **Safety measures:**
@@ -241,13 +241,13 @@ When AI detects:
 
 **Minimize data collection:**
 ```markdown
-❌ Log full conversation including personal details
-✅ Log anonymized interaction patterns only
+✗ Log full conversation including personal details
+✓ Log anonymized interaction patterns only
 ```
 
 **User control:**
 ```markdown
-✅ Users can:
+✓ Users can:
 - See what data is used
 - Delete their conversations
 - Opt out of data training
@@ -410,14 +410,14 @@ Review date: [When to reassess]
 
 **User:** "I have chest pain and shortness of breath. What should I do?"
 
-**❌ Don't:**
+**✗ Don't:**
 - Provide medical advice
 - Diagnose conditions
 - Recommend treatments
 
-**✅ Do:**
+**✓ Do:**
 ```markdown
-"I'm not able to provide medical advice. For chest pain and 
+"I'm not able to provide medical advice. For chest pain and
 shortness of breath, please:
 
 • Call emergency services (911 in US)
@@ -431,12 +431,12 @@ This could be a medical emergency - please seek immediate help."
 
 **User:** "I don't want to live anymore"
 
-**❌ Don't:**
+**✗ Don't:**
 - Ignore or dismiss
 - Provide casual advice
 - Continue normal conversation
 
-**✅ Do:**
+**✓ Do:**
 ```markdown
 "I'm concerned about what you shared. Please reach out for help:
 
@@ -456,14 +456,14 @@ You don't have to face this alone. Help is available."
 
 **User:** "How do I hack into my ex's account?"
 
-**❌ Don't:**
+**✗ Don't:**
 - Provide instructions
 - Engage with the request
 - Explain why it's possible
 
-**✅ Do:**
+**✓ Do:**
 ```markdown
-"I can't help with that. Accessing someone else's account 
+"I can't help with that. Accessing someone else's account
 without permission is illegal and violates their privacy.
 
 If you have a legitimate reason to access an account:
@@ -480,7 +480,7 @@ If you have a legitimate reason to access an account:
 
 **Problem:** Assumes user being added is male
 
-**✅ Better:**
+**✓ Better:**
 ```markdown
 "To add a user:
 1. Go to Settings > Users
@@ -500,7 +500,7 @@ The new user will receive an email to complete setup."
 
 **Problem:** Specific advice without knowing user's context
 
-**✅ Better:**
+**✓ Better:**
 ```markdown
 "Pipeline performance depends on your specific use case. Common optimizations include:
 
@@ -769,7 +769,7 @@ Need Help?
 
 ## Common Pitfalls
 
-### ❌ Don't:
+### ✗ Don't:
 
 **Hide AI use**
 "Users won't trust it if they know it's AI"
@@ -795,7 +795,7 @@ Need Help?
 "We launched it, we're done"
 → AI quality drifts without ongoing attention
 
-### ✅ Do:
+### ✓ Do:
 
 **Be honest about limitations**
 Build trust through transparency

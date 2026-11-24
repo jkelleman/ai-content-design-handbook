@@ -110,23 +110,23 @@ Another content designer reviews your work.
 
 **Be specific:**
 ```
-❌ "This section is confusing"
-✅ "The second paragraph introduces 'data sources' without defining it. 
+✗ "This section is confusing"
+✓ "The second paragraph introduces 'data sources' without defining it.
    Consider adding: 'Data sources are the systems where your data lives,
    like databases, files, or APIs.'"
 ```
 
 **Explain your reasoning:**
 ```
-❌ "Change this"
-✅ "Consider using active voice here ('Create a pipeline' instead of 
+✗ "Change this"
+✓ "Consider using active voice here ('Create a pipeline' instead of
    'A pipeline can be created') to make the instruction more direct"
 ```
 
 **Suggest, don't demand:**
 ```
-❌ "Wrong. Fix this."
-✅ "What if we tried: [suggestion]? I think it might be clearer because..."
+✗ "Wrong. Fix this."
+✓ "What if we tried: [suggestion]? I think it might be clearer because..."
 ```
 
 **Use GitHub's "Suggest changes" feature:**

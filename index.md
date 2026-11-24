@@ -6,15 +6,15 @@ Templates, workflows, and ethical guidelines for designing the words in AI produ
 
 ## What Makes This Different
 
-🤖 **AI-First Approach** - Extensive resources for prompt engineering, AI content strategy, and conversational design
+**AI-First Approach** - Extensive resources for prompt engineering, AI content strategy, and conversational design
 
-⚖️ **Ethics Built-In** - Comprehensive guidelines for bias detection, content safety, and transparency
+**Ethics Built-In** - Comprehensive guidelines for bias detection, content safety, and transparency
 
-📊 **Measurement-Focused** - Real frameworks for testing, metrics, and A/B testing content
+**Measurement-Focused** - Real frameworks for testing, metrics, and A/B testing content
 
-🏢 **Grounded in Industry Practice** - [How 10 leading companies design content for AI](resources/industry-examples.md), with sources
+**Grounded in Industry Practice** - [How 10 leading companies design content for AI](resources/industry-examples.md), with sources
 
-🤝 **Ready for Agents** - [Content patterns for AI that takes actions](templates/ai-content/agentic-experiences.md)
+**Ready for Agents** - [Content patterns for AI that takes actions](templates/ai-content/agentic-experiences.md)
 
 ## Get Started
 
@@ -119,9 +119,9 @@ Created by **[Jen Kelleman](https://github.com/jkelleman)**, a content designer 
 Company examples are paraphrased from public guidance and linked. This handbook isn't affiliated with or endorsed by any of the companies it cites.
 
 ### Connect
-- 💼 [LinkedIn](https://www.linkedin.com/in/jenniferkelleman)
-- ✍️ [Medium](https://jenkelleman.medium.com)
-- 🐙 [GitHub](https://github.com/jkelleman)
+- [LinkedIn](https://www.linkedin.com/in/jenniferkelleman)
+- [Medium](https://jenkelleman.medium.com)
+- [GitHub](https://github.com/jkelleman)
 
 ## Contributing
 

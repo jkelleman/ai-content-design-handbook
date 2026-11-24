@@ -105,12 +105,12 @@ git commit -m "Update error messages to be more specific and actionable"
 - Explain why if not obvious
 
 ```
-✅ GOOD:
+✓ GOOD:
 - "Add empty state template with examples"
 - "Fix typos in onboarding flow section"
 - "Update button labels to use active verbs"
 
-❌ BAD:
+✗ BAD:
 - "Changes"
 - "Update"
 - "Fixed stuff"

@@ -6,7 +6,7 @@ Real-world before/after examples showing content improvements across different t
 
 ### Example 1: Network Error
 
-**❌ Before:**
+**✗ Before:**
 ```
 Error 504: Gateway Timeout
 The request could not be processed at this time due to a timeout condition.
@@ -19,7 +19,7 @@ Please try your request again.
 - No clear cause
 - Vague action
 
-**✅ After:**
+**✓ After:**
 ```
 Connection timeout
 
@@ -46,7 +46,7 @@ Error code: 504 (for support reference)
 
 ### Example 2: Validation Error
 
-**❌ Before:**
+**✗ Before:**
 ```
 Invalid input in field 'workspaceName'
 Value does not match required pattern: ^[a-zA-Z0-9_-]{3,64}$
@@ -58,7 +58,7 @@ Value does not match required pattern: ^[a-zA-Z0-9_-]{3,64}$
 - No explanation of rules
 - Unhelpful
 
-**✅ After:**
+**✓ After:**
 ```
 Workspace name is invalid
 
@@ -83,11 +83,11 @@ Issues: Contains '@' and '!' (not allowed), has a space
 
 ### Example 3: Pipeline Created
 
-**❌ Before:**
+**✗ Before:**
 ```
 ✓ Success
 
-Your pipeline has been successfully created and is now available 
+Your pipeline has been successfully created and is now available
 in your workspace. You may now proceed to configure it.
 ```
 
@@ -96,7 +96,7 @@ in your workspace. You may now proceed to configure it.
 - Too wordy
 - Vague next step
 
-**✅ After:**
+**✓ After:**
 ```
 Pipeline created!
 
@@ -118,7 +118,7 @@ What's next?
 
 ### Example 4: Data Upload
 
-**❌ Before:**
+**✗ Before:**
 ```
 File upload operation completed successfully.
 ```
@@ -128,7 +128,7 @@ File upload operation completed successfully.
 - No context
 - No next step
 
-**✅ After:**
+**✓ After:**
 ```
 Dataset uploaded (2.3 GB)
 
@@ -149,7 +149,7 @@ Your data is ready to use. Preview it below or add it to a pipeline.
 
 ### Example 5: No Pipelines
 
-**❌ Before:**
+**✗ Before:**
 ```
 You have no pipelines.
 ```
@@ -159,7 +159,7 @@ You have no pipelines.
 - Not helpful
 - No guidance
 
-**✅ After:**
+**✓ After:**
 ```
 No pipelines yet
 
@@ -182,7 +182,7 @@ Ready to create your first one?
 
 ### Example 6: Empty Dashboard
 
-**❌ Before:**
+**✗ Before:**
 ```
 No data available to display.
 ```
@@ -192,7 +192,7 @@ No data available to display.
 - No explanation
 - Dead end
 
-**✅ After:**
+**✓ After:**
 ```
 Your dashboard is empty
 
@@ -217,11 +217,11 @@ Add widgets to monitor:
 
 ### Example 7: Welcome Screen
 
-**❌ Before:**
+**✗ Before:**
 ```
 Welcome to DataFlow Platform v2.0
 
-This application enables enterprise-grade data integration 
+This application enables enterprise-grade data integration
 and orchestration capabilities through a visual workflow designer.
 
 [Continue]
@@ -233,10 +233,9 @@ and orchestration capabilities through a visual workflow designer.
 - Doesn't address user
 - One vague button
 
-**✅ After:**
+**✓ After:**
 ```
-Welcome to DataFlow! 👋
-
+Welcome to DataFlow!
 Let's get you set up in 3 quick steps:
 1. Create your workspace (30 seconds)
 2. Connect your data (2 minutes)
@@ -258,11 +257,11 @@ Ready? This will take about 7 minutes total.
 
 ### Example 8: Feature Introduction
 
-**❌ Before:**
+**✗ Before:**
 ```
 New Feature: Automated Scheduling
 
-The system now supports automated scheduling capabilities 
+The system now supports automated scheduling capabilities
 for pipeline execution. Access this via Settings > Automation.
 
 [OK]
@@ -274,11 +273,11 @@ for pipeline execution. Access this via Settings > Automation.
 - Vague location
 - Dismissive button
 
-**✅ After:**
+**✓ After:**
 ```
-✨ New: Scheduled pipelines
+New: Scheduled pipelines
 
-Run pipelines automatically—daily, weekly, or on a custom schedule. 
+Run pipelines automatically—daily, weekly, or on a custom schedule.
 No more manual runs!
 
 Example: Schedule a pipeline to run every morning at 6 AM.
@@ -298,7 +297,7 @@ Example: Schedule a pipeline to run every morning at 6 AM.
 
 ### Example 9: Delete Confirmation
 
-**❌ Before:**
+**✗ Before:**
 ```
 Are you sure you want to delete this workspace?
 This action cannot be undone.
@@ -311,7 +310,7 @@ This action cannot be undone.
 - Yes/No buttons ambiguous
 - Doesn't show impact
 
-**✅ After:**
+**✓ After:**
 ```
 Delete "Sales Data" workspace?
 
@@ -320,7 +319,7 @@ This will permanently delete:
 • 5 datasets
 • All activity history
 
-⚠️ This action cannot be undone.
+Warning: This action cannot be undone.
 
 Type the workspace name to confirm: [_____]
 
@@ -338,7 +337,7 @@ Type the workspace name to confirm: [_____]
 
 ### Example 10: Discard Changes
 
-**❌ Before:**
+**✗ Before:**
 ```
 You have unsaved changes. Discard?
 
@@ -350,7 +349,7 @@ You have unsaved changes. Discard?
 - OK/Cancel confusing
 - Doesn't show what changes
 
-**✅ After:**
+**✓ After:**
 ```
 Discard unsaved changes?
 
@@ -375,7 +374,7 @@ If you leave now, these changes won't be saved.
 
 ### Example 11: Button Labels
 
-**❌ Before:**
+**✗ Before:**
 ```
 [Submit]
 [OK]  
@@ -387,7 +386,7 @@ If you leave now, these changes won't be saved.
 - Vague, context-free
 - User doesn't know what happens
 
-**✅ After:**
+**✓ After:**
 ```
 [Create pipeline]
 [Save changes]  
@@ -404,7 +403,7 @@ If you leave now, these changes won't be saved.
 
 ### Example 12: Form Helper Text
 
-**❌ Before:**
+**✗ Before:**
 ```
 Name: [_____]
 ```
@@ -413,7 +412,7 @@ Name: [_____]
 - No guidance
 - User uncertain what to enter
 
-**✅ After:**
+**✓ After:**
 ```
 Workspace name: [_____]
 Choose a name that describes this workspace's purpose
@@ -431,12 +430,12 @@ Example: "Sales Analytics" or "Marketing Data"
 
 ### Example 13: Getting Started Guide
 
-**❌ Before:**
+**✗ Before:**
 ```
 Getting Started
 
-To begin using the platform, users must first provision a 
-workspace entity within the system. Navigate to the workspace 
+To begin using the platform, users must first provision a
+workspace entity within the system. Navigate to the workspace
 creation interface and input the required parameters.
 ```
 
@@ -446,7 +445,7 @@ creation interface and input the required parameters.
 - No clear steps
 - Not actionable
 
-**✅ After:**
+**✓ After:**
 ```
 Getting Started
 
@@ -471,7 +470,7 @@ Next: [Connect your data →]
 
 ### Example 14: Error Troubleshooting
 
-**❌ Before:**
+**✗ Before:**
 ```
 Error Code: ERR_AUTH_FAILED
 
@@ -485,7 +484,7 @@ Resolution: Verify credentials and re-authenticate if necessary.
 - Not specific enough
 - Vague resolution
 
-**✅ After:**
+**✓ After:**
 ```
 Connection authentication failed
 
@@ -516,7 +515,7 @@ Common causes:
 
 ### Example 15: Feature Announcement
 
-**❌ Before:**
+**✗ Before:**
 ```
 Version 2.4.0 Release Notes
 
@@ -532,25 +531,25 @@ Version 2.4.0 Release Notes
 - Boring list format
 - No context
 
-**✅ After:**
+**✓ After:**
 ```
 What's New in DataFlow (January 2026)
 
-🔐 Sign in with your work account
+Sign in with your work account
 You can now sign in using your Google or Microsoft account—
 no need to create a separate password!
 [Set up single sign-on →]
 
-⛓️ Chain pipelines together
+Chain pipelines together
 Link pipelines so one starts automatically when another finishes.
 Great for complex workflows that need to run in sequence.
 [Learn about pipeline dependencies →]
 
-⚡ Faster data transformations
+Faster data transformations
 Data transformations now run up to 40% faster, especially for
 large datasets over 1 GB.
 
-🐛 Bug fixes
+Bug fixes
 Fixed an issue where scheduled pipelines sometimes skipped runs.
 If this affected you, please reschedule your pipelines.
 ```
@@ -568,7 +567,7 @@ If this affected you, please reschedule your pipelines.
 
 ### Example 16: AI Chatbot Response
 
-**❌ Before:**
+**✗ Before:**
 ```
 I can help you with that. Please provide more details about
 your query so I can assist you better.
@@ -579,7 +578,7 @@ your query so I can assist you better.
 - Doesn't acknowledge user
 - Vague
 
-**✅ After:**
+**✓ After:**
 ```
 I can help you troubleshoot pipeline errors!
 
@@ -601,7 +600,7 @@ Or, describe the problem in your own words and I'll do my best to help.
 
 ### Example 17: AI Disclosure
 
-**❌ Before:**
+**✗ Before:**
 ```
 Hello! How can I help you today?
 ```
@@ -611,9 +610,9 @@ Hello! How can I help you today?
 - Implies human
 - Not transparent
 
-**✅ After:**
+**✓ After:**
 ```
-👋 Hi! I'm an AI assistant for DataFlow
+Hi! I'm an AI assistant for DataFlow
 
 I can help with:
 • Questions about features
@@ -641,8 +640,8 @@ These before-and-after pairs come from, or directly apply, the public guidance o
 ### Example 18: Password requirements (Apple)
 
 ```
-❌ That password is too short.
-✅ Choose a password with at least 8 characters.
+✗ That password is too short.
+✓ Choose a password with at least 8 characters.
 ```
 **Why it works:** Apple's HIG uses this example. It states the requirement instead of the violation, so people know exactly what to do.
 ([HIG: Writing](https://developer.apple.com/design/human-interface-guidelines/writing))
@@ -650,25 +649,25 @@ These before-and-after pairs come from, or directly apply, the public guidance o
 ### Example 19: Name field validation (Apple)
 
 ```
-❌ Invalid name.
-❌ Don't use numbers or symbols.
-✅ Use only letters for your name.
+✗ Invalid name.
+✗ Don't use numbers or symbols.
+✓ Use only letters for your name.
 ```
 **Why it works:** It tells people what to do, not what they did wrong, and appears next to the field.
 
 ### Example 20: Loading failure without "we" (Apple)
 
 ```
-❌ We're having trouble loading this content.
-✅ Unable to load content.
+✗ We're having trouble loading this content.
+✓ Unable to load content.
 ```
 **Why it works:** Apple notes it's unclear who "we" is. Other companies, such as Atlassian, use "we" deliberately. Either way, add a next step: "Unable to load content. Check your connection and try again."
 
 ### Example 21: Value out of range (Microsoft)
 
 ```
-❌ Bad size.
-✅ Enter a size between 1 and 100.
+✗ Bad size.
+✓ Enter a size between 1 and 100.
 ```
 **Why it works:** Microsoft's error guidelines say to avoid vague words like "bad" and state the actual criteria.
 ([Error message guidelines](https://learn.microsoft.com/en-us/windows/win32/debug/error-message-guidelines))
@@ -676,8 +675,8 @@ These before-and-after pairs come from, or directly apply, the public guidance o
 ### Example 22: Printer offline (Google)
 
 ```
-❌ You selected an unavailable printer.
-✅ The printer you chose is offline. Choose another printer or check that it's turned on.
+✗ You selected an unavailable printer.
+✓ The printer you chose is offline. Choose another printer or check that it's turned on.
 ```
 **Why it works:** Google's technical writing guidance: describe what happened, not what the user did.
 ([Set the right tone](https://developers.google.com/tech-writing/error-messages/set-tone))
@@ -685,16 +684,16 @@ These before-and-after pairs come from, or directly apply, the public guidance o
 ### Example 23: A button label (Apple)
 
 ```
-❌ Let's do it!
-✅ Send
+✗ Let's do it!
+✓ Send
 ```
 **Why it works:** Apple's HIG: label buttons with verbs and prioritize clarity over cleverness.
 
 ### Example 24: Consistent action names (Shopify)
 
 ```
-❌ "Upload image" on one page, "Add photos" on another
-✅ "Upload image" everywhere
+✗ "Upload image" on one page, "Add photos" on another
+✓ "Upload image" everywhere
 ```
 **Why it works:** Shopify asks apps to pick one term per action. Synonyms make people wonder whether two buttons do different things.
 ([App content](https://shopify.dev/apps/design-guidelines/content))
@@ -702,8 +701,8 @@ These before-and-after pairs come from, or directly apply, the public guidance o
 ### Example 25: An AI content label (Meta)
 
 ```
-❌ Made with AI   (on a real photo with one AI-assisted edit)
-✅ AI info  →  "Generative AI may have been used to create or edit content in this post."
+✗ Made with AI   (on a real photo with one AI-assisted edit)
+✓ AI info  →  "Generative AI may have been used to create or edit content in this post."
 ```
 **Why it works:** Meta changed this label after photographers objected that real photos were mislabeled. A label is a claim; word it to match what the system actually knows.
 ([Report](https://jang.com.pk/en/15206-meta-replaces-made-with-ai-label-with-ai-info-amid-user-criticism-news))
@@ -711,8 +710,8 @@ These before-and-after pairs come from, or directly apply, the public guidance o
 ### Example 26: An AI system limitation (Google PAIR)
 
 ```
-❌ I can't help with that.
-✅ I can only search documents in this workspace, and I don't see one about travel policy.
+✗ I can't help with that.
+✓ I can only search documents in this workspace, and I don't see one about travel policy.
    Try searching the HR site, or ask your manager to add the policy here.
 ```
 **Why it works:** Google's People + AI Guidebook says AI errors should explain what the system can't do and what input would work, and offer a path forward.
@@ -721,8 +720,8 @@ These before-and-after pairs come from, or directly apply, the public guidance o
 ### Example 27: An agent receipt
 
 ```
-❌ Done!
-✅ Sent 46 of 48 reminders from dana@acme.com. 2 bounced: billing@oldco.com, ap@northwind.io. Nothing else changed. [View sent]
+✗ Done!
+✓ Sent 46 of 48 reminders from dana@acme.com. 2 bounced: billing@oldco.com, ap@northwind.io. Nothing else changed. [View sent]
 ```
 **Why it works:** When AI acts for someone, the confirmation is a receipt: outcome, identity used, failures, and what didn't change. See [Agentic AI Experiences](../templates/ai-content/agentic-experiences.md).
 
@@ -732,7 +731,7 @@ More examples and sources: [How Leading Companies Design Content for AI](../reso
 
 ### What Makes Good Content
 
-✅ **Do:**
+✓ **Do:**
 - Use plain language
 - Be specific and concrete
 - Provide clear next steps
@@ -741,7 +740,7 @@ More examples and sources: [How Leading Companies Design Content for AI](../reso
 - Give examples
 - State limitations honestly
 
-❌ **Don't:**
+✗ **Don't:**
 - Use jargon without explanation
 - Be vague or generic
 - Leave users stuck

@@ -60,37 +60,37 @@ Material Design's guidance is that a snackbar's action should relate directly to
 ### Created
 
 ```
-❌ Success!
-✅ Pipeline created
+✗ Success!
+✓ Pipeline created
    It runs daily at 6:00 AM. [View pipeline]
 ```
 
 ### Saved
 
 ```
-❌ Your changes have been saved successfully to the database!
-✅ Changes saved
+✗ Your changes have been saved successfully to the database!
+✓ Changes saved
 ```
 "Successfully" adds nothing, and people don't know or care that there's a database.
 
 ### Sent
 
 ```
-❌ Message sent successfully!!
-✅ Message sent · [Undo]
+✗ Message sent successfully!!
+✓ Message sent · [Undo]
 ```
 
 ### Deleted, with undo
 
 ```
-✅ Project archived · [Undo]
+✓ Project archived · [Undo]
 ```
 Undo is better than "Are you sure?" for reversible actions. See [Confirmation Dialogs](../flows/confirmation-dialogs.md).
 
 ### Long-running job
 
 ```
-✅ Your export is ready
+✓ Your export is ready
    2,400 rows from "Q3 orders" · CSV, 1.2 MB
    [Download]
 ```
@@ -98,7 +98,7 @@ Undo is better than "Are you sure?" for reversible actions. See [Confirmation Di
 ### Payment
 
 ```
-✅ Payment received
+✓ Payment received
    $49.00 charged to Visa ending 4242. Receipt sent to dana@example.com.
    Your Pro plan renews on June 3, 2026.
    [View receipt]
@@ -109,8 +109,8 @@ Undo is better than "Are you sure?" for reversible actions. See [Confirmation Di
 When some items worked and some didn't, say both, and never hide failures inside a success message.
 
 ```
-❌ Upload complete
-✅ 8 of 10 files uploaded
+✗ Upload complete
+✓ 8 of 10 files uploaded
    2 files are over the 25 MB limit: video.mov, raw-data.zip
    [Choose smaller files]
 ```
@@ -122,7 +122,7 @@ AI work needs more than "Done," because people need to check it.
 ### Generated content
 
 ```
-✅ Draft created from your notes
+✓ Draft created from your notes
    Review it before sending. AI-generated text can contain mistakes.
    [Edit draft]   [Regenerate]
 ```
@@ -131,7 +131,7 @@ Microsoft's Copilot transparency documentation describes pairing AI-generated co
 ### Agent completed a task
 
 ```
-✅ Meeting scheduled
+✓ Meeting scheduled
    "Q3 planning" · Thursday, June 5, 2:00–2:30 PM · 4 attendees invited
    I sent invites from your calendar and added the agenda you wrote.
    [Open event]   [Undo]
@@ -141,7 +141,7 @@ When an agent acts for someone, the confirmation is a receipt: what it did, with
 ### Bulk AI action
 
 ```
-✅ 142 product descriptions rewritten
+✓ 142 product descriptions rewritten
    12 were flagged for review because they mention pricing. [Review flagged]
 ```
 

@@ -62,12 +62,12 @@ The same pattern now covers a new case: **approving an action an AI agent wants 
 
 ### Delete Confirmation
 ```
-❌ BAD:
+✗ BAD:
 **Are you sure?**
 This action cannot be undone.
 [OK] [Cancel]
 
-✅ GOOD:
+✓ GOOD:
 **Delete "Sales Pipeline"?**
 This pipeline and its run history will be permanently deleted.
 [Cancel] [Delete pipeline]
@@ -75,12 +75,12 @@ This pipeline and its run history will be permanently deleted.
 
 ### Remove User Confirmation
 ```
-❌ BAD:
+✗ BAD:
 **Warning**
 Do you want to proceed?
 [Yes] [No]
 
-✅ GOOD:
+✓ GOOD:
 **Remove Sarah Chen from workspace?**
 Sarah will lose access to all projects and data in this workspace.
 [Cancel] [Remove user]
@@ -88,12 +88,12 @@ Sarah will lose access to all projects and data in this workspace.
 
 ### Archive Confirmation
 ```
-❌ BAD:
+✗ BAD:
 **Confirm**
 Click OK to continue.
 [OK] [Cancel]
 
-✅ GOOD:
+✓ GOOD:
 **Archive this workspace?**
 Archived workspaces are read-only. You can restore it later from settings.
 [Cancel] [Archive]
@@ -101,12 +101,12 @@ Archived workspaces are read-only. You can restore it later from settings.
 
 ### Publish Confirmation
 ```
-❌ BAD:
+✗ BAD:
 **Publish**
 Are you ready to publish?
 [Yes] [No]
 
-✅ GOOD:
+✓ GOOD:
 **Publish report to production?**
 This report will be visible to all users in your organization.
 [Cancel] [Publish]
@@ -258,10 +258,10 @@ When an AI agent proposes an action, the confirmation becomes an **approval**. T
 ### Example
 
 ```
-❌ The agent wants to run send_email(recipients=48). Allow?
+✗ The agent wants to run send_email(recipients=48). Allow?
    [Allow]   [Deny]
 
-✅ Send overdue-invoice reminders to 48 customers?
+✓ Send overdue-invoice reminders to 48 customers?
    From: dana@acme.com · Subject: "Your invoice is past due"
    I chose customers with invoices more than 30 days overdue, based on your request.
    Emails can't be unsent.
